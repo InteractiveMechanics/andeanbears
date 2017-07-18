@@ -1,6 +1,6 @@
 Utilities = (function() {
 	var timeout = [];
-    var duration = 3000; //90000
+    var duration = 90000; //90000
 
     var init = function() {
         bindEvents();

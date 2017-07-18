@@ -7,18 +7,48 @@
 	justify-content: center;
 	align-items: center;
 	z-index: 2;
+	position: absolute;
 }
 
 .droppable-widget {
-	width: 105px;
-	height: 105px;
+	width: 100px;
+	height: 100px;
 	background-color: transparent;
 	border: 5px solid #1f68dd;
 	border-radius: 50%;
 	position: absolute;
 }
 
+.draggable-widget-holder[data-bear="1"],
+.draggable-widget[data-bear="1"] {
+	top: 715px;
+	left: 300px;
+}
+
 .droppable-widget[data-bear="1"] {
 	top: 300px;
 	left: 100px;
 } 
+
+.droppable-widget[data-bear="2"] {
+	top: 275px;
+	left: 400px;
+}
+
+.draggable-widget-holder {
+	width: 100px;
+	height: 100px;
+	background-color: lighten(#1f68dd, 30%);
+	border-radius: 50%;
+	position: absolute;
+}
+
+.correct-answer,
+.hint-1, .hint-2 {
+	position: absolute;
+    left: 100px;
+    width: 200px;
+    background-color: rgba(250, 250, 250,0.5);
+    padding: 15px;
+    z-index: 2;
+}
