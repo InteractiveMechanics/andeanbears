@@ -8,6 +8,12 @@ Game = (function() {
     	$('#game').html('');
     }
 
+    var showStartOver = function() {
+        if ($('.dropped').length) {
+            $('#game-reset-btn').removeClass('hidden');
+        }
+    }
+
    
     var buildGame = function() {
     	clearGame();
@@ -34,8 +40,9 @@ Game = (function() {
                 var hint2 = $(this).find('.hint-2');
 
     		 	   	if(ui.draggable.is('[data-bear="' + droppableNumber + '"]')) {
+
     		 	   		ui.draggable.draggable('option', 'revert', 'invalid');
-    		 	   		ui.draggable.css('background-color', 'green');
+    		 	   		ui.draggable.css('background-color', 'green').addClass('dropped');
     		 	   		correctAnswer.removeClass('hidden');
                         setTimeout(function(){ correctAnswer.addClass('hidden'); }, 3000);
     		 	   	 	ui.draggable.position({
@@ -48,6 +55,7 @@ Game = (function() {
     		 	   		});
 
     		 	   	ui.draggable.draggable('option', 'disabled', true);
+                    showStartOver();
 
     		 		} else {
     		 			ui.draggable.draggable('option', 'revert', 'valid');
