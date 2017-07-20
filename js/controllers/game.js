@@ -5,7 +5,7 @@ Game = (function() {
     }
 
     var clearGame = function() {
-    	$('#game').html('');
+    	$('#game-map').html('');
     }
 
     var showStartOver = function() {
@@ -14,13 +14,18 @@ Game = (function() {
         }
     }
 
+    var buildMarkers = function() {
+        $('#game-template').tmpl(data.locations).appendTo('#game-map');
+    }
+
    
     var buildGame = function() {
     	clearGame();
     	if ($('#game').hasClass('hidden')) {
     		$('#game').removeClass('hidden');
     	}
-    	$('#game-template').tmpl().appendTo('#game');
+    	//$('#game-template').tmpl().appendTo('#game');
+        buildMarkers();
     	Utilities.clearHome();
     	//clear the home screen
     	$('.draggable-widget').draggable({

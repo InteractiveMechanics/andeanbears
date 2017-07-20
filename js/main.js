@@ -1,7 +1,14 @@
 $(function(){
+	data = function() {};
 
-	Utilities.init();
-	Game.init();
-	Explore.init();
+    $.get('/game.json', function(response) {
+        data = response;
+
+        Utilities.init();
+		Game.init();
+		Explore.init();
+
+    }, 'json');
+
 
 });

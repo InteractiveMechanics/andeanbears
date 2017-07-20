@@ -28,26 +28,21 @@
     <!-- profile -->
     <!-- game -->
     <script id="game-template" type="text/x-jQuery-templ">
-        <div id="game-map">
-        </div>
-        <div id="game-btn-wrapper">
-            <div class="draggable-widget-holder" data-bear="1"></div>
-            <div class="draggable-widget" data-bear="1">
-                <p class="draggable-widget-content">Andean Bear</p> 
+          <div class="droppable-widget" data-bear="${Id}" style="top: ${y}px; left: ${x}px;">
+            <div class="correct-answer hidden">
+                <h2 class="correctTitle">${Correct.title}</h2>
+                <p class="correctText">${Correct.text}</p>
+                <img class="correctImg" src="http://www.conservapedia.com/images/d/d9/Three-happy-bears.jpg">
             </div>
-          <div class="droppable-widget" data-bear="1">
-            <div class="correct-answer hidden"><p>Here is a correct answer</p></div>
-            <div class="hint-1 hidden"><p>this is the first hint</p></div>
-            <div class="hint-2 hidden"><p>this is the second hint</p></div>  
+            <div class="hint-1 hidden">
+                <h2>${Incorrect[0].title}</h2>
+                <p>${Incorrect[0].text}</p>
+            </div>
+            <div class="hint-2 hidden">
+                <h2>${Incorrect[1].title}</h2>
+                <p>${Incorrect[1].text}</p>
+            </div>  
           </div>
-          <div class="droppable-widget" data-bear="2">
-            <div class="correct-answer hidden"><p>Here is a correct answer</p></div>  
-            <div class="hint-1 hidden"><p>this is the first hint</p></div>
-            <div class="hint-2 hidden"><p>this is the second hint</p></div>
-          </div>
-        <button id="game-reset-btn" class="hidden">Start Challenge Over</button>
-        <button class="reset-btn">Back To Home</button>
-        </div>
     </script>
 
     <div id="home">
@@ -59,7 +54,55 @@
 
     <div id="explore"></div>
     <div id="profile"></div>
-    <div id="game"></div>
+    <div id="game" class="hidden">
+        <div id="game-map"></div>
+          <div id="game-btn-wrapper">
+            <button id="game-reset-btn" class="hidden">Start Challenge Over</button>
+
+            <div class="draggable-widget-holder" data-bear="1"></div>
+            <div class="draggable-widget" data-bear="1">
+                <p class="draggable-widget-content">Andean Bear</p> 
+            </div>
+            
+            <div class="draggable-widget-holder" data-bear="2"></div>
+            <div class="draggable-widget" data-bear="2">
+                <p class="draggable-widget-content">American Black Bear</p> 
+            </div>
+            
+            <div class="draggable-widget-holder" data-bear="3"></div>
+            <div class="draggable-widget" data-bear="3">
+                <p class="draggable-widget-content">Brown Bear</p> 
+            </div>
+
+            <div class="draggable-widget-holder" data-bear="4"></div>
+            <div class="draggable-widget" data-bear="4">
+                <p class="draggable-widget-content">Polar Bear</p> 
+            </div>
+
+            <div class="draggable-widget-holder" data-bear="5"></div>
+            <div class="draggable-widget" data-bear="5">
+                <p class="draggable-widget-content">Asiatic Black Bear</p> 
+            </div>
+
+            <div class="draggable-widget-holder" data-bear="6"></div>
+            <div class="draggable-widget" data-bear="6">
+                <p class="draggable-widget-content">Giant Panda</p> 
+            </div>
+
+            <div class="draggable-widget-holder" data-bear="7"></div>
+            <div class="draggable-widget" data-bear="7">
+                <p class="draggable-widget-content">Sun Bear</p> 
+            </div>
+
+              <div class="draggable-widget-holder" data-bear="8"></div>
+            <div class="draggable-widget" data-bear="8">
+                <p class="draggable-widget-content">Sloth Bear</p> 
+            </div>
+    
+           
+            <button class="reset-btn">Back To Home</button>
+        </div>
+    </div>
 
 
 

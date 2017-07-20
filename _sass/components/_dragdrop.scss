@@ -25,15 +25,53 @@
 	left: 300px;
 }
 
-.droppable-widget[data-bear="1"] {
-	top: 300px;
-	left: 100px;
-} 
-
-.droppable-widget[data-bear="2"] {
-	top: 275px;
+.draggable-widget-holder[data-bear="2"],
+.draggable-widget[data-bear="2"] {
+	top: 715px;
 	left: 400px;
 }
+
+.draggable-widget-holder[data-bear="3"],
+.draggable-widget[data-bear="3"] {
+	top: 715px;
+	left: 500px;
+}
+
+.draggable-widget-holder[data-bear="4"],
+.draggable-widget[data-bear="4"] {
+	top: 715px;
+	left: 600px;
+}
+
+.draggable-widget-holder[data-bear="5"],
+.draggable-widget[data-bear="5"] {
+	top: 715px;
+	left: 700px;
+}
+
+.draggable-widget-holder[data-bear="6"],
+.draggable-widget[data-bear="6"] {
+	top: 715px;
+	left: 800px;
+}
+
+.draggable-widget-holder[data-bear="7"],
+.draggable-widget[data-bear="7"] {
+	top: 715px;
+	left: 900px;
+}
+
+.draggable-widget-holder[data-bear="8"],
+.draggable-widget[data-bear="8"] {
+	top: 715px;
+	left: 1000px;
+}
+
+
+
+
+
+
 
 .draggable-widget-holder {
 	width: 100px;

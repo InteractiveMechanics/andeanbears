@@ -1,0 +1,213 @@
+{
+    "locations": [
+        {
+            "Id": 1,
+            "x": 123,
+            "y": 456,
+            "Title": "Andean Bear",
+            "Correct": 
+                {
+                    "title": "Correct!",
+                    "text": "These solitary bears can be found in the dense cloud forests and rainforests of the Andes Mountains. They are the only bear species found in South America.", 
+                    "image": "./path/to/file"
+                }
+            ,
+            "Incorrect": [
+                {
+                    "title": "Try Again!",
+                    "text": "The species found here is named after the mountain range it calls home."
+                },
+                {
+                    "title": "Keep Trying!",
+                    "text": "The species found here has marks around its eyes that look like glasses."
+                }
+            ]
+        },
+        {
+            
+            "Id": 2,
+            "x": 223,
+            "y": 456,
+            "Title": "American Black Bear",
+            "Correct": 
+                {
+                    "title": "Yes!",
+                    "text": "As their name suggests, American black bears are found throughout the United States, as well as Canada and parts of northern Mexico. It is thought that there are two times more American black bears on Earth than all other bear species combined. ", 
+                    "tmage": "./path/to/file"
+                }
+            ,
+            "Incorrect": [
+                {
+                    "title": "Guess Again!",
+                    "text": "The species found here is the most common of all bears, even living here in Tennessee."
+                },
+                {
+                    "title": "Try Again!",
+                    "text": "Bears of the species found here can have brown, tan, and even blonde fur, despite their name."
+                }
+            ]
+        },
+           {
+            "Id": 3,
+            "x": 323,
+            "y": 456,
+            "Title": "Brown Bear",
+            "Correct": 
+                {
+                    "title": "You’re Right!",
+                    "text": "These bears are found in more places around the world than any other bear. They are common in parts of North America, Europe, and Asia. They are the most widespread of any bear species.", 
+                    "image": "./path/to/file"
+                }
+            ,
+            "Incorrect": [
+                {
+                    "title": "Try Again!",
+                    "text": "The bear species found here is the most widespread on Earth, it even shows up twice on this map."
+                },
+                {
+                    "title": "Guess Again!",
+                    "text": "Some members of the species that live here are known as grizzly bears."
+                }
+            ]
+                
+        },
+         {
+            "Id": 4,
+            "x": 423,
+            "y": 456,
+            "Title": "Brown Bear",
+            "Correct": 
+                {
+                    "title": "Correct!",
+                    "text": "Brown bears are found throughout North America, Europe, and Asia. The enormous bears sometimes have huge home ranges, some cover up to one thousand square miles.", 
+                    "image": "./path/to/file"
+                }
+            ,
+            "Incorrect": [
+                {
+                    "title": "Keep Trying!",
+                    "text": "The species that lives here is extremely adaptable, able to survive in a range of habitats, and eat a variety of foods."
+                },
+                {
+                    "title": "Try Again!",
+                    "text": "The species found here is the most widespread on Earth, it even shows up twice on this map."
+                }
+            ]
+        },
+        {
+            "Id": 5,
+            "x": 523,
+            "y": 456,
+            "Title": "Polar Bear",
+            "Correct": 
+                {
+                    "title": "Excellent!",
+                    "Text": "Polar bears can be found in the arctic lands and waters of northern Asia, Europe, and North America. These bears are great swimmers, and spend most of their time in the summer swimming between ice floes to catch food. ", 
+                    "Image": "./path/to/file"
+                }
+            ,
+            "Incorrect": [
+                {
+                    "title": "Keep Trying!",
+                    "text": "The species that lives here is the largest of all the bear species."
+                },
+                {
+                    "title": "Try Again!",
+                    "text": "The species found here is adapted to living in snowy and icy environments. "
+                }
+            ]
+        },
+            {
+            "Id": 6,
+            "x": 623,
+            "y": 456,
+            "Title": "Asiatic Black Bear",
+            "Correct": 
+                {
+                    "title": "Excellent!",
+                    "Text": "Excellent! Asiatic black bears are found throughout Asia, from India to Southeast Asia, and even in Japan. These small bears have been seen eating over 160 different kinds of fruit in their forest habitats.", 
+                    "Image": "./path/to/file"
+                }
+            ,
+            "Incorrect": [
+                {
+                    "title": "Try Again!",
+                    "text": "The bear species that lives here is named for the continent where it is found."
+                },
+                {
+                    "title": "Guess Again!",
+                    "text": "The bears found here typically have a crescent-shaped patch of light fur on their chests, leading them to have the nickname “moon bears.”"
+                }
+            ]
+        },
+         {
+            "Id": 7,
+            "x": 723,
+            "y": 456,
+            "Title": "Giant Panda",
+            "Correct": 
+                {
+                    "title": "You're Right!",
+                    "text": "Giant pandas are extremely rare, living in just one small area of central China. These distinctive bears spend half of their day eating in their bamboo forest habitat.", 
+                    "image": "./path/to/file"
+                }
+            ,
+            "Incorrect": [
+                {
+                    "title": "Guess Again!",
+                    "text": "The species found here loves to snack on the bamboo found in its forest home."
+                },
+                {
+                    "title": "Keep Trying!",
+                    "text": "The species that lives here is easily recognized by its distinctive black and white fur."
+                }
+            ]
+        },
+        {
+            "Id": 8,
+            "x": 823,
+            "y": 456,
+            "Title": "Sun Bear",
+            "Correct": 
+                {
+                    "title": "Correct!",
+                    "text": "These bears are found in tropical forest habitats in Southeast Asia. They use their long snouts and even longer tongues to slurp bugs and honey from nests and hives.", 
+                    "image": "./path/to/file"
+                }
+            ,
+            "Incorrect": [
+                {
+                    "Title": "Guess Again!",
+                    "text": "The species that lives here is the smallest of all the bear species."
+                },
+                {
+                    "title": "Try Again!",
+                    "text": "The bears found here have short fur that helps them stay cool in their tropical habitat. "
+                }
+            ]
+        },
+        {
+            "Id": 9,
+            "x": 923,
+            "y": 456,
+            "Title": "Sloth Bear",
+            "Correct": 
+                {
+                    "title": "Yes!",
+                    "text": "Sloth bears are found in forests and grasslands throughout India, Nepal, and Sri Lanka. They got their names because the first scientists to study them thought they were sloths and not bears at all.", 
+                    "image": "./path/to/file"
+                }
+            ,
+            "Incorrect": [
+                {
+                    "title": "Keep Trying!",
+                    "text": "The bear species found here is named for a completely different kind of animal."
+                },
+                {
+                    "title": "Guess Again!",
+                    "text": "Even though their name might make you think they are slow, the bear species found here can outrun you."
+                }
+            ]
+        }
+    ]
+}
