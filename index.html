@@ -45,19 +45,8 @@
           </div>
     </script>
 
-    <div id="home">
-        <div class="home-btn-wrapper">
-            <button id="home-btn-explore" class="home-btn"><img src="http://www.walksworldwide.com/image_database/250x250/Walking_with_Bears_Home.jpg" alt=""> Explore Bears of the World</button>
-            <button id="home-btn-game" class="home-btn"><img src="https://s3-media4.fl.yelpcdn.com/bphoto/qJd7I9GU6Ba89Kb7Pj6Spg/ls.jpg" alt=""> Take the Bear Challenge</button> 
-        </div>
-    </div>
-
-    <div id="explore"></div>
-    <div id="profile"></div>
-    <div id="game" class="hidden">
-        <div id="game-map"></div>
-          <div id="game-btn-wrapper">
-            <button id="game-reset-btn" class="hidden">Start Challenge Over</button>
+    <script id="game-btn-template" type="text/x-jQuery-templ">
+          <button id="game-reset-btn" class="hidden">Start Challenge Over</button>
 
             <div class="draggable-widget-holder" data-bear="1"></div>
             <div class="draggable-widget" data-bear="1">
@@ -101,7 +90,21 @@
     
            
             <button class="reset-btn">Back To Home</button>
+
+    </script>
+
+    <div id="home">
+        <div class="home-btn-wrapper">
+            <button id="home-btn-explore" class="home-btn"><img src="http://www.walksworldwide.com/image_database/250x250/Walking_with_Bears_Home.jpg" alt=""> Explore Bears of the World</button>
+            <button id="home-btn-game" class="home-btn"><img src="https://s3-media4.fl.yelpcdn.com/bphoto/qJd7I9GU6Ba89Kb7Pj6Spg/ls.jpg" alt=""> Take the Bear Challenge</button> 
         </div>
+    </div>
+
+    <div id="explore"></div>
+    <div id="profile"></div>
+    <div id="game" class="hidden">
+        <div id="game-map"></div>
+        <div id="game-btn-wrapper"></div>
     </div>
 
 

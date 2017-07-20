@@ -6,6 +6,7 @@ Game = (function() {
 
     var clearGame = function() {
     	$('#game-map').html('');
+        $('#game-btn-wrapper').html('');
     }
 
     var showStartOver = function() {
@@ -16,6 +17,7 @@ Game = (function() {
 
     var buildMarkers = function() {
         $('#game-template').tmpl(data.locations).appendTo('#game-map');
+        $('#game-btn-template').tmpl().appendTo('#game-btn-wrapper');
     }
 
    
