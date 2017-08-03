@@ -3,3 +3,11 @@ html, body {
 	height: 1080px;
 	overflow: hidden;
 }
+
+button {
+	border: none;
+	background-color: transparent;
+	&:focus, &:active {
+		outline: none;
+	}
+}

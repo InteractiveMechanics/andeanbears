@@ -138,8 +138,12 @@
 	position: absolute;
    	left: 50px;
     width: 350px;
-    z-index: 2;
+    //z-index: 2;
     top: 6px;
+}
+
+.hint-1, .hint-2 {
+	z-index: 2;
 }
 
 
@@ -220,7 +224,7 @@
 	left: -50px;
 	top: -6px;
 	border-radius: 50%;
-	z-index: 6;
+	//z-index: 6;
 
 }
 

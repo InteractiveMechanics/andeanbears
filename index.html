@@ -27,12 +27,12 @@
      //TODO Add video here 
         <h1>${Title}</h1>
         <div class="profile-btn-wrapper">
-            <button data-profile="1">Thing one</button>
-            <button data-proifile="2">Thing two</button>
-            <button data-proifle="3">Thing three</button>
-            <button data-profile="4">Thing four</button>
-            <button data-profile="5">Thing five</button>
-            <button data-profile="6">Thing six</button>
+            <button id="help-btn" data-profile="1">Can you help me</button>
+            <button id="weight-btn" data-proifile="1">Guess my weight</button>
+            <button id="diet-btn"data-proifle="1">Diet in the Wild</button>
+            <button id="cool-btn" data-profile="1">Cool or Gross</button>
+            <button id="live-btn" data-profile="1">Where do I live?</button>
+            <button id="selfies-btn" data-profile="1">See My Selfies</button>
             <div id="help" class="hidden animated fadeIn" data-profile="1">Can you help me</div>
             <div id="weight" class="hidden animated fadeIn" data-profile="2">Guess my weight</div>
             <div id="diet" class="hidden animated fadeIn" data-profile="1">Diet in the wild</div>
@@ -41,7 +41,8 @@
             <div id="selfies" class="hidden animated fadeIn" data-profile="2">See my selfies</div>
 
         </div>
-         <button class="reset-btn">Go Home</button>
+        <button class="explore-reset-btn"></button>
+        <button class="reset-btn"></button>
      </script>
 
     <!-- game -->
@@ -251,39 +252,39 @@
         </div>
     </div>
 
-    <div id="explore">
+    <div id="explore" class="animated fadeIn">
         <div class="explore-btns-wrapper">
         <button class="explore-btn" data-bear="1" id="sunBear">
             <span class="explore-btn-text">Sun Bear</span>
-            <span class="explore-btn-img"></span>
+            <span class="explore-btn-img" data-bear="1"></span>
         </button>
         <button class="explore-btn" data-bear="2" id="giantPanda">
             <span class="explore-btn-text">Giant Panda</span>
-            <span class="explore-btn-img"></span>
+            <span class="explore-btn-img" data-bear="2"></span>
         </button>
         <button class="explore-btn" data-bear="3" id="slothBear">
             <span class="explore-btn-text">Sloth Bear</span>
-            <span class="explore-btn-img"></span>
+            <span class="explore-btn-img" data-bear="3"></span>
         </button>
         <button class="explore-btn" data-bear="4" id="andeanBear">
             <span class="explore-btn-text">Andean Bear</span>
-            <span class="explore-btn-img"></span>
+            <span class="explore-btn-img" data-bear="4"></span>
         </button>
         <button class="explore-btn" data-bear="5" id="asiaticBlackBear">
             <span class="explore-btn-text">Asiatic Black Bear</span>
-            <span class="explore-btn-img"></span>
+            <span class="explore-btn-img" data-bear="5"></span>
         </button>
         <button class="explore-btn" data-bear="6" id="americanBlackBear">
             <span class="explore-btn-text">American Black Bear</span>
-            <span class="explore-btn-img"></span>
+            <span class="explore-btn-img" data-bear="6"></span>
         </button>
         <button class="explore-btn" data-bear="7" id="brownBear">
             <span class="explore-btn-text">Brown Bear</span>
-            <span class="explore-btn-img"></span>
+            <span class="explore-btn-img" data-bear="7"></span>
         </button>
         <button class="explore-btn" data-bear="8" id="polarBear">
-            <span class="explore-btn-text">Polar</span>
-            <span class="explore-btn-img"></span>
+            <span class="explore-btn-text">Polar<br>Bear</span>
+            <span class="explore-btn-img" data-bear="8"></span>
         </button>
         </div>
 
@@ -311,6 +312,7 @@
     <script src="./js/lib/jquery.loadTemplate.min.js"></script>
     <script src="./js/lib/createjs-2015.11.26.min.js"></script>
     <script src="./js/lib/jquery-ui.min.js"></script>
+    <script src="./js/lib/jquery.ui.touch-punch.min.js"></script>
 
     <script src="./js/controllers/utilities.js"></script>
     <script src="./js/controllers/explore.js"></script>

@@ -1,10 +1,18 @@
+.explore-reset-btn {
+	background-image: url('../../assets/explore/btn-diffBear.png');
+	background-size: cover;
+	width: 400px;
+	height: 100px;
+
+}
+
 .explore-btns-wrapper {
-	display: flex;
-    position: absolute;
-    top: 560px;
+    position: relative;
+    top: 652px;
     left: 0px;
-    justify-content: space-around;
-    width: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
 }
 
 #explore {
@@ -16,17 +24,96 @@
 .explore-btn {
 	background-color: transparent;
 	border: none;
-	width: 211px;
+	width: 150px;
 	height: 300px;
-	background-size: contain;
-	background-repeat: no-repeat;
 	position: relative;
+	padding: 0px 10px;
+	margin: 0px 15px;
+
 	.explore-btn-text {
 		font-family: $truenorth-bold;
 		color: white;
 		font-size: 35px;
 		-webkit-font-smoothing: antialiased;
+		line-height: 1.0;
+	}
+	&:after {
+		content: url('../../assets/explore/name-lines.png');
+		position: absolute; 
+		left: -20px;
+		top: 100px;
+	}
+	
 }
+
+.explore-btn[data-bear="1"] {
+	&:after {
+		content: "";
 	}
 }
 
+.explore-btn[data-bear="2"],
+.explore-btn[data-bear="4"] {
+	width: 175px;
+}
+
+.explore-btn[data-bear="5"],
+.explore-btn[data-bear="6"],
+.explore-btn[data-bear="7"],
+.explore-btn[data-bear="8"] {
+	width: 235px;
+}
+
+.explore-btn-img[data-bear="1"] {
+	background: url('../../assets/explore/btn-SunBear.png');
+	background-repeat: no-repeat;
+    background-size: contain;
+    height: 133px;
+    width: 150px;
+    display: block;
+    position: absolute;
+    top: -20px;
+}
+
+
+#help {
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	color: white;
+}
+
+#weight {
+	width: 200px;
+	height: 200px;
+	background-color: green;
+	color: white;
+}
+
+#diet {
+	width: 200px;
+	height: 200px;
+	background-color: orange;
+	color: black;
+}
+
+#cool {
+	width: 200px;
+	height: 200px;
+	background-color: purple;
+	color: white;
+}
+
+#live {
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	color: black;
+}
+
+#selfies {
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	color: white;
+}
