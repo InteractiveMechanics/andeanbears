@@ -5,9 +5,9 @@ $(function(){
         data = response;
 
         Utilities.init();
+        Explore.init();
 		Game.init();
-		Explore.init();
-
+		
     }, 'json');
 
 

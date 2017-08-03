@@ -1,77 +1,134 @@
 .draggable-widget {
-	width: 100px;
-	height: 100px;
-	background-color: #1f68dd;
+	width: 110px;
+	height: 110px;
+	background-color: transparent;
 	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 2;
+	//z-index: 2;
 	position: absolute;
 }
 
 .droppable-widget {
-	width: 100px;
-	height: 100px;
+	background: url('../../assets/game/empty-btn.png');
+	background-size: cover;
+	width: 110px;
+	height: 110px;
 	background-color: transparent;
-	border: 5px solid #1f68dd;
+	//border: 5px solid #1f68dd;
 	border-radius: 50%;
 	position: absolute;
+	//z-index: 2;
+}
+
+.draggable-widget-content {
+	color: transparent;
 }
 
 .draggable-widget-holder[data-bear="1"],
 .draggable-widget[data-bear="1"] {
-	top: 715px;
-	left: 300px;
+	top: 78px;
+	left: 267px;
+}
+
+.draggable-widget[data-species="sun"] {
+	background: url('../../assets/game/SunBear-btn.png');
+	background-size: cover;
 }
 
 .draggable-widget-holder[data-bear="2"],
 .draggable-widget[data-bear="2"] {
-	top: 715px;
-	left: 400px;
+	top: 78px;
+	left: 449px;
+}
+
+
+.draggable-widget[data-species="panda"] {
+	background: url('../../assets/game/GiantPanda-btn.png');
+	background-size: cover;
 }
 
 .draggable-widget-holder[data-bear="3"],
 .draggable-widget[data-bear="3"] {
-	top: 715px;
-	left: 500px;
+	top: 78px;
+	left: 630px;
+}
+
+.draggable-widget[data-species="sloth"] {
+	background: url('../../assets/game/SlothBear-btn.png');
+	background-size: cover;
 }
 
 .draggable-widget-holder[data-bear="4"],
 .draggable-widget[data-bear="4"] {
-	top: 715px;
-	left: 600px;
+	top: 78px;
+	left: 812px;
+}
+
+.draggable-widget[data-species="andean"] {
+	background: url('../../assets/game/AndeanBear-btn.png');
+	background-size: cover;
 }
 
 .draggable-widget-holder[data-bear="5"],
 .draggable-widget[data-bear="5"] {
-	top: 715px;
-	left: 700px;
+	top: 78px;
+	left: 995px;
+}
+
+.draggable-widget[data-species="asiatic"] {
+	background: url('../../assets/game/AsiaticBear-btn.png');
+	background-size: cover;
 }
 
 .draggable-widget-holder[data-bear="6"],
 .draggable-widget[data-bear="6"] {
-	top: 715px;
-	left: 800px;
+	top: 78px;
+	left: 1175px;
+}
+
+.draggable-widget[data-species="american"] {
+	background: url('../../assets/game/AmericanBlackBear-btn.png');
+	background-size: cover;
 }
 
 .draggable-widget-holder[data-bear="7"],
 .draggable-widget[data-bear="7"] {
-	top: 715px;
-	left: 900px;
+	top: 78px;
+	left: 1358px;
+}
+
+.draggable-widget[data-species="brown"] {
+	background: url('../../assets/game/BrownBear-btn.png');
+	background-size: cover;
+}
+
+
+.brown-bear-marker {
+	background: url('../../assets/game/BrownBear-btn.png');
+	background-size: cover;
+	width: 110px;
+	height: 110px;
+	background-color: transparent;
+	border-radius: 50%;
+	z-index: 2;
+	position: absolute;
 }
 
 .draggable-widget-holder[data-bear="8"],
 .draggable-widget[data-bear="8"] {
-	top: 715px;
-	left: 1000px;
+	top: 78px;
+	left: 1539px;
+}
+
+.draggable-widget[data-species="polar"] {
+	background: url('../../assets/game/PolarBear-btn.png');
+	background-size: cover;
 }
 
 
 .draggable-widget-holder {
-	width: 100px;
-	height: 100px;
-	background-color: lighten(#1f68dd, 30%);
+	width: 110px;
+	height: 110px;
+	background-color: transparent;
 	border-radius: 50%;
 	position: absolute;
 }
@@ -79,9 +136,182 @@
 .correct-answer,
 .hint-1, .hint-2 {
 	position: absolute;
-    left: 100px;
-    width: 200px;
-    background-color: rgba(250, 250, 250,0.5);
-    padding: 15px;
+   	left: 50px;
+    width: 350px;
     z-index: 2;
+    top: 6px;
+}
+
+
+.hint-wrapper {
+	background-color: rgba(106, 93, 64, 0.85);
+	padding: 20px 20px 20px 70px;
+	color: white;
+	position: relative;
+	top: -3px;
+	h2 {
+		font-family: $happy-fox;
+		letter-spacing: 1px;
+		font-size: 40px;
+	}
+	p {
+		font-family: $neris-semibold;
+		font-size: 16px;
+
+	}
+
+}
+
+.hint-overlay {
+	position: absolute;
+	height: 110px;
+	width: 110px;
+	background-color: rgba(106, 93, 64, 0.85);
+	background-image: url('../../assets/game/empty-btn.png');
+	background-size: cover;
+	left: -50px;
+	top: -3px;
+	border-radius: 50%;
+	z-index: 6;
+	h2 {
+		font-family: $happy-fox;
+		letter-spacing: 1px;
+		font-size: 40px;
+	}
+	p {
+		font-family: $neris-semibold;
+		font-size: 16px;
+
+	}
+}
+
+.correct-answer {
+	img {
+		top: -3px;
+		position: relative;
+		width: 100%;
+	}
+}
+
+.correct-wrapper {
+	background-color: rgba(106, 93, 64, 0.85);
+	padding: 20px 20px 20px 70px;
+	color: white;
+	position: relative;
+	top: -3px;
+	h2 {
+		font-family: $happy-fox;
+		letter-spacing: 1px;
+		font-size: 40px;
+	}
+	p {
+		font-family: $neris-semibold;
+		font-size: 16px;
+
+	}
+}
+
+.correct-overlay {
+	position: absolute;
+	height: 110px;
+	width: 110px;
+	//background-color: rgba(106, 93, 64, 0.85);
+	background-size: cover;
+	left: -50px;
+	top: -6px;
+	border-radius: 50%;
+	z-index: 6;
+
+}
+
+#polar-ring, 
+#brown-ring, 
+#american-ring,
+#asiatic-ring,
+#andean-ring,
+#sloth-ring,
+#panda-ring,
+#sun-ring {
+	fill: transparent;
+}
+
+
+
+.ring-shadow {
+	 filter: drop-shadow(0px 0px 10px $black);
+}
+
+.bear-ring {
+	height: 140px;
+    left: -15px;
+    bottom: 45px;
+    position: relative;
+}
+
+//active class for draggable
+.ui-draggable-dragging {
+	#polar-ring {
+		fill: $polar;
+	}
+	#brown-ring {
+		fill: $brown;
+	}
+	#american-ring {
+		fill: $american;
+	}
+	#asiatic-ring {
+		fill: $asiatic;
+	}
+	#andean-ring {
+		fill: $andean;
+	}
+	#sloth-ring {
+		fill: $sloth;
+	}
+	#panda-ring {
+		fill: $panda;
+	}
+	#sun-ring {
+		fill: $sun;
+	}
+
+}
+
+.dragged {
+	#polar-ring {
+		fill: $polar;
+		filter: drop-shadow(0px 0px 10px $polar);
+	}
+	#brown-ring {
+		fill: $brown;
+		filter: drop-shadow(0px 0px 10px $brown);
+	}
+
+	#american-ring {
+		fill: $american;
+		filter: drop-shadow(0px 0px 10px $american);
+	}
+	#asiatic-ring {
+		fill: $asiatic;
+		filter: drop-shadow(0px 0px 10px $asiatic);
+	}
+	#andean-ring {
+		fill: $andean;
+		filter: drop-shadow(0px 0px 10px $andean);
+	}
+	#sloth-ring {
+		fill: $sloth;
+		filter: drop-shadow(0px 0px 10px $sloth);
+	}
+	#panda-ring {
+		fill: $panda;
+		filter: drop-shadow(0px 0px 10px $panda);
+	}
+	#sun-ring {
+		fill: $sun;
+		filter: drop-shadow(0px 0px 10px $sun);
+	}
+
+
+
 }

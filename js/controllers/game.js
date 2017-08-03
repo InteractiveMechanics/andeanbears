@@ -7,12 +7,36 @@ Game = (function() {
     var clearGame = function() {
     	$('#game-map').html('');
         $('#game-btn-wrapper').html('');
+        $('#game-complete').addClass('hidden');
+        if ($('.droppable-widget').hasClass('animated tada')) {
+            $('.droppable-widget').removeClass('animated tada');
+        }
     }
 
     var showStartOver = function() {
-        if ($('.dropped').length) {
+        if ($('.dragged').length) {
             $('#game-reset-btn').removeClass('hidden');
         }
+    }
+
+    var showComplete = function() {
+        var numberDropped = $('.dropped').length;
+        console.log(numberDropped);
+        if (numberDropped == 8) {
+            setTimeout(function() {  $('.dragged').addClass('animated tada'); }, 5000);
+            setTimeout(function() {  $('#game-complete').removeClass('hidden').addClass('animated fadeIn'); }, 7000);
+        }
+    }
+
+    var hideComplete = function() {
+        if (!$('#game-complete').hasClass('hidden')) {
+            $('#game-complete').addClass('hidden');
+        }
+    }
+
+    var showExplore = function() {
+        $('#game').addClass('hidden');
+        Explore.buildExplore();
     }
 
     var buildMarkers = function() {
@@ -20,15 +44,29 @@ Game = (function() {
         $('#game-btn-template').tmpl().appendTo('#game-btn-wrapper');
     }
 
+    var markBrownBear = function() {
+        $('.droppable-widget[data-bear="7"]').addClass('brown-bear').append('<div class="brown-bear-marker hidden"></div>');
+    }
+
+    var dropBrownBear = function() {
+        $('.brown-bear').not('dropped').find('.brown-bear-marker').removeClass('hidden');
+        $('.brown-bear').not('dropped').addClass('.dropped');
+    }
+
+    
+
    
     var buildGame = function() {
+        Explore.clearProfile();
+        Explore.clearExplore();
     	clearGame();
     	if ($('#game').hasClass('hidden')) {
-    		$('#game').removeClass('hidden');
+    		$('#game').removeClass('hidden').addClass('animated fadeIn');
     	}
     	//$('#game-template').tmpl().appendTo('#game');
         buildMarkers();
     	Utilities.clearHome();
+        markBrownBear();
     	//clear the home screen
     	$('.draggable-widget').draggable({
     		snap: '.droppable-widget',
@@ -49,9 +87,11 @@ Game = (function() {
     		 	   	if(ui.draggable.is('[data-bear="' + droppableNumber + '"]')) {
 
     		 	   		ui.draggable.draggable('option', 'revert', 'invalid');
-    		 	   		ui.draggable.css('background-color', 'green').addClass('dropped');
-    		 	   		correctAnswer.removeClass('hidden');
-                        setTimeout(function(){ correctAnswer.addClass('hidden'); }, 3000);
+    		 	   		ui.draggable.addClass('dragged animated pulse');
+                        $(this).addClass('dropped');
+                        setTimeout(function() {  correctAnswer.removeClass('hidden'); }, 1000);
+    		 	   		//correctAnswer.removeClass('hidden');
+                        setTimeout(function(){ correctAnswer.addClass('hidden'); }, 5000);
     		 	   	 	ui.draggable.position({
 			              	my: "center",
 			              	at: "center",
@@ -61,14 +101,21 @@ Game = (function() {
 			             	}
     		 	   		});
 
-    		 	   	ui.draggable.draggable('option', 'disabled', true);
-                    showStartOver();
+        		 	   	ui.draggable.draggable('option', 'disabled', true);
+
+                        showStartOver();
+                        showComplete();
+                        if ($(this).hasClass('brown-bear')) {
+                            dropBrownBear();
+                        }
+
 
     		 		} else {
     		 			ui.draggable.draggable('option', 'revert', 'valid');
 
                         if (!hint1.hasClass('answered')) {
                             hint1.removeClass('hidden').addClass('answered');
+                            $(this).css('background', '');
                             setTimeout(function(){ hint1.addClass('hidden'); }, 3000);
                         } else {
                             hint2.removeClass('hidden');
@@ -88,6 +135,8 @@ Game = (function() {
 
      var bindEvents = function() {
         $(document).on('click tap', '#game-reset-btn', buildGame);
+        $(document).on('click tap', '.botw-btn', showExplore);
+        $(document).on('click tap', '#game-map', hideComplete);
     }
 
 	return {

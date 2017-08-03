@@ -1,15 +1,16 @@
 {
     "locations": [
         {
-            "Id": 1,
-            "x": 123,
-            "y": 456,
+            "Id": 4,
+            "x": 724,
+            "y": 552,
+            "Color": "275772",
             "Title": "Andean Bear",
             "Correct": 
                 {
                     "title": "Correct!",
                     "text": "These solitary bears can be found in the dense cloud forests and rainforests of the Andes Mountains. They are the only bear species found in South America.", 
-                    "image": "./path/to/file"
+                    "image": "assets/game/AndeanBear-correct.jpg"
                 }
             ,
             "Incorrect": [
@@ -25,15 +26,16 @@
         },
         {
             
-            "Id": 2,
-            "x": 223,
-            "y": 456,
+            "Id": 6,
+            "x": 668,
+            "y": 350,
+            "Color": "386a25",
             "Title": "American Black Bear",
             "Correct": 
                 {
                     "title": "Yes!",
                     "text": "As their name suggests, American black bears are found throughout the United States, as well as Canada and parts of northern Mexico. It is thought that there are two times more American black bears on Earth than all other bear species combined. ", 
-                    "tmage": "./path/to/file"
+                    "image": "assets/game/AmericanBlackBear-correct.jpg"
                 }
             ,
             "Incorrect": [
@@ -48,15 +50,16 @@
             ]
         },
            {
-            "Id": 3,
-            "x": 323,
-            "y": 456,
+            "Id": 7,
+            "x": 1257,
+            "y": 264,
+            "Color": "7c2643",
             "Title": "Brown Bear",
             "Correct": 
                 {
                     "title": "You’re Right!",
                     "text": "These bears are found in more places around the world than any other bear. They are common in parts of North America, Europe, and Asia. They are the most widespread of any bear species.", 
-                    "image": "./path/to/file"
+                    "image": "assets/game/BrownBear01-correct.jpg"
                 }
             ,
             "Incorrect": [
@@ -72,15 +75,16 @@
                 
         },
          {
-            "Id": 4,
-            "x": 423,
-            "y": 456,
+            "Id": 7,
+            "x": 511,
+            "y": 174,
             "Title": "Brown Bear",
+            "Color": "7c2643",
             "Correct": 
                 {
                     "title": "Correct!",
                     "text": "Brown bears are found throughout North America, Europe, and Asia. The enormous bears sometimes have huge home ranges, some cover up to one thousand square miles.", 
-                    "image": "./path/to/file"
+                    "image": "assets/game/BrownBear02-correct.jpg"
                 }
             ,
             "Incorrect": [
@@ -95,15 +99,16 @@
             ]
         },
         {
-            "Id": 5,
-            "x": 523,
-            "y": 456,
+            "Id": 8,
+            "x": 823,
+            "y": 70,
             "Title": "Polar Bear",
+            "Color": "462457",
             "Correct": 
                 {
                     "title": "Excellent!",
-                    "Text": "Polar bears can be found in the arctic lands and waters of northern Asia, Europe, and North America. These bears are great swimmers, and spend most of their time in the summer swimming between ice floes to catch food. ", 
-                    "Image": "./path/to/file"
+                    "text": "Polar bears can be found in the arctic lands and waters of northern Asia, Europe, and North America. These bears are great swimmers, and spend most of their time in the summer swimming between ice floes to catch food. ", 
+                    "image": "assets/game/PolarBear-correct.jpg"
                 }
             ,
             "Incorrect": [
@@ -118,15 +123,16 @@
             ]
         },
             {
-            "Id": 6,
-            "x": 623,
-            "y": 456,
+            "Id": 5,
+            "x": 1540,
+            "y": 307,
             "Title": "Asiatic Black Bear",
+            "Color": "7e271e",
             "Correct": 
                 {
                     "title": "Excellent!",
-                    "Text": "Excellent! Asiatic black bears are found throughout Asia, from India to Southeast Asia, and even in Japan. These small bears have been seen eating over 160 different kinds of fruit in their forest habitats.", 
-                    "Image": "./path/to/file"
+                    "text": "Excellent! Asiatic black bears are found throughout Asia, from India to Southeast Asia, and even in Japan. These small bears have been seen eating over 160 different kinds of fruit in their forest habitats.", 
+                    "image": "assets/game/AsiaticBlackBear-correct.jpg"
                 }
             ,
             "Incorrect": [
@@ -141,15 +147,16 @@
             ]
         },
          {
-            "Id": 7,
-            "x": 723,
-            "y": 456,
+            "Id": 2,
+            "x": 1413,
+            "y": 356,
             "Title": "Giant Panda",
+            "Color": "d49c2d",
             "Correct": 
                 {
                     "title": "You're Right!",
                     "text": "Giant pandas are extremely rare, living in just one small area of central China. These distinctive bears spend half of their day eating in their bamboo forest habitat.", 
-                    "image": "./path/to/file"
+                    "image": "assets/game/GiantPanda-correct.jpg"
                 }
             ,
             "Incorrect": [
@@ -164,15 +171,16 @@
             ]
         },
         {
-            "Id": 8,
-            "x": 823,
-            "y": 456,
+            "Id": 1,
+            "x": 1494,
+            "y": 517,
             "Title": "Sun Bear",
+            "Color": "c14f1e",
             "Correct": 
                 {
                     "title": "Correct!",
                     "text": "These bears are found in tropical forest habitats in Southeast Asia. They use their long snouts and even longer tongues to slurp bugs and honey from nests and hives.", 
-                    "image": "./path/to/file"
+                    "image": "assets/game/SunBear-correct.jpg"
                 }
             ,
             "Incorrect": [
@@ -187,15 +195,16 @@
             ]
         },
         {
-            "Id": 9,
-            "x": 923,
-            "y": 456,
+            "Id": 3,
+            "x": 1343,
+            "y": 486,
             "Title": "Sloth Bear",
+            "Color": "0c7b6b",
             "Correct": 
                 {
                     "title": "Yes!",
                     "text": "Sloth bears are found in forests and grasslands throughout India, Nepal, and Sri Lanka. They got their names because the first scientists to study them thought they were sloths and not bears at all.", 
-                    "image": "./path/to/file"
+                    "image": "assets/game/SlothBear-correct.jpg"
                 }
             ,
             "Incorrect": [
@@ -210,4 +219,5 @@
             ]
         }
     ]
+
 }

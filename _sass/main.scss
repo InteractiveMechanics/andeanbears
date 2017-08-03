@@ -1,6 +1,6 @@
+@import "base/typography";
 @import "base/variables";
 @import "base/helpers";
-@import "base/typography";
 @import "base/mixins";
 
 @import "components/layout";
@@ -9,3 +9,4 @@
 @import "components/dragdrop";
 
 @import "pages/index";
+@import "pages/explore";
