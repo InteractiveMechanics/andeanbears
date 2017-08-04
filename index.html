@@ -24,25 +24,38 @@
     <!-- explore -->
     <!-- profile -->
      <script id="profile-template" type="text/x-jQuery-templ">
-     //TODO Add video here 
-        <h1>${Title}</h1>
-        <div class="profile-btn-wrapper">
-            <button id="help-btn" data-profile="1">Can you help me</button>
-            <button id="weight-btn" data-proifile="1">Guess my weight</button>
-            <button id="diet-btn"data-proifle="1">Diet in the Wild</button>
-            <button id="cool-btn" data-profile="1">Cool or Gross</button>
-            <button id="live-btn" data-profile="1">Where do I live?</button>
-            <button id="selfies-btn" data-profile="1">See My Selfies</button>
-            <div id="help" class="hidden animated fadeIn" data-profile="1">Can you help me</div>
-            <div id="weight" class="hidden animated fadeIn" data-profile="2">Guess my weight</div>
-            <div id="diet" class="hidden animated fadeIn" data-profile="1">Diet in the wild</div>
-            <div id="cool" class="hidden animated fadeIn" data-profile="2">Cool or gross</div>
-            <div id="live" class="hidden animated fadeIn" data-profile="1">Where do I live</div>
-            <div id="selfies" class="hidden animated fadeIn" data-profile="2">See my selfies</div>
-
+        <div class="video-container">
+            <video width="100%" height="auto" poster="assets/exlore/andean/bkgr-andean.jpg" autoplay loop>
+                <source src="assets/explore/andean/AndeanBear_NEW.mp4" type="video/mp4">
+            </video> 
         </div>
-        <button class="explore-reset-btn"></button>
-        <button class="reset-btn"></button>
+        <div class="background-border"></div>
+        <div class="profile-header">
+        <h1 data-bear="${Id}">${Title}</h1>
+        <h3 class="latin">Tremarctos ornatus</h3>
+        </div>
+        <div class="content-wrapper">
+            <div id="landing" class="animated fadeIn" data-profile="1"></div>
+            <div id="help" class="hidden animated fadeIn" data-profile="1">Can you help me</div>
+            <div id="weight" class="hidden animated fadeIn" data-profile="1">Guess my weight</div>
+            <div id="diet" class="hidden animated fadeIn" data-profile="1">Diet in the wild</div>
+            <div id="cool" class="hidden animated fadeIn" data-profile="1">Cool or gross</div>
+            <div id="live" class="hidden animated fadeIn" data-profile="1">Where do I live</div>
+            <div id="selfies" class="hidden animated fadeIn" data-profile="1">See my selfies</div>
+        </div>
+
+        <div class="profile-btn-wrapper">
+            <button id="selfies-btn" data-profile="1"></button>
+            <button id="live-btn" data-profile="1"></button>
+            <button id="cool-btn" data-profile="1"></button>
+            <button id="diet-btn"data-profile="1"></button>
+            <button id="weight-btn" data-proifile="1"></button>
+            <button id="help-btn" data-profile="1"></button>
+        </div>
+        <div class="profile-nav-wrapper">
+            <button class="explore-reset-btn"></button>
+            <button class="reset-btn" id="explore-reset"></button>
+        </div>
      </script>
 
     <!-- game -->
@@ -291,7 +304,11 @@
          <button class="reset-btn-explore"></button>
 
     </div>
-    <div id="profile"></div>
+    <div id="profile">
+       <!--  <video width="100%" height="auto" poster="assets/exlore/andean/bkgr-andean.jpg" autoplay loop>
+            <source src="assets/explore/andean/AndeanBear_NEW.mp4" type="video/mp4">
+         </video> -->
+    </div>
     <div id="game" class="hidden">
         <img class="game-label" src="assets/game/BC-label.png" alt="take the bear challenge label">
         <div id="game-map"></div>

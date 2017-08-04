@@ -49,6 +49,7 @@ Utilities = (function() {
     var resetInteractive = function() {
         $('#explore').addClass('hidden');
         $('#game').addClass('hidden');
+        $('#profile').addClass('hidden');
         $('#home').removeClass('hidden');
         unanimateBtn();
 
