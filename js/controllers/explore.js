@@ -59,11 +59,19 @@ Explore = (function() {
         //buildProfile(id);  
     }
 
+
     var buildProfile = function(id) {
         clearExplore();
         $('#profile-template').tmpl(data.locations[id]).appendTo('#profile');
         $('#profile').removeClass('hidden');
         $('#landing').removeClass('hidden').addClass('animated fadeIn');
+    }
+
+    var transformHeading = function() {
+        $('.profile-header').css('top', '100px').addClass('small animated slideInUp');
+        $('.profile-title').css('font-size', '50px');
+        $('.latin').addClass('hidden animated fadeOut');
+        $('.reset-profile').removeClass('hidden').addClass('animated slideInUp');
     }
 
     var animateHelp = function() {
@@ -77,6 +85,7 @@ Explore = (function() {
         animateHelp();
         if ($('#help').hasClass('hidden')) {
             $('#help').removeClass('hidden').removeClass('fadeOut').addClass('fadeIn');
+            transformHeading();
             $('#landing').addClass('hidden fadeOut');
             $('#weight').addClass('hidden fadeOut');
             $('#weight-btn').removeClass('animated pulse active');
@@ -103,6 +112,7 @@ Explore = (function() {
         animateWeight();
         if ($('#weight').hasClass('hidden')) {
             $('#weight').removeClass('hidden').removeClass('fadeOut').addClass('fadeIn');
+            transformHeading();
             $('#landing').addClass('hidden fadeOut');
             $('#help').addClass('hidden fadeOut');
             $('#help-btn').removeClass('animated pulse active');
@@ -129,6 +139,7 @@ Explore = (function() {
         animateDiet();
         if ($('#diet').hasClass('hidden')) {
             $('#diet').removeClass('hidden').removeClass('fadeOut').addClass('fadeIn');
+            transformHeading();
             $('#landing').addClass('hidden fadeOut');
             $('#help').addClass('hidden fadeOut');
             $('#help-btn').removeClass('animated pulse active');
@@ -154,6 +165,7 @@ Explore = (function() {
         animateCool();
         if ($('#cool').hasClass('hidden')) {
             $('#cool').removeClass('hidden').removeClass('fadeOut').addClass('fadeIn');
+            transformHeading();
             $('#landing').addClass('hidden fadeOut');
             $('#help').addClass('hidden fadeOut');
             $('#help-btn').removeClass('animated pulse active');
@@ -180,6 +192,7 @@ Explore = (function() {
         animateLive();
         if ($('#live').hasClass('hidden')) {
             $('#live').removeClass('hidden').removeClass('fadeOut').addClass('fadeIn');
+            transformHeading();
             $('#landing').addClass('hidden fadeOut');
             $('#help').addClass('hidden fadeOut');
             $('#help-btn').removeClass('animated pulse active');
@@ -207,6 +220,8 @@ Explore = (function() {
         animateSelfies();
         if ($('#selfies').hasClass('hidden')) {
             $('#selfies').removeClass('hidden').removeClass('fadeOut').addClass('fadeIn');
+            transformHeading();
+            buildSelfiesGallery();
             $('#landing').addClass('hidden fadeOut');
             $('#help').addClass('hidden fadeOut');
             $('#help-btn').removeClass('animated pulse active');
@@ -222,6 +237,57 @@ Explore = (function() {
     
     }
 
+    var buildSelfiesGallery = function() {
+        $('#selfies-gallery').lightGallery({
+                thumbnail:true,
+                width: '100%',
+                height: '100%',
+                fullScreen: false,
+                dynamic: true,
+                dynamicEl: [{
+                    "src": 'assets/explore/andean/Slideshow/1-andean-selfie.jpg',
+                    'thumb': 'assets/explore/andean/Slideshow/1-andean-selfie.jpg',
+                    'subHtml': '<h4>Andean Bear 1</h4><p>The markings on each bears face is unique. No two are the same.</p>'
+                }, {
+                    'src': 'assets/explore/andean/Slideshow/2-andean-selfie.jpg',
+                    'thumb': 'assets/explore/andean/Slideshow/1-andean-selfie.jpg',
+                    'subHtml': "<h4>Andean Bear 2</h4><p>Caption For Photo Number 2</p>"
+                }, {
+                    'src': 'assets/explore/andean/Slideshow/3-andean-selfie.jpg',
+                    'thumb': 'assets/explore/andean/Slideshow/3-andean-selfie.jpg',
+                    'subHtml': "<h4>Andean Bear 3</h4><p>Caption for Photo Number 3</p>"
+                }]
+            });
+        
+        
+    }
+
+    var resetProfile = function() {
+            $('#landing').removeClass('hidden').removeClass('fadeOut').addClass('fadeIn');
+            $('.reset-profile').removeClass('slideInUp').addClass('hidden fadeOut');
+            $('.latin').removeClass('hidden animated fadeOut').addClass('animated fadeIn');
+            $('.profile-header').css('top', '200px').removeClass('slideInUp small').addClass('animated slideInDown');
+            $('.profile-title').css('font-size', '90px');
+            $('#selfies').addClass('hidden fadeOut');
+            $('#help').addClass('hidden fadeOut');
+            $('#help-btn').removeClass('animated pulse active');
+            $('#weight').addClass('hidden fadeOut');
+            $('#weight-btn').removeClass('animated pulse active');
+            $('#diet').addClass('hidden fadeOut');
+            $('#diet-btn').removeClass('animated pulse active');
+            $('#cool').addClass('hidden fadeOut');
+            $('#cool-btn').removeClass('animated pulse active');
+            $('#live').addClass('hidden fadeOut');
+            $('#live-btn').removeClass('animated pulse active');
+    }
+
+    var displayWeightAnswer = function() {
+        $('.weight-art-img').addClass('animated pulse');
+        $('.weight-answer').removeClass('hidden').addClass('animated fadeIn');
+    }
+
+
+
 
 
 
@@ -234,7 +300,8 @@ Explore = (function() {
         $(document).on('click tap', '#cool-btn', buildCool);
         $(document).on('click tap', '#live-btn', buildLive);
         $(document).on('click tap', '#selfies-btn', buildSelfies);
-
+        $(document).on('click tap', '.reset-profile', resetProfile);
+        $(document).on('click tap', '.weight-art-btn', displayWeightAnswer);
     }
 
 

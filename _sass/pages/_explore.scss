@@ -156,43 +156,133 @@
 
 
 #help {
-	width: 200px;
-	height: 200px;
-	background-color: blue;
+	background-color: transparent;
 	color: white;
+	width: 500px;
+    height: 300px;
+    position: absolute;
+    left: 200px;
+    top: 300px;
+    img {
+    	width: 100%;
+    	height: auto;
+    }
 }
 
 #weight {
-	width: 200px;
-	height: 200px;
-	background-color: green;
+	background-color: transparent;
 	color: white;
+	width: 500px;
+    height: 300px;
+    position: absolute;
+    left: 200px;
+    top: 300px;
+    img {
+    	width: 100%;
+    	height: auto;
+    }
+    .weight-art-btn {
+    	width: 100%;
+    	height: auto;
+    	position: absolute;
+    	left: 0px;
+    	top: 400px;
+    }
+
+    .weight-answer {
+    	width: 50%;
+    	height: auto;
+    	position: absolute;
+    	left: 50px;
+    	top: 350px;
+    }
+	
 }
 
 #diet {
-	width: 200px;
-	height: 200px;
-	background-color: orange;
-	color: black;
+	background-color: transparent;
+	color: white;
+	width: 500px;
+    height: 300px;
+    position: absolute;
+    left: 200px;
+    top: 300px;
+    img {
+    	width: 100%;
+    	height: auto;
+    }
+    .dinner-image-wrapper {
+    	position: relative;
+    	height: 100%; 
+    	p {
+    		font-family: $neris-semibold-italic;
+    		font-size: 16px;
+    		position: absolute;
+    		bottom: -150px;
+    		width: 70%;
+    	}
+    	.dinner-image-1 {
+    		transform: rotate(-15deg);
+    		position: absolute;
+    		width: 75%;
+		    top: 36px;
+		    left: 250px;
+		    z-index: 2;
+    	}
+    	.dinner-image-2 {
+    		transform: rotate(15deg);
+    		position: absolute;
+    		width: 75%;
+    		left: 0px;
+    		top: 40px;
+
+    	}
+    }
+	
 }
 
 #cool {
-	width: 200px;
-	height: 200px;
-	background-color: purple;
+	background-color: transparent;
 	color: white;
+	width: 500px;
+    height: 300px;
+    position: absolute;
+    left: 200px;
+    top: 300px;
+    img {
+    	width: 100%;
+    	height: auto;
+    }
+	
 }
 
 #live {
-	width: 200px;
-	height: 200px;
-	background-color: yellow;
-	color: black;
+	background-color: transparent;
+	color: white;
+	width: 500px;
+    height: 300px;
+    position: absolute;
+    left: 200px;
+    top: 300px;
+    img {
+    	width: 100%;
+    	height: auto;
+    }
+    .live-map {
+    	margin-top: 40px;
+    }
+	
 }
 
 #selfies {
-	width: 200px;
-	height: 200px;
-	background-color: black;
-	color: white;
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 300px;
+	left: 200px;
+	img {
+		width: 50%;
+		height: auto;
+	}
 }

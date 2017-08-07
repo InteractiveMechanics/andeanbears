@@ -8,6 +8,7 @@
     <title>Andean Bears Exhibit</title>
 
     <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="js/lib/lightGallery/css/lightgallery.css" rel="stylesheet">
     <link rel="stylesheet" href="animate.css">
     <link href="./dist/css/main.css" rel="stylesheet">
 
@@ -31,17 +32,43 @@
         </div>
         <div class="background-border"></div>
         <div class="profile-header">
-        <h1 data-bear="${Id}">${Title}</h1>
+        <h1 class="profile-title" data-bear="${Id}">Andean Bear</h1>
         <h3 class="latin">Tremarctos ornatus</h3>
+        <button class="reset-profile hidden">&lt; Return to text</button>
         </div>
         <div class="content-wrapper">
             <div id="landing" class="animated fadeIn" data-profile="1"></div>
-            <div id="help" class="hidden animated fadeIn" data-profile="1">Can you help me</div>
-            <div id="weight" class="hidden animated fadeIn" data-profile="1">Guess my weight</div>
-            <div id="diet" class="hidden animated fadeIn" data-profile="1">Diet in the wild</div>
-            <div id="cool" class="hidden animated fadeIn" data-profile="1">Cool or gross</div>
-            <div id="live" class="hidden animated fadeIn" data-profile="1">Where do I live</div>
-            <div id="selfies" class="hidden animated fadeIn" data-profile="1">See my selfies</div>
+            <div id="help" class="hidden animated fadeIn" data-profile="1">
+                <img src="assets/explore/andean/help-text.png" alt="help text">
+            </div>
+            <div id="weight" class="hidden animated fadeIn" data-profile="1">
+                <img src="assets/explore/andean/weight-text.png" alt="weight text">
+                <img class="weight-answer hidden" src="assets/explore/andean/weight-answer.png" alt="weight answer">
+                <button class="weight-art-btn">
+                    <img class="weight-art-img" src="assets/explore/andean/weight-art.png" alt="weight art">
+                </button>
+            </div>
+            <div id="diet" class="hidden animated fadeIn" data-profile="1">
+                <img src="assets/explore/andean/dinner-text.png" alt="dinner text">
+                <div class="dinner-image-wrapper">
+                    <img class="dinner-image-1" src="assets/explore/andean/dinner-andean-img01.png" alt="dinner image 1">
+                    <img class="dinner-image-2" src="assets/explore/andean/dinner-andean-img02.png" alt="dinner image 1">
+                    <p class="dinner-image-caption">Bromelaids are a family of plants that grow mainly in tropical South America</p>
+
+                </div>
+            </div>
+            <div id="cool" class="hidden animated fadeIn" data-profile="1">
+                <img src="assets/explore/andean/coolOrGross-text.png" alt="Cool or Gross text">
+            </div>
+            <div id="live" class="hidden animated fadeIn" data-profile="1">
+                <img src="assets/explore/andean/whereLive-andean.png" alt="where do i live text">
+                <img class="live-map" src="assets/explore/andean/whereLive-map-andean.png" alt="where do i live map">
+            </div>
+            <div id="selfies" class="hidden animated fadeIn" data-profile="1">
+                <div id="selfies-gallery">
+                  
+                </div>
+            </div>
         </div>
 
         <div class="profile-btn-wrapper">
@@ -330,6 +357,8 @@
     <script src="./js/lib/createjs-2015.11.26.min.js"></script>
     <script src="./js/lib/jquery-ui.min.js"></script>
     <script src="./js/lib/jquery.ui.touch-punch.min.js"></script>
+    <script src="./js/lib/lightGallery/js/lightgallery.js"></script>
+    <script src="./js/lib/lightGallery/js/lg-thumbnail.js"></script>
 
     <script src="./js/controllers/utilities.js"></script>
     <script src="./js/controllers/explore.js"></script>

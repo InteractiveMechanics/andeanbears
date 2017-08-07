@@ -27,14 +27,14 @@
     color: white;
     top: 200px;
     h1 {
-    	font-family: $serifa-bt-bl;
+    	font-family: $serifa-bt-black;
     	font-size: 90px;
     	text-transform: uppercase;
     	-webkit-font-smoothing: antialiased;
     	margin-bottom: 0px;
     }
     h3 {
-    	font-family: $serifa-bt-bl;
+    	font-family: $serifa-bt-italic;
     	font-size: 43px;
     	-webkit-font-smoothing: antialiased;
     	margin-top: 0px;
@@ -48,8 +48,25 @@
     	height: 5px;
     	background: transparent;
     	width: 130px;
+    	top: initial;
     }
+
 }
+
+.profile-header.small {
+	&:after {
+		top: 130px;
+	}
+}
+
+.reset-profile {
+	font-size: 24px;
+	font-family: $neris-black;
+	-webkit-font-smoothing: antialiased;
+	text-transform: uppercase;
+	display: block;
+}
+
 
 .profile-nav-wrapper {
 	position: absolute;
@@ -164,4 +181,9 @@
 	background-image: url('../../assets/explore/profile/btn-home.png'); 
 	position: initial;
 	margin-top: 0px;
+}
+
+.weight-art-btn {
+	width: 100%;
+	height: auto;
 }
