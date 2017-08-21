@@ -1,8 +1,127 @@
 .lg-backdrop {
-	top: 200px;
-	right: 200px;
-	bottom: 200px;
-	left: 200px;
+	top: 100px;
+	right: 100px;
+	bottom: 100px;
+	left: 100px;
 	background: url('../../assets/explore/profile/selfies-popup-bkgr.png');
-	background-size: contain;
+	background-size: cover;
 }
+
+.lg-outer {
+	width: 80%;
+    height: 68%;
+    top: 16%;
+    left: 10%;
+}
+
+ .lg-outer .lg-img-wrap {
+ 	display: flex; 
+ 	justify-content: center;
+ 	padding: 0px;
+ }
+
+ .lg-outer .lg-image {
+ 	width: 100% !important;
+ }
+
+
+.lg-outer .lg-thumb {
+	margin: 0px auto -79px !important;
+}
+
+.lg-outer .lg-thumb-item {
+    border-color: transparent;
+}
+
+.lg-outer .lg-thumb-outer {
+	background-color: transparent;
+}
+
+.lg-outer .lg-thumb-item.active, 
+.lg-outer .lg-thumb-item:hover {
+	background: url('../../assets/explore/profile/selfies-thumbnail-active.png');
+	background-size: contain;
+	border-width: 5px;
+	border-color: transparent;
+}
+
+.lg-outer .lg-toogle-thumb {
+	display: none;
+}
+
+.lg-outer .lg-inner {
+	height: 84%;
+	width: 80%;
+	left: 10%;
+}
+
+.lg-actions .lg-next {
+	top: 33%;
+	background-color: transparent;
+	&:before {
+		content: url('../../assets/explore/profile/btn-arrow-r.png');
+	}
+}
+
+.lg-actions .lg-next.active {
+	&:before {
+		content: url('../../assets/explore/profile/btn-arrow-r-active.png');
+	}
+}
+
+
+.lg-actions .lg-prev {
+	top: 33%;
+	background-color: transparent;
+	&:after {
+		content: url('../../assets/explore/profile/btn-arrow-l.png');
+	}
+}
+
+.lg-actions .lg-prev.active {
+	&:after {
+		content: url('../../assets/explore/profile/btn-arrow-l-active.png');
+	}
+}
+
+
+.lg-hide-items .lg-next,
+.lg-hide-items .lg-prev,
+.lg-hide-items .lg-toolbar {
+	opacity: 1.0;
+}
+
+.lg-sub-html {
+	position: absolute;
+	width: 1229px;
+	left: 10%;
+}
+
+.lg-outer.lg-pull-caption-up.lg-thumb-open .lg-sub-html {
+	bottom: 116px;
+}
+
+.lg-toolbar .lg-close {
+	&:after {
+		content: url('../../assets/explore/profile/btn-close.png');
+	}
+}
+
+.lg-toolbar {
+	background-color: transparent;
+}
+
+#lg-download {
+	display: none;
+}
+
+#lg-counter {
+	display: none;
+}
+
+.lg-outer .lg-video-cont {
+	overflow: hidden;
+}
+ 
+
+

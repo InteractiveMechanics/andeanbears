@@ -26,63 +26,65 @@
     <!-- profile -->
      <script id="profile-template" type="text/x-jQuery-templ">
         <div class="video-container">
-            <video width="100%" height="auto" poster="assets/exlore/andean/bkgr-andean.jpg" autoplay loop>
-                <source src="assets/explore/andean/AndeanBear_NEW.mp4" type="video/mp4">
-            </video> 
+            <img src="${Background}" alt="andean bear">
         </div>
         <div class="background-border"></div>
         <div class="profile-header">
-        <h1 class="profile-title" data-bear="${Id}">Andean Bear</h1>
-        <h3 class="latin">Tremarctos ornatus</h3>
+        <h1 class="profile-title" data-bear="${Id}">${Name}</h1>
+        <h3 class="latin">${Latin}</h3>
         <button class="reset-profile hidden">&lt; Return to text</button>
         </div>
         <div class="content-wrapper">
-            <div id="landing" class="animated fadeIn" data-profile="1"></div>
-            <div id="help" class="hidden animated fadeIn" data-profile="1">
-                <img src="assets/explore/andean/help-text.png" alt="help text">
+            <div id="landing" class="animated fadeIn" data-profile="${Id}"></div>
+            <div id="help" class="hidden animated fadeIn" data-profile="${Id}">
+                <img src="${Help}" alt="help text">
             </div>
-            <div id="weight" class="hidden animated fadeIn" data-profile="1">
-                <img src="assets/explore/andean/weight-text.png" alt="weight text">
-                <img class="weight-answer hidden" src="assets/explore/andean/weight-answer.png" alt="weight answer">
+            <div id="weight" class="hidden animated fadeIn" data-profile="${Id}">
+                <img src="${Weight.description}" alt="weight text">
+                <img class="weight-answer hidden" src="${Weight.answer}" alt="weight answer">
                 <button class="weight-art-btn">
-                    <img class="weight-art-img" src="assets/explore/andean/weight-art.png" alt="weight art">
+                    <img class="weight-art-img" src="${Weight.art}" alt="weight art">
                 </button>
             </div>
             <div id="diet" class="hidden animated fadeIn" data-profile="1">
-                <img src="assets/explore/andean/dinner-text.png" alt="dinner text">
+                <img src="${Diet.description}" alt="dinner text">
                 <div class="dinner-image-wrapper">
-                    <img class="dinner-image-1" src="assets/explore/andean/dinner-andean-img01.png" alt="dinner image 1">
-                    <img class="dinner-image-2" src="assets/explore/andean/dinner-andean-img02.png" alt="dinner image 1">
-                    <p class="dinner-image-caption">Bromelaids are a family of plants that grow mainly in tropical South America</p>
+                    <img class="dinner-image-1" src="${Diet.image1}" alt="dinner image 1">
+                    <img class="dinner-image-2" src="${Diet.image2}" alt="dinner image 1">
+                    <p class="dinner-image-caption">${Diet.caption}</p>
 
                 </div>
             </div>
-            <div id="cool" class="hidden animated fadeIn" data-profile="1">
-                <img src="assets/explore/andean/coolOrGross-text.png" alt="Cool or Gross text">
+            <div id="cool" class="hidden animated fadeIn" data-profile="${Id}">
+                <img src="${Cool}" alt="Cool or Gross text">
             </div>
-            <div id="live" class="hidden animated fadeIn" data-profile="1">
-                <img src="assets/explore/andean/whereLive-andean.png" alt="where do i live text">
-                <img class="live-map" src="assets/explore/andean/whereLive-map-andean.png" alt="where do i live map">
+            <div id="live" class="hidden animated fadeIn" data-profile="${Id}">
+                <img src="${Live.description}" alt="where do i live text">
+                <img class="live-map" src="${Live.map}" alt="where do i live map">
             </div>
-            <div id="selfies" class="hidden animated fadeIn" data-profile="1">
-                <div id="selfies-gallery">
-                  
-                </div>
+            <div id="selfies" class="hidden animated fadeIn" data-profile="${Id}">
             </div>
+        </div>
+        <div style="display:none;" id="video1">
+            <video class="lg-video-object lg-html5" autoplay loop>
+                <source src="${Video}" type="video/mp4">
+            </video>
         </div>
 
         <div class="profile-btn-wrapper">
-            <button id="selfies-btn" data-profile="1"></button>
-            <button id="live-btn" data-profile="1"></button>
-            <button id="cool-btn" data-profile="1"></button>
-            <button id="diet-btn"data-profile="1"></button>
-            <button id="weight-btn" data-proifile="1"></button>
-            <button id="help-btn" data-profile="1"></button>
+            <button id="selfies-btn" data-profile="${Id}" data-gallery="{'thumb': '${Selfie[0].image}','html': '#video1','subHtml': '${Videocaption}'},{'src': '${Selfie[0].image}','thumb': '${Selfie[0].image}','subHtml': '${Selfie[0].caption}'}"></button>
+            <button id="live-btn" data-profile="${Id}"></button>
+            <button id="cool-btn" data-profile="${Id}"></button>
+            <button id="diet-btn" data-profile="${Id}"></button>
+            <button id="weight-btn" data-proifile="${Id}"></button>
+            <button id="help-btn" style="background: url('${Button}');" data-profile="${Id}"></button>
         </div>
         <div class="profile-nav-wrapper">
             <button class="explore-reset-btn"></button>
             <button class="reset-btn" id="explore-reset"></button>
-        </div>
+        </div>   
+       
+
      </script>
 
     <!-- game -->
@@ -295,35 +297,35 @@
     <div id="explore" class="animated fadeIn">
         <div class="explore-btns-wrapper">
         <button class="explore-btn" data-bear="1" id="sunBear">
-            <span class="explore-btn-text">Sun Bear</span>
+            <span class="explore-btn-text"  data-bear="1">Sun Bear</span>
             <span class="explore-btn-img" data-bear="1"></span>
         </button>
         <button class="explore-btn" data-bear="2" id="giantPanda">
-            <span class="explore-btn-text">Giant Panda</span>
+            <span class="explore-btn-text" data-bear="2" >Giant Panda</span>
             <span class="explore-btn-img" data-bear="2"></span>
         </button>
         <button class="explore-btn" data-bear="3" id="slothBear">
-            <span class="explore-btn-text">Sloth Bear</span>
+            <span class="explore-btn-text" data-bear="3">Sloth Bear</span>
             <span class="explore-btn-img" data-bear="3"></span>
         </button>
         <button class="explore-btn" data-bear="4" id="andeanBear">
-            <span class="explore-btn-text">Andean Bear</span>
+            <span class="explore-btn-text" data-bear="4">Andean Bear</span>
             <span class="explore-btn-img" data-bear="4"></span>
         </button>
         <button class="explore-btn" data-bear="5" id="asiaticBlackBear">
-            <span class="explore-btn-text">Asiatic Black Bear</span>
+            <span class="explore-btn-text" data-bear="5">Asiatic Black Bear</span>
             <span class="explore-btn-img" data-bear="5"></span>
         </button>
         <button class="explore-btn" data-bear="6" id="americanBlackBear">
-            <span class="explore-btn-text">American Black Bear</span>
+            <span class="explore-btn-text" data-bear="6">American Black Bear</span>
             <span class="explore-btn-img" data-bear="6"></span>
         </button>
         <button class="explore-btn" data-bear="7" id="brownBear">
-            <span class="explore-btn-text">Brown Bear</span>
+            <span class="explore-btn-text" data-bear="7">Brown Bear</span>
             <span class="explore-btn-img" data-bear="7"></span>
         </button>
         <button class="explore-btn" data-bear="8" id="polarBear">
-            <span class="explore-btn-text">Polar<br>Bear</span>
+            <span class="explore-btn-text" data-bear="8">Polar<br>Bear</span>
             <span class="explore-btn-img" data-bear="8"></span>
         </button>
         </div>
@@ -342,7 +344,7 @@
         <div id="game-btn-wrapper"></div>
         <div id="game-complete" class="hidden">
             <h1>Congratulations!</h1>
-            <h3>You've completed the Bear Challenge.</h3>
+            <h3>You&#8217;ve completed the Bear Challenge.</h3>
             <h3>Now discover even more about bears!</h3>
             <button class="botw-btn"></button>
         </div>
@@ -359,6 +361,8 @@
     <script src="./js/lib/jquery.ui.touch-punch.min.js"></script>
     <script src="./js/lib/lightGallery/js/lightgallery.js"></script>
     <script src="./js/lib/lightGallery/js/lg-thumbnail.js"></script>
+    <script src="./js/lib/lightGallery/js/lg-autoplay.min.js"></script>
+    <script src="./js/lib/lightGallery/js/lg-video.min.js"></script>
 
     <script src="./js/controllers/utilities.js"></script>
     <script src="./js/controllers/explore.js"></script>

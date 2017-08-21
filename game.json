@@ -218,6 +218,53 @@
                 }
             ]
         }
+    ],
+
+    "bears": [
+        {
+            "Id": 1,
+            "Name": "Andean Bear",
+            "Latin": "Tremarctos ornatus",
+            "Background": "assets/explore/andean/bkgr-andean.jpg",
+            "Help": "assets/explore/andean/help-text.png",
+            "Weight": 
+                {
+                    "description": "assets/explore/andean/weight-text.png",
+                    "answer": "assets/explore/andean/weight-answer.png", 
+                    "art": "assets/explore/andean/weight-art.png"
+                }
+            ,
+            "Diet": 
+                {
+                    "description": "assets/explore/andean/dinner-text.png",
+                    "image1": "assets/explore/andean/dinner-andean-img01.png",
+                    "image2": "assets/explore/andean/dinner-andean-img02.png",
+                    "caption": "Bromelaids are a family of plants that grow mainly in tropical South America."
+                }
+            ,
+            "Cool": "assets/explore/andean/coolOrGross-text.png",
+            "Live": 
+                {
+                    "description": "assets/explore/andean/whereLive-andean.png",
+                    "map": "assets/explore/andean/whereLive-map-andean.png"
+                }
+            ,
+            "Video": "assets/explore/andean/AndeanBear_NEW.mp4",
+            "Videocaption": "This is the video caption",
+            "Button": "assets/explore/andean/btn-help.png",
+            "Selfie": [
+                {
+                    "image": "assets/explore/andean/Slideshow/1-andean-selfie.jpg",
+                    "caption": "The markings on each bears face is unique. No two are the same"
+                },
+                {
+                    "image": "assets/explore/andean/Slideshow/2-andean-selfie.jpg",
+                    "caption": "Caption for image 2"
+                }
+            ]
+        }
+
     ]
+
 
 }

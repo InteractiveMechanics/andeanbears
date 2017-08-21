@@ -6,7 +6,7 @@
 
 #home-btn-explore,
 #home-btn-game {
-	height: 528px;
+	height: 558px;
 	width: 557px;
 	position: absolute;
 	border: none;
@@ -16,7 +16,7 @@
 
 #home-btn-explore {
 	background: url('../../assets/home/BOTW-btn.png');
-	height: 528px;
+	height: 558px;
 	width: 557px;
     left: 345px;
     background-size: cover;
@@ -38,6 +38,7 @@
     height: 626px;
     width: auto;
     z-index: 3;
+    pointer-events: none;
 }
 
 .game-label {
@@ -106,17 +107,29 @@
 	top: 6%;
 	left: 12%;
 	z-index: 2;
-	padding: 10%;
+	padding: 8% 10%;
 	color: #fff;
+	font-family: $serifa-bt-black;
 	.botw-btn {
 		background: url('../../assets/game/BOTW-btn.png');
 		background-size: cover;
 		height: 400px;
 		width: 700px;
 		display: block;
-		margin: 100px auto 0;
+		margin: -10px auto 0;
 		border: none;
 	}
+	h1 {
+		font-size: 90px;
+		text-transform: uppercase;
+		margin-bottom: 40px;
+		margin-top: 0px;
+	}
+
+	h3 {
+		font-size: 40px;
+	}
+
 }
 
 

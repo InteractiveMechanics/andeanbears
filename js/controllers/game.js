@@ -90,6 +90,9 @@ Game = (function() {
     		 	   		ui.draggable.addClass('dragged animated pulse');
                         $(this).addClass('dropped');
                         setTimeout(function() {  correctAnswer.removeClass('hidden'); }, 1000);
+                        if ( $('.correct-answer') != correctAnswer ) {
+                            $('.correct-answer').addClass('hidden');
+                        }
     		 	   		//correctAnswer.removeClass('hidden');
                         setTimeout(function(){ correctAnswer.addClass('hidden'); }, 5000);
     		 	   	 	ui.draggable.position({

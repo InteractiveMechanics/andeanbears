@@ -6,9 +6,19 @@ Utilities = (function() {
         bindEvents();
     }
 
+
+
     var animateChallengeBtn = function() {
         $('#home-btn-game').addClass('animated pulse');
         setTimeout(function() {  Game.buildGame(); }, 2000);
+    }
+
+
+    var animateResetBtn = function() {
+        $('.reset-btn').css('background-image', 'url("../../assets/game/BC-home-btn-down.png")').addClass('animated pulse');
+         setTimeout(function() { resetInteractive(); }, 2000);
+         setTimeout(function() { unanimateResetBtn(); }, 2500);
+
     }
 
     var animateExploreBtn = function() {
@@ -19,21 +29,33 @@ Utilities = (function() {
 
     var animateResetExplore= function() {
         $('.reset-btn-explore').css('background-image', 'url("../../assets/explore/btn-home-pushed.png")').addClass('animated pulse');
-        setTimeout(function() { resetInteractive(); }, 3000);
+        setTimeout(function() { resetInteractive(); }, 2000);
+        setTimeout(function() { unanimateResetExplore(); }, 2500);
     }
 
     var unanimateBtn = function() {
         $('#home-btn-game').removeClass('animated pulse');
-        $('#home-btn-explore').removeClass('animated pulse');
+        $('#home-btn-explore').removeClass('animated pulse'); 
     }
 
-     var bindEvents = function() {
+    var unanimateResetExplore = function() {
+        $('.reset-btn-explore').css('background-image', 'url("../../assets/explore/btn-home.png")').removeClass('animated pulse');
+    }
+
+    var unanimateResetBtn = function() {
+        $('.reset-btn').css('background-image', 'url("../../assets/game/BC-home-btn.png")').removeClass('animated pulse');
+    }
+
+
+
+    var bindEvents = function() {
         $(document).on('click tap', resetTimeout);
         $(document).ready(resetInteractive);
         $(document).on('click tap', '#home-btn-explore', animateExploreBtn);
         $(document).on('click tap', '#home-btn-game', animateChallengeBtn);
-        $(document).on('click tap', '.reset-btn', resetInteractive);
+        $(document).on('click tap', '.reset-btn', animateResetBtn);
         $(document).on('click tap', '.reset-btn-explore', animateResetExplore);
+        
     }
 
     var resetTimeout = function() {

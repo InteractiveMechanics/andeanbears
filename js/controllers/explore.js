@@ -34,35 +34,48 @@ Explore = (function() {
         Utilities.clearHome();
     }
 
-    var updateExplore = function() {
+    var prepareExplore = function() {
         var id = $('h1').attr('data-bear');
         alert(id);
-        if ($('.explore-btn-img').is('[data-bear="' + id + '"]')) {
-            $('.explore-btn-img[data-bear="' + id + '"]').addClass('visited');
-
-        }
+        
         clearProfile();
         clearBtnAnimation();
-        showExplore();
-       
+        updateExplore(id);
+    }
+
+    var updateExplore = function(id) {
+        if ($('#explore').hasClass('hidden')) {
+
+            $('#explore').removeClass('hidden');
+
+            $('.explore-btn-img').removeClass('active animated pulse');
+
+            
+            if ($('.explore-btn-img').is('[data-bear="' + id + '"]')) {
+                $('.explore-btn-img[data-bear="' + id + '"]').addClass('visited');
+            }
+
+        }
     }
 
 
     var getProfile = function() {
         var id = $(this).attr('data-bear');
         if ($('.explore-btn-img').is('[data-bear="' + id + '"]')) {
-            $(this).find($('.explore-btn-img')).addClass('animated pulse');
-
+            $(this).find($('.explore-btn-img')).addClass('active animated pulse');
         }
-        $('.explore-btn').attr("disabled", true);
+
+         
         setTimeout(function() {  buildProfile(id); }, 2000);
         //buildProfile(id);  
     }
 
 
+
+
     var buildProfile = function(id) {
         clearExplore();
-        $('#profile-template').tmpl(data.locations[id]).appendTo('#profile');
+        $('#profile-template').tmpl(data.bears[id-1]).appendTo('#profile');
         $('#profile').removeClass('hidden');
         $('#landing').removeClass('hidden').addClass('animated fadeIn');
     }
@@ -238,28 +251,21 @@ Explore = (function() {
     }
 
     var buildSelfiesGallery = function() {
-        $('#selfies-gallery').lightGallery({
-                thumbnail:true,
+        var data = $('#selfies-btn').attr('data-gallery');
+        $('#selfies-btn').lightGallery({
+                thumbnail: true,
                 width: '100%',
                 height: '100%',
                 fullScreen: false,
-                dynamic: true,
-                dynamicEl: [{
-                    "src": 'assets/explore/andean/Slideshow/1-andean-selfie.jpg',
-                    'thumb': 'assets/explore/andean/Slideshow/1-andean-selfie.jpg',
-                    'subHtml': '<h4>Andean Bear 1</h4><p>The markings on each bears face is unique. No two are the same.</p>'
-                }, {
-                    'src': 'assets/explore/andean/Slideshow/2-andean-selfie.jpg',
-                    'thumb': 'assets/explore/andean/Slideshow/1-andean-selfie.jpg',
-                    'subHtml': "<h4>Andean Bear 2</h4><p>Caption For Photo Number 2</p>"
-                }, {
-                    'src': 'assets/explore/andean/Slideshow/3-andean-selfie.jpg',
-                    'thumb': 'assets/explore/andean/Slideshow/3-andean-selfie.jpg',
-                    'subHtml': "<h4>Andean Bear 3</h4><p>Caption for Photo Number 3</p>"
-                }]
+                autoplay: true,
+                progressBar: false,
+                forceAutoplay: true,
+                videoMaxWidth: '100%',
+                pause: 10000,
+                autoplayControls: false,
+                dymamic: true,
+                dynamicEl: [data]
             });
-        
-        
     }
 
     var resetProfile = function() {
@@ -269,6 +275,7 @@ Explore = (function() {
             $('.profile-header').css('top', '200px').removeClass('slideInUp small').addClass('animated slideInDown');
             $('.profile-title').css('font-size', '90px');
             $('#selfies').addClass('hidden fadeOut');
+            $('#selfies-btn').removeClass('animated pulse active');
             $('#help').addClass('hidden fadeOut');
             $('#help-btn').removeClass('animated pulse active');
             $('#weight').addClass('hidden fadeOut');
@@ -286,14 +293,54 @@ Explore = (function() {
         $('.weight-answer').removeClass('hidden').addClass('animated fadeIn');
     }
 
+    var animateLgNext = function() {
+        $('.lg-next').addClass('active animated pulse');
+         setTimeout(function() {  resetLgNext(); }, 1000);
 
+    }
 
+    var resetLgNext = function() {
+        if ($('.lg-next').hasClass('active animated pulse')) {
+            $('.lg-next').removeClass('active animated pulse');
+        }
+    }
+
+     var animateLgPrev = function() {
+        $('.lg-prev').addClass('active animated pulse');
+         setTimeout(function() {  resetLgPrev(); }, 1000);
+
+    }
+
+    var resetLgPrev = function() {
+        if ($('.lg-prev').hasClass('active animated pulse')) {
+            $('.lg-prev').removeClass('active animated pulse');
+        }
+    }
+
+    var resumeVideo = function(event) {
+        if ($('.lg-current').has('video')) {
+            
+            var videoElement = $('.lg-current').find('video').get(0);
+            
+            if (videoElement.paused) {
+                videoElement.load();
+                videoElement.play();
+                console.log('your if statement is working');
+            } else if (videoElement.ended) {
+                console.log('your else statement is working')   
+                videoElement.play();
+            }
+        } 
+        
+    }
+
+    
 
 
 
      var bindEvents = function() {
         $(document).on('click tap', '.explore-btn[data-bear]', getProfile);
-        $(document).on('click tap', '.explore-reset-btn', updateExplore);
+        $(document).on('click tap', '.explore-reset-btn', prepareExplore);
         $(document).on('click tap', '#help-btn', buildHelp);
         $(document).on('click tap', '#weight-btn', buildWeight);
         $(document).on('click tap', '#diet-btn', buildDiet);
@@ -302,6 +349,10 @@ Explore = (function() {
         $(document).on('click tap', '#selfies-btn', buildSelfies);
         $(document).on('click tap', '.reset-profile', resetProfile);
         $(document).on('click tap', '.weight-art-btn', displayWeightAnswer);
+        $(document).on('click tap', '.lg-next', animateLgNext);
+        $(document).on('click tap', '.lg-prev', animateLgPrev);
+        $(document).on('click tap', '.lg-close', resetProfile);
+        $(document).on('onAfterSlide.lg', resumeVideo);
     }
 
 

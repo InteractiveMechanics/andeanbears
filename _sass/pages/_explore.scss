@@ -74,8 +74,8 @@
 .explore-btn-img[data-bear="1"] {
 	background: url('../../assets/explore/btn-SunBear.png');
 	background-repeat: no-repeat;
-    background-size: contain;
-    height: 133px;
+    //background-size: contain;
+    height: 281px;
     width: 150px;
     top: -20px;	
 }
@@ -86,72 +86,125 @@
     background-size: contain;
 }
 
+.explore-btn-img[data-bear="1"].active {
+	background: url('../../assets/explore/btn-SunBear-active.png');
+	background-repeat: no-repeat;
+}
+
+
+
+
 .explore-btn-img[data-bear="2"] {
 	background: url('../../assets/explore/btn-GiantPanda.png');
 	background-repeat: no-repeat;
-    background-size: contain;
+    //background-size: contain;
 	width: 175px;
-	height: 133px;
-	top: -40px;
+	height: 266px;
+	top: -23px;
 }
+
+.explore-btn-img[data-bear="2"].active {
+	background: url('../../assets/explore/btn-GiantPanda-active.png');
+	background-repeat: no-repeat;
+}
+
+
 
 .explore-btn-img[data-bear="3"] {
 	background: url('../../assets/explore/btn-SlothBear.png');
 	background-repeat: no-repeat;
-    background-size: contain;
+    //background-size: contain;
 	width: 150px;
-	height: 133px;
+	height: 268px;
 	top: -31px;
+}
+
+.explore-btn-img[data-bear="3"].active {
+	background: url('../../assets/explore/btn-SlothBear-active.png');
+	background-repeat: no-repeat;
 }
 
 .explore-btn-img[data-bear="4"] {
 	background: url('../../assets/explore/btn-AndeanBear.png');
 	background-repeat: no-repeat;
-    background-size: contain;
+    //background-size: contain;
 	width: 180px;
-	height: 133px;
-	top: -31px;
+	height: 273px; //133px
+	top: -39px; //31px
 	left: 3px
 }
+
+.explore-btn-img[data-bear="4"].active {
+	background: url('../../assets/explore/btn-AndeanBear-active.png');
+}
+
+.explore-btn-img[data-bear="4"].visited {
+	background: url('../../assets/explore/btn-AndeanBear-visited.png');
+}
+
+
 
 .explore-btn-img[data-bear="5"] {
 	background: url('../../assets/explore/btn-AsiaticBear.png');
 	background-repeat: no-repeat;
-    background-size: contain;
+    //background-size: contain;
 	width: 235px;
-	height: 150px;
-	top: -60px;
-	left: -11px;
+	height: 288px;
+	top: -30px;
+	left: 0px;
 }
+
+.explore-btn-img[data-bear="5"].active {
+	background: url('../../assets/explore/btn-AsiaticBear-active.png');
+	background-repeat: no-repeat;
+}
+
+
+
 
 .explore-btn-img[data-bear="6"] {
 	background: url('../../assets/explore/btn-BlackBear.png');
 	background-repeat: no-repeat;
-    background-size: contain;
+    //background-size: contain;
 	width: 235px;
-	height: 150px;
-	top: -64px;
+	height: 289px;
+	top: -40px;
 	left: 8px;
+}
+
+.explore-btn-img[data-bear="6"].active {
+	background: url('../../assets/explore/btn-BlackBear-active.png');
+	background-repeat: no-repeat;
 }
 
 .explore-btn-img[data-bear="7"] {
 	background: url('../../assets/explore/btn-BrownBear.png');
 	background-repeat: no-repeat;
-    background-size: contain;
+    //background-size: contain;
 	width: 235px;
-	height: 150px;
-	top: -84px;
+	height: 313px;
+	top: -63px;
 	left: -16px;
+}
+
+.explore-btn-img[data-bear="7"].active {
+	background: url('../../assets/explore/btn-BrownBear-active.png');
+	background-repeat: no-repeat;
 }
 
 .explore-btn-img[data-bear="8"] {
 	background: url('../../assets/explore/btn-PolarBear.png');
 	background-repeat: no-repeat;
-    background-size: contain;
+    //background-size: contain;
 	width: 265px;
-	height: 158px;
+	height: 307px;
 	top: -79px;
 	left: -26px;
+}
+
+.explore-btn-img[data-bear="8"].active {
+	background: url('../../assets/explore/btn-PolarBear-active.png');
+	background-repeat: no-repeat;
 }
 
 
@@ -222,7 +275,7 @@
     		width: 70%;
     	}
     	.dinner-image-1 {
-    		transform: rotate(-15deg);
+    		transform: rotate(12deg);
     		position: absolute;
     		width: 75%;
 		    top: 36px;
@@ -230,7 +283,7 @@
 		    z-index: 2;
     	}
     	.dinner-image-2 {
-    		transform: rotate(15deg);
+    		transform: rotate(6deg);
     		position: absolute;
     		width: 75%;
     		left: 0px;
