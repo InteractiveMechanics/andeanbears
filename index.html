@@ -35,7 +35,7 @@
         <button class="reset-profile hidden">&lt; Return to text</button>
         </div>
         <div class="content-wrapper">
-            <div id="landing" class="animated fadeIn" data-profile="${Id}"></div>
+            <div id="landing" class="animated fadeIn" style="background: url('${Landing}') no-repeat;" data-profile="${Id}"></div>
             <div id="help" class="hidden animated fadeIn" data-profile="${Id}">
                 <img src="${Help}" alt="help text">
             </div>
@@ -47,13 +47,8 @@
                 </button>
             </div>
             <div id="diet" class="hidden animated fadeIn" data-profile="1">
-                <img src="${Diet.description}" alt="dinner text">
-                <div class="dinner-image-wrapper">
-                    <img class="dinner-image-1" src="${Diet.image1}" alt="dinner image 1">
-                    <img class="dinner-image-2" src="${Diet.image2}" alt="dinner image 1">
-                    <p class="dinner-image-caption">${Diet.caption}</p>
-
-                </div>
+                <img src="${Diet}" alt="dinner text">
+                <p class="dinner-image-caption">${Diet.caption}</p>
             </div>
             <div id="cool" class="hidden animated fadeIn" data-profile="${Id}">
                 <img src="${Cool}" alt="Cool or Gross text">
@@ -62,8 +57,7 @@
                 <img src="${Live.description}" alt="where do i live text">
                 <img class="live-map" src="${Live.map}" alt="where do i live map">
             </div>
-            <div id="selfies" class="hidden animated fadeIn" data-profile="${Id}">
-            </div>
+            <div id="selfies" class="hidden animated fadeIn" data-profile="${Id}"></div>
         </div>
         <div style="display:none;" id="video1">
             <video class="lg-video-object lg-html5" autoplay loop>
@@ -72,16 +66,41 @@
         </div>
 
         <div class="profile-btn-wrapper">
-            <button id="selfies-btn" data-profile="${Id}" data-gallery="{'thumb': '${Selfie[0].image}','html': '#video1','subHtml': '${Videocaption}'},{'src': '${Selfie[0].image}','thumb': '${Selfie[0].image}','subHtml': '${Selfie[0].caption}'}"></button>
+            <button id="selfies-btn" data-profile="${Id}" data-gallery='
+                [
+                    {
+                        "thumb": "${Selfie[0].image}", 
+                        "html": "#video1", 
+                        "subHtml": "${Videocaption}"
+                    }, 
+                
+                    {{each(i) Selfie}}
+                        {{if i<5}}
+                            {
+                                "src": "${Selfie[i].image}", 
+                                "thumb": "${Selfie[i].image}", 
+                                "subHtml": "${Selfie[i].caption}"
+                            },
+                        {{/if}}
+                    {{/each}}
+
+                    {
+                       "src": "${Selfie[5].image}", 
+                        "thumb": "${Selfie[5].image}", 
+                        "subHtml": "${Selfie[5].caption}" 
+                    }
+                    
+
+                ]'></button>
             <button id="live-btn" data-profile="${Id}"></button>
             <button id="cool-btn" data-profile="${Id}"></button>
             <button id="diet-btn" data-profile="${Id}"></button>
             <button id="weight-btn" data-proifile="${Id}"></button>
-            <button id="help-btn" style="background: url('${Button}');" data-profile="${Id}"></button>
+            <button id="help-btn" style="background: url('${Button}'); background-size: contain; background-repeat: no-repeat;" data-profile="${Id}"></button>
         </div>
         <div class="profile-nav-wrapper">
             <button class="explore-reset-btn"></button>
-            <button class="reset-btn" id="explore-reset"></button>
+            <button class="reset-btn" id="profile-reset"></button>
         </div>   
        
 
@@ -91,11 +110,11 @@
     <script id="game-template" type="text/x-jQuery-templ">
           <div class="droppable-widget" data-bear="${Id}" style="top: ${y}px; left: ${x}px;">
             <div class="correct-answer hidden animated fade-in">
-                <div class="correct-overlay" style="background-color:#${Color};"></div>
                 <div class="correct-wrapper" style="background-color:#${Color}">
-                <h2 class="correctTitle">${Correct.title}</h2>
-                <p class="correctText">${Correct.text}</p>
+                    <h2 class="correctTitle">${Correct.title}</h2>
+                    <p class="correctText">${Correct.text}</p>
                 </div>
+                <div class="correct-overlay" style="background-color:#${Color}; background-image: url('${Button}');"></div>
                 <img class="correctImg" src="${Correct.image}">
             </div>
             <div class="hint-1 hidden animated shake">
@@ -111,8 +130,10 @@
                     <h2>${Incorrect[1].title}</h2>
                     <p>${Incorrect[1].text}</p>
                 </div>
-            </div>  
+            </div> 
+            <img class="empty-btn" src="assets/game/empty-btn.png"> 
           </div>
+         
     </script>
 
     <script id="game-btn-template" type="text/x-jQuery-templ">

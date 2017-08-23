@@ -93,11 +93,11 @@
 }
 
 #landing {
-	background: url('../../assets/explore/andean/landing-text.png');
-	background-size: contain;
+	//background: url('../../assets/explore/andean/landing-text.png');
+	//background-size: contain;
 	background-repeat: no-repeat;
-	width: 500px;
-    height: 300px;
+	width: 600px;
+    height: 700px;
     position: absolute;
     left: 200px;
     top: 430px;
@@ -170,15 +170,61 @@
 	background-repeat: no-repeat;
 }
 
-#help-btn.active {
-	background: url('../../assets/explore/profile/btn-help-active.png');
-	background-size: contain;
-	background-repeat: no-repeat;
+#help-btn[data-profile="1"].active {
+	background: url('../../assets/explore/sun/btn-help-active-sun.png') !important;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
+}
+
+
+#help-btn[data-profile="2"].active {
+	background: url('../../assets/explore/panda/btn-help-active-panda.png') !important;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
+}
+
+#help-btn[data-profile="3"].active {
+	background: url('../../assets/explore/sloth/btn-help-active-sloth.png') !important;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
+}
+
+
+#help-btn[data-profile="4"].active {
+	background: url('../../assets/explore/andean/btn-help-active.png') !important;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
+}
+
+#help-btn[data-profile="5"].active {
+	background: url('../../assets/explore/asiatic/btn-help-active-asiatic.png') !important;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;	
+}
+
+#help-btn[data-profile="6"].active {
+	background: url('../../assets/explore/american/btn-help-active-american.png') !important;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;	
+}
+
+#help-btn[data-profile="7"].active {
+	background: url('../../assets/explore/brown/btn-help-active-brown.png') !important;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;	
+}
+
+#help-btn[data-profile="8"].active {
+	background: url('../../assets/explore/polar/btn-help-active-polar.png') !important;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;	
 }
 
 
 
-#explore-reset {
+
+
+#profile-reset {
 	background-image: url('../../assets/explore/profile/btn-home.png'); 
 	position: initial;
 	margin-top: 0px;

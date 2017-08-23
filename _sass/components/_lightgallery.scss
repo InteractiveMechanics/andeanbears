@@ -7,6 +7,10 @@
 	background-size: cover;
 }
 
+.lg-backdrop.in {
+	opacity: 0.92;
+}
+
 .lg-outer {
 	width: 80%;
     height: 68%;
@@ -95,6 +99,10 @@
 	position: absolute;
 	width: 1229px;
 	left: 10%;
+	text-align: left;
+	height: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .lg-outer.lg-pull-caption-up.lg-thumb-open .lg-sub-html {

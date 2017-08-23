@@ -36,7 +36,7 @@ Explore = (function() {
 
     var prepareExplore = function() {
         var id = $('h1').attr('data-bear');
-        alert(id);
+        
         
         clearProfile();
         clearBtnAnimation();
@@ -55,12 +55,18 @@ Explore = (function() {
                 $('.explore-btn-img[data-bear="' + id + '"]').addClass('visited');
             }
 
+            if ($('.explore-btn-text').is('[data-bear="' + id + '"]')) {
+                $('.explore-btn-text[data-bear="' + id + '"]').addClass('visited');
+            }
+
+
         }
     }
 
 
     var getProfile = function() {
         var id = $(this).attr('data-bear');
+        console.log(id);
         if ($('.explore-btn-img').is('[data-bear="' + id + '"]')) {
             $(this).find($('.explore-btn-img')).addClass('active animated pulse');
         }
@@ -75,6 +81,7 @@ Explore = (function() {
 
     var buildProfile = function(id) {
         clearExplore();
+        console.log(id);
         $('#profile-template').tmpl(data.bears[id-1]).appendTo('#profile');
         $('#profile').removeClass('hidden');
         $('#landing').removeClass('hidden').addClass('animated fadeIn');
@@ -251,7 +258,7 @@ Explore = (function() {
     }
 
     var buildSelfiesGallery = function() {
-        var data = $('#selfies-btn').attr('data-gallery');
+        var data = JSON.parse($('#selfies-btn').attr('data-gallery'));
         $('#selfies-btn').lightGallery({
                 thumbnail: true,
                 width: '100%',
@@ -259,12 +266,12 @@ Explore = (function() {
                 fullScreen: false,
                 autoplay: true,
                 progressBar: false,
-                forceAutoplay: true,
+                fourceAutoplay: true,
                 videoMaxWidth: '100%',
                 pause: 10000,
                 autoplayControls: false,
-                dymamic: true,
-                dynamicEl: [data]
+                dynamic: true,
+                dynamicEl: data
             });
     }
 

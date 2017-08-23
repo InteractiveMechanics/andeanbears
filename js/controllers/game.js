@@ -48,12 +48,14 @@ Game = (function() {
         $('.droppable-widget[data-bear="7"]').addClass('brown-bear').append('<div class="brown-bear-marker hidden"></div>');
     }
 
+
     var dropBrownBear = function() {
         $('.brown-bear').not('dropped').find('.brown-bear-marker').removeClass('hidden');
         $('.brown-bear').not('dropped').addClass('.dropped');
     }
 
     
+
 
    
     var buildGame = function() {
@@ -81,20 +83,26 @@ Game = (function() {
     		 	var originalLeft = $(this).css('left');
     		 	var originalTop = $(this).css('top');
                 var correctAnswer = $(this).find('.correct-answer');
+                var droppedElement = $(this);
                 var hint1 = $(this).find('.hint-1');
                 var hint2 = $(this).find('.hint-2');
-
+               
     		 	   	if(ui.draggable.is('[data-bear="' + droppableNumber + '"]')) {
 
     		 	   		ui.draggable.draggable('option', 'revert', 'invalid');
     		 	   		ui.draggable.addClass('dragged animated pulse');
                         $(this).addClass('dropped');
+
                         setTimeout(function() {  correctAnswer.removeClass('hidden'); }, 1000);
+                        setTimeout(function() {  $(this).css('z-index', '4'); }, 1000);
+                        
                         if ( $('.correct-answer') != correctAnswer ) {
                             $('.correct-answer').addClass('hidden');
                         }
     		 	   		//correctAnswer.removeClass('hidden');
-                        setTimeout(function(){ correctAnswer.addClass('hidden'); }, 5000);
+                        setTimeout(function(){ correctAnswer.addClass('hidden'); }, 8000);
+                        setTimeout(function(){ $(this).css('z-index', 'initial'); }, 8000);
+                       
     		 	   	 	ui.draggable.position({
 			              	my: "center",
 			              	at: "center",

@@ -6,6 +6,7 @@
             "y": 552,
             "Color": "275772",
             "Title": "Andean Bear",
+            "Button": "assets/game/AndeanBear-btn.png",
             "Correct": 
                 {
                     "title": "Correct!",
@@ -31,6 +32,7 @@
             "y": 350,
             "Color": "386a25",
             "Title": "American Black Bear",
+            "Button": "assets/game/AmericanBlackBear-btn.png",
             "Correct": 
                 {
                     "title": "Yes!",
@@ -55,6 +57,7 @@
             "y": 264,
             "Color": "7c2643",
             "Title": "Brown Bear",
+            "Button": "assets/game/BrownBear-btn.png",
             "Correct": 
                 {
                     "title": "You’re Right!",
@@ -80,6 +83,7 @@
             "y": 174,
             "Title": "Brown Bear",
             "Color": "7c2643",
+            "Button": "assets/game/BrownBear-btn.png",
             "Correct": 
                 {
                     "title": "Correct!",
@@ -104,6 +108,7 @@
             "y": 70,
             "Title": "Polar Bear",
             "Color": "462457",
+            "Button": "assets/game/PolarBear-btn.png",
             "Correct": 
                 {
                     "title": "Excellent!",
@@ -128,6 +133,7 @@
             "y": 307,
             "Title": "Asiatic Black Bear",
             "Color": "7e271e",
+            "Button": "assets/game/AsiaticBear-btn.png",
             "Correct": 
                 {
                     "title": "Excellent!",
@@ -152,6 +158,7 @@
             "y": 356,
             "Title": "Giant Panda",
             "Color": "d49c2d",
+            "Button": "assets/game/GiantPanda-btn.png",
             "Correct": 
                 {
                     "title": "You're Right!",
@@ -176,6 +183,7 @@
             "y": 517,
             "Title": "Sun Bear",
             "Color": "c14f1e",
+            "Button": "assets/game/SunBear-btn.png",
             "Correct": 
                 {
                     "title": "Correct!",
@@ -200,6 +208,7 @@
             "y": 486,
             "Title": "Sloth Bear",
             "Color": "0c7b6b",
+            "Button": "assets/game/SlothBear-btn.png",
             "Correct": 
                 {
                     "title": "Yes!",
@@ -221,10 +230,172 @@
     ],
 
     "bears": [
-        {
+         {
             "Id": 1,
+            "Name": "Sun Bear",
+            "Latin": "Helarctos malayanus",
+            "Landing": "assets/explore/sun/landing-text-sun.png",
+            "Background": "assets/explore/sun/bkgr-sun.jpg",
+            "Help": "assets/explore/sun/help-text-sun.png",
+            "Weight": 
+                {
+                    "description": "assets/explore/sun/weight-text-sun.png",
+                    "answer": "assets/explore/sun/weight-answer-sun.png", 
+                    "art": "assets/explore/sun/weight-img-sun.png"
+                }
+            ,
+            "Diet": "assets/explore/sun/dinner-text-sun.png",
+            "Dietcaption": "Diet Caption for Sun Bear",
+            "Cool": "assets/explore/sun/coolOrGross-text-sun.png",
+            "Live": 
+                {
+                    "description": "assets/explore/sun/whereLive-text-sun.png",
+                    "map": "assets/explore/sun/whereLive-map-sun.png"
+                }
+            ,
+            "Video": "assets/explore/video/sun.mp4",
+            "Videocaption": "This is the video caption",
+            "Button": "assets/explore/sun/btn-help-sun.png",
+            "Selfie": [
+                {
+                    "image": "assets/explore/sun/Slideshow/1-sun-selfie.jpg",
+                    "caption": "Sun Bear Caption 1"
+                },
+                {
+                    "image": "assets/explore/sun/Slideshow/2-sun-selfie.jpg",
+                    "caption": "Sun Bear Caption 2"
+                },
+                  {
+                    "image": "assets/explore/sun/Slideshow/3-sun-selfie.jpg",
+                    "caption": "Sun Bear Caption 3"
+                },
+                {
+                    "image": "assets/explore/sun/Slideshow/4-sun-selfie.jpg",
+                    "caption": "Sun Bear Caption 4"
+                },
+                  {
+                    "image": "assets/explore/sun/Slideshow/5-sun-selfie.jpg",
+                    "caption": "Sun Bear Caption 5"
+                },
+                {
+                    "image": "assets/explore/sun/Slideshow/6-sun-selfie.jpg",
+                    "caption": "Sun Bear Caption 6"
+                }
+            ]
+        },
+
+        {
+            "Id": 2,
+            "Name": "Panda Bear",
+            "Latin": "Ailuropoda melanoleuca",
+            "Landing": "assets/explore/panda/landing-text-panda.png",
+            "Background": "assets/explore/panda/bkgr-panda.jpg",
+            "Help": "assets/explore/panda/help-text-panda.png",
+            "Weight": 
+                {
+                    "description": "assets/explore/panda/weight-text-panda.png",
+                    "answer": "assets/explore/panda/weight-answer-panda.png", 
+                    "art": "assets/explore/panda/weight-img-panda.png"
+                }
+            ,
+            "Diet": "assets/explore/panda/dinner-text-panda.png",
+            "Dietcaption": "Caption for Panda dinner",
+            "Cool": "assets/explore/panda/coolOrGross-text-panda.png",
+            "Live": 
+                {
+                    "description": "assets/explore/panda/whereLive-text-panda.png",
+                    "map": "assets/explore/panda/whereLive-img-panda.png"
+                }
+            ,
+            "Video": "assets/explore/videos/panda.mp4",
+            "Videocaption": "This is the video caption for panda",
+            "Button": "assets/explore/panda/btn-help-panda.png",
+            "Selfie": [
+                {
+                    "image": "assets/explore/panda/Slideshow/1-panda-selfie.jpg",
+                    "caption": "The markings on each bears face is unique. No two are the same"
+                },
+                {
+                    "image": "assets/explore/panda/Slideshow/2-panda-selfie.jpg",
+                    "caption": "Caption for image 2"
+                },
+                {
+                    "image": "assets/explore/panda/Slideshow/3-panda-selfie.jpg",
+                    "caption": "Caption 3"
+                },
+                {
+                    "image": "assets/explore/panda/Slideshow/4-panda-selfie.jpg",
+                    "caption": "Caption for image 4"
+                },
+                {
+                    "image": "assets/explore/panda/Slideshow/5-panda-selfie.jpg",
+                    "caption": "Caption 5"
+                },
+                {
+                    "image": "assets/explore/panda/Slideshow/6-panda-selfie.jpg",
+                    "caption": "Caption for image 6"
+                }
+            ]
+        },
+
+        {
+            "Id": 3,
+            "Name": "Sloth Bear",
+            "Latin": "Melursus ursinus",
+            "Landing": "assets/explore/sloth/landing-text-sloth.png",
+            "Background": "assets/explore/sloth/bkgr-sloth.jpg",
+            "Help": "assets/explore/sloth/help-text-sloth.png",
+            "Weight": 
+                {
+                    "description": "assets/explore/sloth/weight-text-sloth.png",
+                    "answer": "assets/explore/sloth/weight-answer-sloth.png", 
+                    "art": "assets/explore/sloth/weight-img-sloth.png"
+                }
+            ,
+            "Diet": "assets/explore/sloth/dinner-text-sloth.png",
+            "Dietcaption": "Diet caption for sloth bear",
+            "Cool": "assets/explore/sloth/coolOrGross-text-sloth.png",
+            "Live": 
+                {
+                    "description": "assets/explore/sloth/whereLive-text-sloth.png",
+                    "map": "assets/explore/sloth/whereLive-img-sloth.png"
+                }
+            ,
+            "Video": "assets/explore/videos/sloth.mp4",
+            "Videocaption": "Video caption for sloth",
+            "Button": "assets/explore/sloth/btn-help-sloth.png",
+            "Selfie": [
+                {
+                    "image": "assets/explore/sloth/Slideshow/1-sloth-selfie.jpg",
+                    "caption": "Sloth Bear Caption 1"
+                },
+                {
+                    "image": "assets/explore/sloth/Slideshow/2-sloth-selfie.jpg",
+                    "caption": "Sloth Bear Caption 2"
+                },
+                 {
+                    "image": "assets/explore/sloth/Slideshow/3-sloth-selfie.jpg",
+                    "caption": "Sloth Bear Caption 3"
+                },
+                {
+                    "image": "assets/explore/sloth/Slideshow/4-sloth-selfie.jpg",
+                    "caption": "Sloth Bear Caption 4"
+                },
+                 {
+                    "image": "assets/explore/sloth/Slideshow/5-sloth-selfie.jpg",
+                    "caption": "Sloth Bear Caption 5"
+                },
+                {
+                    "image": "assets/explore/sloth/Slideshow/6-sloth-selfie.jpg",
+                    "caption": "Sloth Bear Caption 6"
+                }
+            ]
+        },
+        {
+            "Id": 4,
             "Name": "Andean Bear",
             "Latin": "Tremarctos ornatus",
+            "Landing": "assets/explore/andean/landing-text.png",
             "Background": "assets/explore/andean/bkgr-andean.jpg",
             "Help": "assets/explore/andean/help-text.png",
             "Weight": 
@@ -234,14 +405,8 @@
                     "art": "assets/explore/andean/weight-art.png"
                 }
             ,
-            "Diet": 
-                {
-                    "description": "assets/explore/andean/dinner-text.png",
-                    "image1": "assets/explore/andean/dinner-andean-img01.png",
-                    "image2": "assets/explore/andean/dinner-andean-img02.png",
-                    "caption": "Bromelaids are a family of plants that grow mainly in tropical South America."
-                }
-            ,
+            "Diet": "assets/explore/andean/dinner-text.png",
+            "Dietcaption": "Bromelaids are a family of plants that grow mainly in tropical South America.",
             "Cool": "assets/explore/andean/coolOrGross-text.png",
             "Live": 
                 {
@@ -249,8 +414,8 @@
                     "map": "assets/explore/andean/whereLive-map-andean.png"
                 }
             ,
-            "Video": "assets/explore/andean/AndeanBear_NEW.mp4",
-            "Videocaption": "This is the video caption",
+            "Video": "assets/explore/video/andean.mp4",
+            "Videocaption": "Caption for the Andean Bear Video",
             "Button": "assets/explore/andean/btn-help.png",
             "Selfie": [
                 {
@@ -260,6 +425,235 @@
                 {
                     "image": "assets/explore/andean/Slideshow/2-andean-selfie.jpg",
                     "caption": "Caption for image 2"
+                },
+                {
+                    "image": "assets/explore/andean/Slideshow/3-andean-selfie.jpg",
+                    "caption": "Caption for image 3"
+                },
+                {
+                    "image": "assets/explore/andean/Slideshow/4-andean-selfie.jpg",
+                    "caption": "Caption for image 4"
+                },
+                {
+                    "image": "assets/explore/andean/Slideshow/5-andean-selfie.jpg",
+                    "caption": "Caption for image 5"
+                },
+                {
+                    "image": "assets/explore/andean/Slideshow/6-andean-selfie.jpg",
+                    "caption": "Caption for image 6"
+                }
+            ]
+        },
+        {
+            "Id": 5,
+            "Name": "Asiatic Bear",
+            "Latin": "Ursus thibetanus",
+            "Landing": "assets/explore/asiatic/landing-text-asiatic.png",
+            "Background": "assets/explore/asiatic/bkgr-asiatic.jpg",
+            "Help": "assets/explore/asiatic/help-text-asiatic.png",
+            "Weight": 
+                {
+                    "description": "assets/explore/asiatic/weight-text-asiatic.png",
+                    "answer": "assets/explore/asiatic/weight-answer-asiatic.png", 
+                    "art": "assets/explore/asiatic/weight-art-asiatic.png"
+                }
+            ,
+            "Diet": "assets/explore/asiatic/dinner-text-asiatic.png",
+            "Dietcaption": "Caption for diet asiatic bear",
+            "Cool": "assets/explore/asiatic/coolOrGross-text-asiatic.png",
+            "Live": 
+                {
+                    "description": "assets/explore/asiatic/whereLive-asiatic.png",
+                    "map": "assets/explore/asiatic/whereLive-map-asiatic.png"
+                }
+            ,
+            "Video": "assets/explore/videos/asiatic.mp4",
+            "Videocaption": "This is the video caption for Asiatic Black Bear",
+            "Button": "assets/explore/asiatic/btn-help-asiatic.png",
+            "Selfie": [
+                {
+                    "image": "assets/explore/asiatic/Slideshow/1-asiatic-selfie.jpg",
+                    "caption": "Caption 1 for Asiatic Black Bear"
+                },
+                {
+                    "image": "assets/explore/asiatic/Slideshow/2-asiatic-selfie.jpg",
+                    "caption": "Caption 2 for Asiatic Black Bear"
+                },
+                {
+                    "image": "assets/explore/asiatic/Slideshow/3-asiatic-selfie.jpg",
+                    "caption": "Caption 3 for Asiatic Black Bear"
+                },
+                {
+                    "image": "assets/explore/asiatic/Slideshow/4-asiatic-selfie.jpg",
+                    "caption": "Caption 4 for Asiatic Black Bear"
+                },
+                {
+                    "image": "assets/explore/asiatic/Slideshow/5-asiatic-selfie.jpg",
+                    "caption": "Caption 5 for Asiatic Black Bear"
+                },
+                {
+                    "image": "assets/explore/asiatic/Slideshow/6-asiatic-selfie.jpg",
+                    "caption": "Caption 6 for Asiatic Black Bear"
+                }
+            ]
+        },
+        {
+            "Id": 6,
+            "Name": "American Bear",
+            "Latin": "Ursus americanus",
+            "Landing": "assets/explore/american/landing-text.png",
+            "Background": "assets/explore/american/bkgr-american.jpg",
+            "Help": "assets/explore/american/help-text-american.png",
+            "Weight": 
+                {
+                    "description": "assets/explore/american/weight-text.png",
+                    "answer": "assets/explore/american/weight-answer.png", 
+                    "art": "assets/explore/american/weight-art.png"
+                }
+            ,
+            "Diet": "assets/explore/american/dinner-text-american.png",
+            "Dietcaption": "Caption for the American Black Bear diet section",
+            "Cool": "assets/explore/american/coolOrGross-text-american.png",
+            "Live": 
+                {
+                    "description": "assets/explore/american/whereLive-american.png",
+                    "map": "assets/explore/american/whereLive-map-american.png"
+                }
+            ,
+            "Video": "assets/explore/videos/american.mp4.",
+            "Videocaption": "Caption for American Black Bear Video",
+            "Button": "assets/explore/american/btn-help-american.png",
+            "Selfie": [
+                {
+                    "image": "assets/explore/american/Slideshow/1-american-selfie.jpg",
+                    "caption": "American Black Bear Caption 1"
+                },
+                {
+                    "image": "assets/explore/american/Slideshow/2-american-selfie.jpg",
+                    "caption": "Caption for image 2"
+                },
+                {
+                    "image": "assets/explore/american/Slideshow/3-american-selfie.jpg",
+                    "caption": "American Black Bear Caption 3"
+                },
+                {
+                    "image": "assets/explore/american/Slideshow/4-american-selfie.jpg",
+                    "caption": "Caption for image 4"
+                },
+                {
+                    "image": "assets/explore/american/Slideshow/5-american-selfie.jpg",
+                    "caption": "American Black Bear Caption 5"
+                },
+                {
+                    "image": "assets/explore/american/Slideshow/6-american-selfie.jpg",
+                    "caption": "Caption for image 6"
+                }
+            ]
+        },
+    
+        {
+            "Id": 7,
+            "Name": "Brown Bear",
+            "Latin": "Ursus arctos",
+            "Landing": "assets/explore/brown/landing-text-brown.png",
+            "Background": "assets/explore/brown/bkgr-brown.jpg",
+            "Help": "assets/explore/brown/help-text-brown.png",
+            "Weight": 
+                {
+                    "description": "assets/explore/brown/weight-text-brown.png",
+                    "answer": "assets/explore/brown/weight-answer-brown.png", 
+                    "art": "assets/explore/brown/weight-img-brown.png"
+                }
+            ,
+            "Diet": "assets/explore/brown/dinner-text-brown.png",
+            "Dietcaption": "dinner caption for brown bear",
+            "Cool": "assets/explore/brown/coolOrGross-text-brown.png",
+            "Live": 
+                {
+                    "description": "assets/explore/brown/whereLive-text-brown.png",
+                    "map": "assets/explore/brown/whereLive-img-brown.png"
+                }
+            ,
+            "Video": "assets/explore/videos/brown.mp4",
+            "Videocaption": "This is the caption for the brown bear video",
+            "Button": "assets/explore/brown/btn-help-brown.png",
+            "Selfie": [
+                {
+                    "image": "assets/explore/brown/Slideshow/1-brown-selfie.jpg",
+                    "caption": "Brown Bear Caption 1"
+                },
+                {
+                    "image": "assets/explore/brown/Slideshow/2-brown-selfie.jpg",
+                    "caption": "Brown Bear Caption 2"
+                },
+                {
+                    "image": "assets/explore/brown/Slideshow/3-brown-selfie.jpg",
+                    "caption": "Brown Bear Caption 3"
+                },
+                {
+                    "image": "assets/explore/brown/Slideshow/4-brown-selfie.jpg",
+                    "caption": "Brown Bear Caption 4"
+                },
+                {
+                    "image": "assets/explore/brown/Slideshow/5-brown-selfie.jpg",
+                    "caption": "Brown Bear Caption 5"
+                },
+                {
+                    "image": "assets/explore/brown/Slideshow/6-brown-selfie.jpg",
+                    "caption": "Brown Bear Caption 6"
+                }
+            ]
+        },
+        {
+            "Id": 8,
+            "Name": "Polar Bear",
+            "Latin": "Ursus maritimus",
+            "Landing": "assets/explore/polar/landing-text-polar.png",
+            "Background": "assets/explore/polar/bkgr-polar.jpg",
+            "Help": "assets/explore/polar/help-text-polar.png",
+            "Weight": 
+                {
+                    "description": "assets/explore/polar/weight-text-polar.png",
+                    "answer": "assets/explore/polar/weight-answer-polar.png", 
+                    "art": "assets/explore/polar/weight-img-polar.png"
+                }
+            ,
+            "Diet": "assets/explore/polar/dinner-text-polar.png",
+            "Dietcaption": "Diet Caption for Polar Bear",
+            "Cool": "assets/explore/polar/coolOrGross-text-polar.png",
+            "Live": 
+                {
+                    "description": "assets/explore/polar/whereLive-text-polar.png",
+                    "map": "assets/explore/polar/whereLive-img-polar.png"
+                }
+            ,
+            "Video": "assets/explore/videos/polar.mp4",
+            "Videocaption": "Polar Bear Video Caption",
+            "Button": "assets/explore/polar/btn-help-polar.png",
+            "Selfie": [
+                {
+                    "image": "assets/explore/polar/Slideshow/1-polar-selfie.jpg",
+                    "caption": "Caption for Polar Bear Image 1"
+                },
+                {
+                    "image": "assets/explore/polar/Slideshow/2-polar-selfie.jpg",
+                    "caption": "Caption for image 2"
+                },
+                  {
+                    "image": "assets/explore/polar/Slideshow/3-polar-selfie.jpg",
+                    "caption": "Caption for Polar Bear Image 3"
+                },
+                {
+                    "image": "assets/explore/polar/Slideshow/4-polar-selfie.jpg",
+                    "caption": "Caption for image 4"
+                },
+                  {
+                    "image": "assets/explore/polar/Slideshow/5-polar-selfie.jpg",
+                    "caption": "Caption for Polar Bear Image 5"
+                },
+                {
+                    "image": "assets/explore/polar/Slideshow/6-polar-selfie.jpg",
+                    "caption": "Caption for image 6"
                 }
             ]
         }

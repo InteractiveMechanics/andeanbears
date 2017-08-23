@@ -46,6 +46,12 @@
 	
 }
 
+.explore-btn-text.visited {
+	color: #1d3a48;
+	text-shadow: 0px 1px 1px #265773;
+}
+
+
 .explore-btn[data-bear="1"] {
 	&:after {
 		content: "";
@@ -108,6 +114,12 @@
 	background-repeat: no-repeat;
 }
 
+.explore-btn-img[data-bear="2"].visited {
+	background: url('../../assets/explore/btn-GiantPanda-visited.png');
+	background-repeat: no-repeat;
+}
+
+
 
 
 .explore-btn-img[data-bear="3"] {
@@ -124,22 +136,32 @@
 	background-repeat: no-repeat;
 }
 
+.explore-btn-img[data-bear="3"].visited {
+	background: url('../../assets/explore/btn-SlothBear-visited.png');
+	background-repeat: no-repeat;
+}
+
+
+
+
 .explore-btn-img[data-bear="4"] {
 	background: url('../../assets/explore/btn-AndeanBear.png');
 	background-repeat: no-repeat;
     //background-size: contain;
 	width: 180px;
-	height: 273px; //133px
-	top: -39px; //31px
+	height: 310px; //133px
+	top: -31px; //31px
 	left: 3px
 }
 
 .explore-btn-img[data-bear="4"].active {
 	background: url('../../assets/explore/btn-AndeanBear-active.png');
+	top: -68px
 }
 
 .explore-btn-img[data-bear="4"].visited {
 	background: url('../../assets/explore/btn-AndeanBear-visited.png');
+	background-repeat: no-repeat;
 }
 
 
@@ -159,6 +181,12 @@
 	background-repeat: no-repeat;
 }
 
+.explore-btn-img[data-bear="5"].visited {
+	background: url('../../assets/explore/btn-AsiaticBear-visited.png');
+	background-repeat: no-repeat;
+}
+
+
 
 
 
@@ -177,6 +205,14 @@
 	background-repeat: no-repeat;
 }
 
+.explore-btn-img[data-bear="6"].visited {
+	background: url('../../assets/explore/btn-BlackBear-visited.png');
+	background-repeat: no-repeat;
+}
+
+
+
+
 .explore-btn-img[data-bear="7"] {
 	background: url('../../assets/explore/btn-BrownBear.png');
 	background-repeat: no-repeat;
@@ -191,6 +227,14 @@
 	background: url('../../assets/explore/btn-BrownBear-active.png');
 	background-repeat: no-repeat;
 }
+
+.explore-btn-img[data-bear="7"].visited {
+	background: url('../../assets/explore/btn-BrownBear-visited.png');
+	background-repeat: no-repeat;
+}
+
+
+
 
 .explore-btn-img[data-bear="8"] {
 	background: url('../../assets/explore/btn-PolarBear.png');
@@ -207,18 +251,25 @@
 	background-repeat: no-repeat;
 }
 
+.explore-btn-img[data-bear="8"].visited {
+	background: url('../../assets/explore/btn-PolarBear-visited.png');
+	background-repeat: no-repeat;
+}
+
+
+
 
 #help {
 	background-color: transparent;
 	color: white;
 	width: 500px;
-    height: 300px;
+    height: 700px;
     position: absolute;
-    left: 200px;
+    left: 160px;
     top: 300px;
     img {
-    	width: 100%;
-    	height: auto;
+    	width: auto;
+    	max-height: 100%;
     }
 }
 
@@ -256,13 +307,13 @@
 	background-color: transparent;
 	color: white;
 	width: 500px;
-    height: 300px;
+    height: 700px;
     position: absolute;
-    left: 200px;
+    left: 160px;
     top: 300px;
     img {
-    	width: 100%;
-    	height: auto;
+    	width: auto;
+    	height: 100%;
     }
     .dinner-image-wrapper {
     	position: relative;
@@ -297,14 +348,14 @@
 #cool {
 	background-color: transparent;
 	color: white;
-	width: 500px;
-    height: 300px;
+	width: 600px;
+    height: 700px;
     position: absolute;
-    left: 200px;
+    left: 170px;
     top: 300px;
     img {
-    	width: 100%;
-    	height: auto;
+    	width: auto;
+    	max-height: 100%;
     }
 	
 }
@@ -313,16 +364,17 @@
 	background-color: transparent;
 	color: white;
 	width: 500px;
-    height: 300px;
+    height: 500px;
     position: absolute;
     left: 200px;
     top: 300px;
     img {
-    	width: 100%;
-    	height: auto;
+    	width: auto;
+    	max-height: 100%;
     }
     .live-map {
-    	margin-top: 40px;
+    	margin-top: 0px;
+    	max-height: 100%;
     }
 	
 }
