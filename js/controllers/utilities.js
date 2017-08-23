@@ -10,32 +10,47 @@ Utilities = (function() {
 
     var animateChallengeBtn = function() {
         $('#home-btn-game').addClass('animated pulse');
-        setTimeout(function() {  Game.buildGame(); }, 2000);
+        setTimeout(function() {  Game.buildGame(); }, 1000);
     }
 
 
     var animateResetBtn = function() {
         $('.reset-btn').css('background-image', 'url("../../assets/game/BC-home-btn-down.png")').addClass('animated pulse');
-         setTimeout(function() { resetInteractive(); }, 2000);
-         setTimeout(function() { unanimateResetBtn(); }, 2500);
+         setTimeout(function() { resetInteractive(); }, 1000);
+         setTimeout(function() { unanimateResetBtn(); }, 1500);
 
     }
 
     var animateExploreBtn = function() {
         $('#home-btn-explore').addClass('animated pulse');
-        setTimeout(function() {  Explore.buildExplore(); }, 2000);
+        setTimeout(function() {  Explore.buildExplore(); }, 1000);
         
     }
 
     var animateResetExplore= function() {
         $('.reset-btn-explore').css('background-image', 'url("../../assets/explore/btn-home-pushed.png")').addClass('animated pulse');
-        setTimeout(function() { resetInteractive(); }, 2000);
-        setTimeout(function() { unanimateResetExplore(); }, 2500);
+        setTimeout(function() { resetInteractive(); }, 1000);
+        setTimeout(function() { unanimateResetExplore(); }, 1500);
+    }
+
+    var animateProfileReset = function() {
+        $('#reset-profile').css('background-image', 'url("../../assets/explore/profile/btn-home-active.png")').addClass('animated pulse');
+        setTimeout(function() { resetInteractive(); }, 1000);
+        setTimeout(function() { unanimateProfileReset(); }, 1500);
     }
 
     var unanimateBtn = function() {
         $('#home-btn-game').removeClass('animated pulse');
         $('#home-btn-explore').removeClass('animated pulse'); 
+    }
+
+    var resetVisitedState = function() {
+        $('.explore-btn-text').removeClass('visited');
+        $('.explore-btn-img').removeClass('visited');
+    }
+
+    var resetActiveState = function() {
+        $('.explore-btn-img').removeClass('active');
     }
 
     var unanimateResetExplore = function() {
@@ -46,6 +61,11 @@ Utilities = (function() {
         $('.reset-btn').css('background-image', 'url("../../assets/game/BC-home-btn.png")').removeClass('animated pulse');
     }
 
+    var unanimateProfileReset = function() {
+        $('#reset-profile').css('background-image', 'url("../../assets/explore/profile/btn-home.png")').removeClass('animated pulse');
+    }
+
+
 
 
     var bindEvents = function() {
@@ -53,6 +73,7 @@ Utilities = (function() {
         $(document).ready(resetInteractive);
         $(document).on('click tap', '#home-btn-explore', animateExploreBtn);
         $(document).on('click tap', '#home-btn-game', animateChallengeBtn);
+        $(document).on('click tap', '#reset-profile', animateProfileReset);
         $(document).on('click tap', '.reset-btn', animateResetBtn);
         $(document).on('click tap', '.reset-btn-explore', animateResetExplore);
         
@@ -74,6 +95,8 @@ Utilities = (function() {
         $('#profile').addClass('hidden');
         $('#home').removeClass('hidden');
         unanimateBtn();
+        resetVisitedState();
+        resetActiveState();
 
         //TODO: reset timeout
     }

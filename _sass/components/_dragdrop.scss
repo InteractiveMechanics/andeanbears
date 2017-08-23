@@ -8,7 +8,7 @@
 }
 
 .droppable-widget {
-	background: url('../../assets/game/empty-btn.png');
+	//background: url('../../assets/game/empty-btn.png');
 	background-size: cover;
 	width: 110px;
 	height: 110px;
@@ -17,6 +17,16 @@
 	border-radius: 50%;
 	position: absolute;
 	//z-index: 2;
+}
+
+.empty-btn {
+	height: 110px;
+	width: 110px;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
 }
 
 .draggable-widget-content {
@@ -101,7 +111,6 @@
 	background-size: cover;
 }
 
-
 .brown-bear-marker {
 	background: url('../../assets/game/BrownBear-btn.png');
 	background-size: cover;
@@ -138,8 +147,9 @@
 	position: absolute;
    	left: 50px;
     width: 350px;
-    //z-index: 2;
+    z-index: 2;
     top: 6px;
+
 }
 
 .hint-1, .hint-2 {
