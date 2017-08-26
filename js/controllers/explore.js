@@ -260,6 +260,7 @@ Explore = (function() {
     var buildSelfiesGallery = function() {
         var data = JSON.parse($('#selfies-btn').attr('data-gallery'));
         $('#selfies-btn').lightGallery({
+                mode: 'lg-fade',
                 thumbnail: true,
                 width: '100%',
                 height: '100%',

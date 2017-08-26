@@ -85,16 +85,14 @@
     width: 150px;
     top: -20px;	
 }
-
+.explore-btn-img[data-bear="1"].active {
+	background: url('../../assets/explore/btn-SunBear-active.png');
+	background-repeat: no-repeat;
+}
 .explore-btn-img[data-bear="1"].visited {
 	background: url('../../assets/explore/btn-SunBear-visited.png');
 	background-repeat: no-repeat;
     background-size: contain;
-}
-
-.explore-btn-img[data-bear="1"].active {
-	background: url('../../assets/explore/btn-SunBear-active.png');
-	background-repeat: no-repeat;
 }
 
 

@@ -149,7 +149,9 @@
     width: 350px;
     z-index: 2;
     top: 6px;
-
+}
+.correct-answer {
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.4);
 }
 
 .hint-1, .hint-2 {
@@ -201,7 +203,6 @@
 
 .correct-answer {
 	img {
-		top: -3px;
 		position: relative;
 		width: 100%;
 	}
@@ -212,7 +213,7 @@
 	padding: 20px 20px 20px 70px;
 	color: white;
 	position: relative;
-	top: -3px;
+
 	h2 {
 		font-family: $happy-fox;
 		letter-spacing: 1px;

@@ -69,13 +69,13 @@ Utilities = (function() {
 
 
     var bindEvents = function() {
-        $(document).on('click tap', resetTimeout);
+        $(document).on('click tap drag', resetTimeout);
         $(document).ready(resetInteractive);
-        $(document).on('click tap', '#home-btn-explore', animateExploreBtn);
-        $(document).on('click tap', '#home-btn-game', animateChallengeBtn);
-        $(document).on('click tap', '#reset-profile', animateProfileReset);
-        $(document).on('click tap', '.reset-btn', animateResetBtn);
-        $(document).on('click tap', '.reset-btn-explore', animateResetExplore);
+        $(document).on('click tap drag', '#home-btn-explore', animateExploreBtn);
+        $(document).on('click tap drag', '#home-btn-game', animateChallengeBtn);
+        $(document).on('click tap drag', '#reset-profile', animateProfileReset);
+        $(document).on('click tap drag', '.reset-btn', animateResetBtn);
+        $(document).on('click tap drag', '.reset-btn-explore', animateResetExplore);
         
     }
 
@@ -94,6 +94,7 @@ Utilities = (function() {
         $('#game').addClass('hidden');
         $('#profile').addClass('hidden');
         $('#home').removeClass('hidden');
+        $('#selfies-btn').data('lightGallery').destroy();
         unanimateBtn();
         resetVisitedState();
         resetActiveState();

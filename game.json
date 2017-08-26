@@ -60,9 +60,9 @@
             "Button": "assets/game/BrownBear-btn.png",
             "Correct": 
                 {
-                    "title": "You’re Right!",
-                    "text": "These bears are found in more places around the world than any other bear. They are common in parts of North America, Europe, and Asia. They are the most widespread of any bear species.", 
-                    "image": "assets/game/BrownBear01-correct.jpg"
+                    "title": "Correct!",
+                    "text": "Brown bears are found throughout North America, Europe, and Asia. The enormous bears sometimes have huge home ranges, some cover up to one thousand square miles.", 
+                    "image": "assets/game/BrownBear02-correct.jpg"
                 }
             ,
             "Incorrect": [
@@ -86,9 +86,9 @@
             "Button": "assets/game/BrownBear-btn.png",
             "Correct": 
                 {
-                    "title": "Correct!",
-                    "text": "Brown bears are found throughout North America, Europe, and Asia. The enormous bears sometimes have huge home ranges, some cover up to one thousand square miles.", 
-                    "image": "assets/game/BrownBear02-correct.jpg"
+                    "title": "You’re Right!",
+                    "text": "These bears are found in more places around the world than any other bear. They are common in parts of North America, Europe, and Asia. They are the most widespread of any bear species.", 
+                    "image": "assets/game/BrownBear01-correct.jpg"
                 }
             ,
             "Incorrect": [
@@ -193,12 +193,12 @@
             ,
             "Incorrect": [
                 {
-                    "Title": "Guess Again!",
+                    "title": "Guess Again!",
                     "text": "The species that lives here is the smallest of all the bear species."
                 },
                 {
                     "title": "Try Again!",
-                    "text": "The bears found here have short fur that helps them stay cool in their tropical habitat. "
+                    "text": "The bears found here have short fur that helps them stay cool in their tropical habitat."
                 }
             ]
         },
@@ -286,7 +286,7 @@
 
         {
             "Id": 2,
-            "Name": "Panda Bear",
+            "Name": "Giant Panda",
             "Latin": "Ailuropoda melanoleuca",
             "Landing": "assets/explore/panda/landing-text-panda.png",
             "Background": "assets/explore/panda/bkgr-panda.jpg",
@@ -446,7 +446,7 @@
         },
         {
             "Id": 5,
-            "Name": "Asiatic Bear",
+            "Name": "Asiatic Black Bear",
             "Latin": "Ursus thibetanus",
             "Landing": "assets/explore/asiatic/landing-text-asiatic.png",
             "Background": "assets/explore/asiatic/bkgr-asiatic.jpg",
@@ -499,7 +499,7 @@
         },
         {
             "Id": 6,
-            "Name": "American Bear",
+            "Name": "American Black Bear",
             "Latin": "Ursus americanus",
             "Landing": "assets/explore/american/landing-text.png",
             "Background": "assets/explore/american/bkgr-american.jpg",

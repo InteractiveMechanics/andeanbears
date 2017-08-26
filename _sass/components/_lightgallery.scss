@@ -8,7 +8,7 @@
 }
 
 .lg-backdrop.in {
-	opacity: 0.92;
+	opacity: 0.96;
 }
 
 .lg-outer {
@@ -16,6 +16,9 @@
     height: 68%;
     top: 16%;
     left: 10%;
+}
+.lg-outer .lg {
+    overflow: auto;
 }
 
  .lg-outer .lg-img-wrap {
@@ -26,6 +29,7 @@
 
  .lg-outer .lg-image {
  	width: 100% !important;
+    object-fit: cover;
  }
 
 
@@ -35,6 +39,9 @@
 
 .lg-outer .lg-thumb-item {
     border-color: transparent;
+    box-sizing: content-box;
+    padding: 2px;
+    overflow: visible;
 }
 
 .lg-outer .lg-thumb-outer {
@@ -43,10 +50,23 @@
 
 .lg-outer .lg-thumb-item.active, 
 .lg-outer .lg-thumb-item:hover {
-	background: url('../../assets/explore/profile/selfies-thumbnail-active.png');
-	background-size: contain;
-	border-width: 5px;
-	border-color: transparent;
+    position: relative;
+    border-color: transparent;
+    overflow: visible;
+
+    &:after {
+        content: '';
+        width: 104%;
+        height: 104%;
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background: url(../../assets/explore/profile/selfies-thumbnail-active.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-width: 5px;
+        overflow: visible;
+    }
 }
 
 .lg-outer .lg-toogle-thumb {

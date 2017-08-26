@@ -23,8 +23,12 @@ Game = (function() {
         var numberDropped = $('.dropped').length;
         console.log(numberDropped);
         if (numberDropped == 8) {
-            setTimeout(function() {  $('.dragged').addClass('animated tada'); }, 5000);
-            setTimeout(function() {  $('#game-complete').removeClass('hidden').addClass('animated fadeIn'); }, 7000);
+            setTimeout(function() {  
+                $('.dragged').addClass('animated tada'); 
+                $('.brown-bear').addClass('animated tada'); }, 5000);
+            setTimeout(function() {  
+                $('#game-complete').removeClass('hidden').addClass('animated fadeIn');
+                $('#game-complete').removeClass('hidden').addClass('animated fadeIn'); }, 7000);
         }
     }
 
@@ -71,11 +75,11 @@ Game = (function() {
         markBrownBear();
     	//clear the home screen
     	$('.draggable-widget').draggable({
-    		snap: '.droppable-widget',
-    		//revert: 'invalid',
-		    snapMode: 'interior',
+    		snap: false,
+    		revert: 'invalid',
+		    snapMode: 'inner',
 		    snapTolerance: 20,
-		    cursorAt: {top: 10, left: 100}
+		    cursorAt: {top: 50, left: 50}
     	});
     	$('.droppable-widget').droppable({
     		drop: function( event, ui ) {
@@ -86,55 +90,53 @@ Game = (function() {
                 var droppedElement = $(this);
                 var hint1 = $(this).find('.hint-1');
                 var hint2 = $(this).find('.hint-2');
-               
-    		 	   	if(ui.draggable.is('[data-bear="' + droppableNumber + '"]')) {
 
-    		 	   		ui.draggable.draggable('option', 'revert', 'invalid');
-    		 	   		ui.draggable.addClass('dragged animated pulse');
-                        $(this).addClass('dropped');
+		 	    if(ui.draggable.is('[data-bear="' + droppableNumber + '"]')) {
 
-                        setTimeout(function() {  correctAnswer.removeClass('hidden'); }, 1000);
-                        setTimeout(function() {  $(this).css('z-index', '4'); }, 1000);
-                        
-                        if ( $('.correct-answer') != correctAnswer ) {
-                            $('.correct-answer').addClass('hidden');
-                        }
-    		 	   		//correctAnswer.removeClass('hidden');
-                        setTimeout(function(){ correctAnswer.addClass('hidden'); }, 8000);
-                        setTimeout(function(){ $(this).css('z-index', 'initial'); }, 8000);
-                       
-    		 	   	 	ui.draggable.position({
-			              	my: "center",
-			              	at: "center",
-			              	of: $(this),
-			              	using: function(pos) {
-			                	$(this).animate(pos, 200, "linear");
-			             	}
-    		 	   		});
+		 	   		ui.draggable.draggable('option', 'revert', 'invalid');
+		 	   		ui.draggable.addClass('dragged animated pulse');
+                    $(this).addClass('dropped');
 
-        		 	   	ui.draggable.draggable('option', 'disabled', true);
+                    setTimeout(function() {  correctAnswer.removeClass('hidden'); }, 1000);
+                    setTimeout(function() {  $(this).css('z-index', '4'); }, 1000);
+                    
+                    if ( $('.correct-answer') != correctAnswer ) {
+                        $('.correct-answer').addClass('hidden');
+                    }
+		 	   		//correctAnswer.removeClass('hidden');
+                    setTimeout(function(){ correctAnswer.addClass('hidden'); }, 8000);
+                    setTimeout(function(){ $(this).css('z-index', 'initial'); }, 8000);
+                   
+		 	   	 	ui.draggable.position({
+		              	my: "center",
+		              	at: "center",
+		              	of: $(this),
+		              	using: function(pos) {
+		                	$(this).animate(pos, 200, "linear");
+		             	}
+		 	   		});
 
-                        showStartOver();
-                        showComplete();
-                        if ($(this).hasClass('brown-bear')) {
-                            dropBrownBear();
-                        }
+    		 	   	ui.draggable.draggable('option', 'disabled', true);
+
+                    showStartOver();
+                    showComplete();
+                    if ($(this).hasClass('brown-bear')) {
+                        dropBrownBear();
+                    }
 
 
-    		 		} else {
-    		 			ui.draggable.draggable('option', 'revert', 'valid');
+		 		} else {
+		 			ui.draggable.draggable('option', 'revert', 'valid');
 
-                        if (!hint1.hasClass('answered')) {
-                            hint1.removeClass('hidden').addClass('answered');
-                            $(this).css('background', '');
-                            setTimeout(function(){ hint1.addClass('hidden'); }, 3000);
-                        } else {
-                            hint2.removeClass('hidden');
-                            setTimeout(function(){ hint2.addClass('hidden'); }, 3000);
-                        }
-    		 			
-    			
-    				}
+                    if (!hint1.hasClass('answered')) {
+                        hint1.removeClass('hidden').addClass('answered');
+                        $(this).css('background', '');
+                        setTimeout(function(){ hint1.addClass('hidden'); }, 5000);
+                    } else {
+                        hint2.removeClass('hidden');
+                        setTimeout(function(){ hint2.addClass('hidden'); }, 5000);
+                    }
+				}
     		
     		}
 
