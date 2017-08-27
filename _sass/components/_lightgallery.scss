@@ -1,24 +1,24 @@
 .lg-backdrop {
-	top: 100px;
-	right: 100px;
-	bottom: 100px;
-	left: 100px;
+	top: 40px;
+	right: 30px;
+	bottom: 40px;
+	left: 50px;
 	background: url('../../assets/explore/profile/selfies-popup-bkgr.png');
-	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .lg-backdrop.in {
-	opacity: 0.96;
+	opacity: 0.98;
 }
 
 .lg-outer {
-	width: 80%;
-    height: 68%;
-    top: 16%;
-    left: 10%;
+    width: 1700px;
+    height: 900px;
+    top: 80px;
+    left: 110px;
 }
 .lg-outer .lg {
-    overflow: auto;
+    overflow: visible;
 }
 
  .lg-outer .lg-img-wrap {
@@ -35,6 +35,8 @@
 
 .lg-outer .lg-thumb {
 	margin: 0px auto -79px !important;
+    width: 70% !important;
+    text-align: center;
 }
 
 .lg-outer .lg-thumb-item {
@@ -42,10 +44,14 @@
     box-sizing: content-box;
     padding: 2px;
     overflow: visible;
+    float: none;
+    display: inline-block;
+    width: 140px !important;
 }
 
 .lg-outer .lg-thumb-outer {
 	background-color: transparent;
+    height: 130px !important;
 }
 
 .lg-outer .lg-thumb-item.active, 
@@ -74,9 +80,10 @@
 }
 
 .lg-outer .lg-inner {
-	height: 84%;
+	height: 78%;
 	width: 80%;
 	left: 10%;
+    top: 40px;
 }
 
 .lg-actions .lg-next {
@@ -117,7 +124,7 @@
 
 .lg-sub-html {
 	position: absolute;
-	width: 1229px;
+	width: 1360px;
 	left: 10%;
 	text-align: left;
 	height: 50px;
@@ -126,7 +133,13 @@
 }
 
 .lg-outer.lg-pull-caption-up.lg-thumb-open .lg-sub-html {
-	bottom: 116px;
+	bottom: 158px;
+    font-size: 18px;
+    font-family: "Neris-Light", Helvetica, Arial, sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 20px 30px;
+    height: auto;
 }
 
 .lg-toolbar .lg-close {
@@ -136,6 +149,8 @@
 }
 
 .lg-toolbar {
+    right: -20px;
+    left: auto;
 	background-color: transparent;
 }
 
@@ -149,6 +164,7 @@
 
 .lg-outer .lg-video-cont {
 	overflow: hidden;
+    padding: 0;
 }
  
 

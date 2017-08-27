@@ -58,12 +58,11 @@
             </div>
             <div id="live" class="hidden animated fadeIn" data-profile="${Id}">
                 <img src="${Live.description}" alt="where do i live text">
-                <img class="live-map" src="${Live.map}" alt="where do i live map">
             </div>
             <div id="selfies" class="hidden animated fadeIn" data-profile="${Id}"></div>
         </div>
         <div style="display:none;" id="video1">
-            <video class="lg-video-object lg-html5" autoplay loop>
+            <video class="lg-video-object lg-html5" autoplay loop poster="${Videoposter}">
                 <source src="${Video}" type="video/mp4">
             </video>
         </div>
@@ -72,7 +71,7 @@
             <button id="selfies-btn" data-profile="${Id}" data-gallery='
                 [
                     {
-                        "thumb": "${Selfie[0].image}", 
+                        "thumb": "${Videoposter}", 
                         "html": "#video1", 
                         "subHtml": "${Videocaption}"
                     }, 
@@ -88,7 +87,7 @@
                     {{/each}}
 
                     {
-                       "src": "${Selfie[5].image}", 
+                        "src": "${Selfie[5].image}", 
                         "thumb": "${Selfie[5].image}", 
                         "subHtml": "${Selfie[5].caption}" 
                     }

@@ -254,6 +254,7 @@
                 }
             ,
             "Video": "assets/explore/video/sun.mp4",
+            "Videoposter": "assets/explore/sun/Slideshow/video.jpg",
             "Videocaption": "This is the video caption",
             "Button": "assets/explore/sun/btn-help-sun.png",
             "Selfie": [
@@ -303,11 +304,12 @@
             "Cool": "assets/explore/panda/coolOrGross-text-panda.png",
             "Live": 
                 {
-                    "description": "assets/explore/panda/whereLive-text-panda.png",
+                    "description": "assets/explore/panda/whereLive-panda.png",
                     "map": "assets/explore/panda/whereLive-img-panda.png"
                 }
             ,
             "Video": "assets/explore/videos/panda.mp4",
+            "Videoposter": "assets/explore/panda/Slideshow/video.jpg",
             "Videocaption": "This is the video caption for panda",
             "Button": "assets/explore/panda/btn-help-panda.png",
             "Selfie": [
@@ -357,11 +359,12 @@
             "Cool": "assets/explore/sloth/coolOrGross-text-sloth.png",
             "Live": 
                 {
-                    "description": "assets/explore/sloth/whereLive-text-sloth.png",
+                    "description": "assets/explore/sloth/whereLive-sloth.png",
                     "map": "assets/explore/sloth/whereLive-img-sloth.png"
                 }
             ,
             "Video": "assets/explore/videos/sloth.mp4",
+            "Videoposter": "assets/explore/sloth/Slideshow/video.jpg",
             "Videocaption": "Video caption for sloth",
             "Button": "assets/explore/sloth/btn-help-sloth.png",
             "Selfie": [
@@ -415,6 +418,7 @@
                 }
             ,
             "Video": "assets/explore/video/andean.mp4",
+            "Videoposter": "assets/explore/andean/Slideshow/video.jpg",
             "Videocaption": "Caption for the Andean Bear Video",
             "Button": "assets/explore/andean/btn-help.png",
             "Selfie": [
@@ -468,6 +472,7 @@
                 }
             ,
             "Video": "assets/explore/videos/asiatic.mp4",
+            "Videoposter": "assets/explore/asiatic/Slideshow/video.jpg",
             "Videocaption": "This is the video caption for Asiatic Black Bear",
             "Button": "assets/explore/asiatic/btn-help-asiatic.png",
             "Selfie": [
@@ -516,11 +521,12 @@
             "Cool": "assets/explore/american/coolOrGross-text-american.png",
             "Live": 
                 {
-                    "description": "assets/explore/american/whereLive-american.png",
+                    "description": "assets/explore/american/whereLive-text-american.png",
                     "map": "assets/explore/american/whereLive-map-american.png"
                 }
             ,
-            "Video": "assets/explore/videos/american.mp4.",
+            "Video": "assets/explore/videos/american.mp4",
+            "Videoposter": "assets/explore/american/Slideshow/video.jpg",
             "Videocaption": "Caption for American Black Bear Video",
             "Button": "assets/explore/american/btn-help-american.png",
             "Selfie": [
@@ -570,11 +576,12 @@
             "Cool": "assets/explore/brown/coolOrGross-text-brown.png",
             "Live": 
                 {
-                    "description": "assets/explore/brown/whereLive-text-brown.png",
+                    "description": "assets/explore/brown/whereLive-brown.png",
                     "map": "assets/explore/brown/whereLive-img-brown.png"
                 }
             ,
             "Video": "assets/explore/videos/brown.mp4",
+            "Videoposter": "assets/explore/brown/Slideshow/video.jpg",
             "Videocaption": "This is the caption for the brown bear video",
             "Button": "assets/explore/brown/btn-help-brown.png",
             "Selfie": [
@@ -623,11 +630,12 @@
             "Cool": "assets/explore/polar/coolOrGross-text-polar.png",
             "Live": 
                 {
-                    "description": "assets/explore/polar/whereLive-text-polar.png",
+                    "description": "assets/explore/polar/whereLive-polar.png",
                     "map": "assets/explore/polar/whereLive-img-polar.png"
                 }
             ,
             "Video": "assets/explore/videos/polar.mp4",
+            "Videoposter": "assets/explore/polar/Slideshow/video.jpg",
             "Videocaption": "Polar Bear Video Caption",
             "Button": "assets/explore/polar/btn-help-polar.png",
             "Selfie": [
