@@ -49,7 +49,7 @@
 
 
 #game-map {
-	background: url('../../assets/game/BC-bkgr-blank-lg.jpg');
+	background: url('../../assets/game/BC-bkgr-map-w-bar.jpg');
 	background-size: cover;
 	background-color: #dedede;
 	width: 100%;
@@ -64,17 +64,6 @@
     
     > * {
         z-index: 1;
-    }
-
-    &:after {
-        content: '';
-        background: url('../../assets/game/navbar.png');
-        background-size: cover;
-        opacity: 0.85;
-        width: 100%;
-        height: 217px;
-        position: absolute;
-        z-index: 0;
     }
 }
 
