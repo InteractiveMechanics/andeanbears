@@ -29,13 +29,16 @@
             <img src="${Background}" alt="andean bear">
         </div>
         <div class="background-border"></div>
+        <div class="landing-wrapper">
         <div class="profile-header">
-        <h1 class="profile-title" data-bear="${Id}">${Name}</h1>
-        <h3 class="latin">${Latin}</h3>
-        <button class="reset-profile hidden">&lt; Return to text</button>
+            <h1 class="profile-title" data-bear="${Id}">${Name}</h1>
+            <h3 class="latin">${Latin}</h3>
+            <button class="reset-profile hidden">&lt; Return to text</button>
+        </div>
+
+        <div id="landing" class="animated fadeIn" style="background: url('${Landing}') no-repeat;" data-profile="${Id}"></div>
         </div>
         <div class="content-wrapper">
-            <div id="landing" class="animated fadeIn" style="background: url('${Landing}') no-repeat;" data-profile="${Id}"></div>
             <div id="help" class="hidden animated fadeIn" data-profile="${Id}">
                 <img src="${Help}" alt="help text">
             </div>
@@ -96,7 +99,7 @@
             <button id="cool-btn" data-profile="${Id}"></button>
             <button id="diet-btn" data-profile="${Id}"></button>
             <button id="weight-btn" data-proifile="${Id}"></button>
-            <button id="help-btn" style="background: url('${Button}'); background-size: contain; background-repeat: no-repeat;" data-profile="${Id}"></button>
+            <button id="help-btn" style="background: url('${Button}'); background-repeat: no-repeat;" data-profile="${Id}"></button>
         </div>
         <div class="profile-nav-wrapper">
             <button class="explore-reset-btn"></button>
@@ -360,7 +363,6 @@
          </video> -->
     </div>
     <div id="game" class="hidden">
-        <img class="game-label" src="assets/game/BC-label.png" alt="take the bear challenge label">
         <div id="game-map"></div>
         <div id="game-btn-wrapper"></div>
         <div id="game-complete" class="hidden">

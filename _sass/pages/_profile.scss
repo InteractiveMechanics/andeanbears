@@ -21,23 +21,28 @@
 	z-index: 0;
 }
 
-.profile-header {
+.landing-wrapper {
 	position: absolute;
-    left: 200px;
+    left: 154px;
+    top: 128px;	
+}
+
+.profile-header {
     color: white;
-    top: 200px;
     h1 {
     	font-family: $serifa-bt-black;
-    	font-size: 90px;
+    	font-size: 70px;
     	text-transform: uppercase;
-    	-webkit-font-smoothing: antialiased;
     	margin-bottom: 0px;
+    	line-height: 0.85;
+    	letter-spacing: 0.5px;
+    	max-width: 75%;
     }
     h3 {
     	font-family: $serifa-bt-italic;
-    	font-size: 43px;
+    	font-size: 40px;
     	-webkit-font-smoothing: antialiased;
-    	margin-top: 0px;
+    	margin-top: 6px;
     	margin-bottom: 20px;
     }
     &:after {
@@ -46,7 +51,7 @@
     	position: absolute;
     	margin-right: 0px;
     	left: 0;
-    	height: 5px;
+    	height: 15px;
     	background: transparent;
     	width: 130px;
     	top: initial;
@@ -54,41 +59,50 @@
 
 }
 
-.profile-header.small {
-	&:after {
-		top: 130px;
+.landing-wrapper.small {
+	.profile-header {
+		&:after {
+			border-bottom-width: 3px;
+		}
 	}
 }
 
 .reset-profile {
-	font-size: 24px;
+	font-size: 20px;
 	font-family: $neris-black;
 	-webkit-font-smoothing: antialiased;
 	text-transform: uppercase;
 	display: block;
+	padding: 5px 0px;
 }
+
 
 
 .profile-nav-wrapper {
 	position: absolute;
-	left: 1200px;
-	top: 800px;
+	left: 1292px;
+	top: 832px;
 	display: flex;
     align-items: center;
 }
 
 .profile-btn-wrapper {
 	position: absolute;
-	left: 1200px;
-	top: 200px;
-	width: 540px;
-	min-height: 550px;
+	left:  1296px;
+	top: 177px;
+	width: 569px;
+    min-height: 633px;
   	display: flex;
   	flex-wrap: wrap;
   	flex-direction: row;
   	button {
   		flex-basis: 50%;
   		position: relative;
+  		&:nth-of-type(2n) {
+  			position: relative;
+  			top: 10px;
+  			left: 10px;
+  		}
   	}
 }
 
@@ -98,125 +112,127 @@
 	background-repeat: no-repeat;
 	width: 600px;
     height: 700px;
-    position: absolute;
-    left: 200px;
-    top: 430px;
+    //position: absolute;
+    //left:  154px;
+    //top: 430px;
+    position: relative;
+    margin-top: 77px;
 }
 
 #selfies-btn {
 	background: url('../../assets/explore/profile/btn-selfies.png');
-	background-size: contain;
+	//background-size: contain;
 	background-repeat: no-repeat;
 }
 
 #selfies-btn.active {
 	background: url('../../assets/explore/profile/btn-selfies-active.png');
-	background-size: contain;
+	//background-size: contain;
 	background-repeat: no-repeat;
 }
 
 #live-btn {
 	background: url('../../assets/explore/profile/btn-whereDoILive.png');
-	background-size: contain;
+	//background-size: contain;
 	background-repeat: no-repeat;
 }
 
 #live-btn.active {
 	background: url('../../assets/explore/profile/btn-whereDoILive-active.png');
-	background-size: contain;
+	//background-size: contain;
 	background-repeat: no-repeat;
 }
 
 #cool-btn {
 	background: url('../../assets/explore/profile/btn-coolOrGross.png');
-	background-size: contain;
+	//background-size: contain;
 	background-repeat: no-repeat;
 }
 
 #cool-btn.active {
 	background: url('../../assets/explore/profile/btn-coolOrGross-active.png');
-	background-size: contain;
+	//background-size: contain;
 	background-repeat: no-repeat;
 }
 
 #diet-btn {
 	background: url('../../assets/explore/profile/btn-dinner.png');
-	background-size: contain;
+	//background-size: contain;
 	background-repeat: no-repeat;
 }
 
 #diet-btn.active {
 	background: url('../../assets/explore/profile/btn-dinner-active.png');
-	background-size: contain;
+	//background-size: contain;
 	background-repeat: no-repeat;
 }
 
 
 #weight-btn {
 	background: url('../../assets/explore/profile/btn-weight.png');
-	background-size: contain;
+	//background-size: contain;
 	background-repeat: no-repeat;
 }
 
 #weight-btn.active {
 	background: url('../../assets/explore/profile/btn-weight-active.png');
-	background-size: contain;
+	//background-size: contain;
 	background-repeat: no-repeat;
 }
 
 #help-btn {
 	background: url('../../assets/explore/profile/btn-help.png');
-	background-size: contain;
+	//background-size: contain;
 	background-repeat: no-repeat;
 }
 
 #help-btn[data-profile="1"].active {
 	background: url('../../assets/explore/sun/btn-help-active-sun.png') !important;
-	background-size: contain !important;
+	//background-size: contain !important;
 	background-repeat: no-repeat !important;
 }
 
 
 #help-btn[data-profile="2"].active {
 	background: url('../../assets/explore/panda/btn-help-active-panda.png') !important;
-	background-size: contain !important;
+	//background-size: contain !important;
 	background-repeat: no-repeat !important;
 }
 
 #help-btn[data-profile="3"].active {
 	background: url('../../assets/explore/sloth/btn-help-active-sloth.png') !important;
-	background-size: contain !important;
+	//background-size: contain !important;
 	background-repeat: no-repeat !important;
 }
 
 
 #help-btn[data-profile="4"].active {
 	background: url('../../assets/explore/andean/btn-help-active.png') !important;
-	background-size: contain !important;
+	//background-size: contain !important;
 	background-repeat: no-repeat !important;
 }
 
 #help-btn[data-profile="5"].active {
 	background: url('../../assets/explore/asiatic/btn-help-active-asiatic.png') !important;
-	background-size: contain !important;
+	//background-size: contain !important;
 	background-repeat: no-repeat !important;	
 }
 
 #help-btn[data-profile="6"].active {
 	background: url('../../assets/explore/american/btn-help-active-american.png') !important;
-	background-size: contain !important;
+	//background-size: contain !important;
 	background-repeat: no-repeat !important;	
 }
 
 #help-btn[data-profile="7"].active {
 	background: url('../../assets/explore/brown/btn-help-active-brown.png') !important;
-	background-size: contain !important;
+	//background-size: contain !important;
 	background-repeat: no-repeat !important;	
 }
 
 #help-btn[data-profile="8"].active {
 	background: url('../../assets/explore/polar/btn-help-active-polar.png') !important;
-	background-size: contain !important;
+	//background-size: contain !important;
 	background-repeat: no-repeat !important;	
 }
 

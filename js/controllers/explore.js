@@ -88,8 +88,8 @@ Explore = (function() {
     }
 
     var transformHeading = function() {
-        $('.profile-header').css('top', '100px').addClass('small animated slideInUp');
-        $('.profile-title').css('font-size', '50px');
+        $('.landing-wrapper').css('top', '55px').addClass('small animated slideInUp');
+        $('.profile-title').css('font-size', '44px').css('max-width', 'initial');
         $('.latin').addClass('hidden animated fadeOut');
         $('.reset-profile').removeClass('hidden').addClass('animated slideInUp');
     }
@@ -281,7 +281,7 @@ Explore = (function() {
             $('.reset-profile').removeClass('slideInUp').addClass('hidden fadeOut');
             $('.latin').removeClass('hidden animated fadeOut').addClass('animated fadeIn');
             $('.profile-header').css('top', '200px').removeClass('slideInUp small').addClass('animated slideInDown');
-            $('.profile-title').css('font-size', '90px');
+            $('.profile-title').css('font-size', '70px').css('max-width', '75%');
             $('#selfies').addClass('hidden fadeOut');
             $('#selfies-btn').removeClass('animated pulse active');
             $('#help').addClass('hidden fadeOut');
