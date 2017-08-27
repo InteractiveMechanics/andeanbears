@@ -2,7 +2,7 @@
     "locations": [
         {
             "Id": 4,
-            "x": 724,
+            "x": 701,
             "y": 552,
             "Color": "275772",
             "Title": "Andean Bear",
@@ -28,8 +28,8 @@
         {
             
             "Id": 6,
-            "x": 668,
-            "y": 350,
+            "x": 638,
+            "y": 333,
             "Color": "386a25",
             "Title": "American Black Bear",
             "Button": "assets/game/AmericanBlackBear-btn.png",
@@ -53,8 +53,8 @@
         },
            {
             "Id": 7,
-            "x": 1257,
-            "y": 264,
+            "x": 1246,
+            "y": 237,
             "Color": "7c2643",
             "Title": "Brown Bear",
             "Button": "assets/game/BrownBear-btn.png",
@@ -79,8 +79,8 @@
         },
          {
             "Id": 7,
-            "x": 511,
-            "y": 174,
+            "x": 499,
+            "y": 158,
             "Title": "Brown Bear",
             "Color": "7c2643",
             "Button": "assets/game/BrownBear-btn.png",
@@ -104,8 +104,8 @@
         },
         {
             "Id": 8,
-            "x": 823,
-            "y": 70,
+            "x": 786,
+            "y": 66,
             "Title": "Polar Bear",
             "Color": "462457",
             "Button": "assets/game/PolarBear-btn.png",
@@ -129,8 +129,8 @@
         },
             {
             "Id": 5,
-            "x": 1540,
-            "y": 307,
+            "x": 1511,
+            "y": 284,
             "Title": "Asiatic Black Bear",
             "Color": "7e271e",
             "Button": "assets/game/AsiaticBear-btn.png",
@@ -154,8 +154,8 @@
         },
          {
             "Id": 2,
-            "x": 1413,
-            "y": 356,
+            "x": 1380,
+            "y": 348,
             "Title": "Giant Panda",
             "Color": "d49c2d",
             "Button": "assets/game/GiantPanda-btn.png",
@@ -179,7 +179,7 @@
         },
         {
             "Id": 1,
-            "x": 1494,
+            "x": 1472,
             "y": 517,
             "Title": "Sun Bear",
             "Color": "c14f1e",
@@ -204,8 +204,8 @@
         },
         {
             "Id": 3,
-            "x": 1343,
-            "y": 486,
+            "x": 1312,
+            "y": 473,
             "Title": "Sloth Bear",
             "Color": "0c7b6b",
             "Button": "assets/game/SlothBear-btn.png",

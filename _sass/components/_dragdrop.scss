@@ -10,8 +10,8 @@
 .droppable-widget {
 	//background: url('../../assets/game/empty-btn.png');
 	background-size: cover;
-	width: 110px;
-	height: 110px;
+	width: 138px;
+	height: 138px;
 	background-color: transparent;
 	//border: 5px solid #1f68dd;
 	border-radius: 50%;
@@ -20,8 +20,8 @@
 }
 
 .empty-btn {
-	height: 110px;
-	width: 110px;
+	height: 138px;
+	width: 138px;
 	position: absolute;
 	left: 0px;
 	right: 0px;
@@ -120,6 +120,8 @@
 	border-radius: 50%;
 	z-index: 2;
 	position: absolute;
+	left: 14px;
+    top: 15px;
 }
 
 .draggable-widget-holder[data-bear="8"],
@@ -145,23 +147,26 @@
 .correct-answer,
 .hint-1, .hint-2 {
 	position: absolute;
-   	left: 50px;
     width: 350px;
     z-index: 2;
-    top: 6px;
+   
 }
 .correct-answer {
     box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.4);
+    left: 63px;
+    top: 6px;
 }
 
 .hint-1, .hint-2 {
 	z-index: 2;
+	left: 57px;
+	top: 3px;
 }
 
 
 .hint-wrapper {
 	background-color: rgba(106, 93, 64, 0.85);
-	padding: 20px 20px 20px 70px;
+	padding: 1px 20px 20px 100px;
 	color: white;
 	position: relative;
 	top: -3px;
@@ -171,7 +176,7 @@
 		font-size: 40px;
 	}
 	p {
-		font-family: $neris-semibold;
+		font-family: $neris-light;
 		font-size: 16px;
 
 	}
@@ -180,12 +185,12 @@
 
 .hint-overlay {
 	position: absolute;
-	height: 110px;
-	width: 110px;
+	height: 138px;
+	width: 138px;
 	background-color: rgba(106, 93, 64, 0.85);
 	background-image: url('../../assets/game/empty-btn.png');
 	background-size: cover;
-	left: -50px;
+	left: -57px;
 	top: -3px;
 	border-radius: 50%;
 	z-index: 6;
@@ -195,7 +200,7 @@
 		font-size: 40px;
 	}
 	p {
-		font-family: $neris-semibold;
+		font-family: $neris-light;
 		font-size: 16px;
 
 	}
@@ -210,7 +215,7 @@
 
 .correct-wrapper {
 	background-color: rgba(106, 93, 64, 0.85);
-	padding: 20px 20px 20px 70px;
+	padding: 1px 20px 20px 80px;
 	color: white;
 	position: relative;
 
@@ -220,7 +225,7 @@
 		font-size: 40px;
 	}
 	p {
-		font-family: $neris-semibold;
+		font-family: $neris-light; // $neris-semibold
 		font-size: 16px;
 
 	}
@@ -233,7 +238,7 @@
 	//background-color: rgba(106, 93, 64, 0.85);
 	background-size: cover;
 	left: -50px;
-	top: -6px;
+	top: 8px;
 	border-radius: 50%;
 	//z-index: 6;
 
