@@ -19,7 +19,7 @@
 	top: 0;
 	left: 0;
 	z-index: 0;
-    //display: none;
+    display: none;
 }
 
 .landing-wrapper {
@@ -81,7 +81,7 @@
 
 .profile-nav-wrapper {
 	position: absolute;
-	left: 1292px;
+	left: 1290px;
 	top: 832px;
 	display: flex;
     align-items: center;
@@ -89,20 +89,18 @@
 
 .profile-btn-wrapper {
 	position: absolute;
-	left:  1296px;
+	left: 1275px;
 	top: 177px;
-	width: 569px;
-    min-height: 633px;
-  	display: flex;
-  	flex-wrap: wrap;
-  	flex-direction: row;
+
   	button {
-  		flex-basis: 50%;
   		position: relative;
+        background-position: center center;
+        width: 300px;
+        height: 210px;
+        padding: 0;
+
   		&:nth-of-type(2n) {
-  			position: relative;
-  			top: 10px;
-  			left: 10px;
+  			left: -25px;
   		}
   	}
 }
@@ -121,74 +119,79 @@
 }
 
 #selfies-btn {
-	background: url('../../assets/explore/profile/btn-selfies.png');
+	background-image: url('../../assets/explore/profile/btn-selfies.png');
 	//background-size: contain;
 	background-repeat: no-repeat;
 }
 
 #selfies-btn.active {
-	background: url('../../assets/explore/profile/btn-selfies-active.png');
+	background-image: url('../../assets/explore/profile/btn-selfies-active.png');
 	//background-size: contain;
 	background-repeat: no-repeat;
 }
 
 #live-btn {
-	background: url('../../assets/explore/profile/btn-whereDoILive.png');
+	background-image: url('../../assets/explore/profile/btn-whereDoILive.png');
 	//background-size: contain;
 	background-repeat: no-repeat;
 }
 
 #live-btn.active {
-	background: url('../../assets/explore/profile/btn-whereDoILive-active.png');
+	background-image: url('../../assets/explore/profile/btn-whereDoILive-active.png');
 	//background-size: contain;
 	background-repeat: no-repeat;
+    background-position-x: 10px;
 }
 
 #cool-btn {
-	background: url('../../assets/explore/profile/btn-coolOrGross.png');
+	background-image: url('../../assets/explore/profile/btn-coolOrGross.png');
 	//background-size: contain;
 	background-repeat: no-repeat;
+    top: -25px;
 }
 
 #cool-btn.active {
-	background: url('../../assets/explore/profile/btn-coolOrGross-active.png');
+	background-image: url('../../assets/explore/profile/btn-coolOrGross-active.png');
 	//background-size: contain;
 	background-repeat: no-repeat;
 }
 
 #diet-btn {
-	background: url('../../assets/explore/profile/btn-dinner.png');
+	background-image: url('../../assets/explore/profile/btn-dinner.png');
 	//background-size: contain;
 	background-repeat: no-repeat;
+    top: -25px;
 }
 
 #diet-btn.active {
-	background: url('../../assets/explore/profile/btn-dinner-active.png');
+	background-image: url('../../assets/explore/profile/btn-dinner-active.png');
 	//background-size: contain;
 	background-repeat: no-repeat;
 }
 
 
 #weight-btn {
-	background: url('../../assets/explore/profile/btn-weight.png');
+	background-image: url('../../assets/explore/profile/btn-weight.png');
 	//background-size: contain;
 	background-repeat: no-repeat;
+    top: -40px;
 }
 
 #weight-btn.active {
-	background: url('../../assets/explore/profile/btn-weight-active.png');
+	background-image: url('../../assets/explore/profile/btn-weight-active.png');
 	//background-size: contain;
 	background-repeat: no-repeat;
 }
 
 #help-btn {
-	background: url('../../assets/explore/profile/btn-help.png');
+	background-image: url('../../assets/explore/profile/btn-help.png');
 	//background-size: contain;
 	background-repeat: no-repeat;
+    top: -40px;
 }
 
 #help-btn[data-profile="1"].active {
-	background: url('../../assets/explore/sun/btn-help-active-sun.png') !important;
+	background-image: url('../../assets/explore/sun/btn-help-active-sun.png') !important;
 	//background-size: contain !important;
 	background-repeat: no-repeat !important;
 }

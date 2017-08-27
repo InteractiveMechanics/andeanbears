@@ -235,7 +235,7 @@
             "Name": "Sun Bear",
             "Latin": "Helarctos malayanus",
             "Landing": "assets/explore/sun/landing-text-sun.png",
-            "Background": "assets/explore/sun/bkgr-sun.jpg",
+            "Background": "assets/explore/sun/bkgr-sun.png",
             "Help": "assets/explore/sun/help-text-sun.png",
             "Weight": 
                 {
@@ -289,7 +289,7 @@
             "Name": "Giant Panda",
             "Latin": "Ailuropoda melanoleuca",
             "Landing": "assets/explore/panda/landing-text-panda.png",
-            "Background": "assets/explore/panda/bkgr-panda.jpg",
+            "Background": "assets/explore/panda/bkgr-panda.png",
             "Help": "assets/explore/panda/help-text-panda.png",
             "Weight": 
                 {
@@ -343,7 +343,7 @@
             "Name": "Sloth Bear",
             "Latin": "Melursus ursinus",
             "Landing": "assets/explore/sloth/landing-text-sloth.png",
-            "Background": "assets/explore/sloth/bkgr-sloth.jpg",
+            "Background": "assets/explore/sloth/bkgr-sloth.png",
             "Help": "assets/explore/sloth/help-text-sloth.png",
             "Weight": 
                 {
@@ -396,7 +396,7 @@
             "Name": "Andean Bear",
             "Latin": "Tremarctos ornatus",
             "Landing": "assets/explore/andean/landing-text.png",
-            "Background": "assets/explore/andean/bkgr-andean.jpg",
+            "Background": "assets/explore/andean/bkgr-andean.png",
             "Help": "assets/explore/andean/help-text.png",
             "Weight": 
                 {
@@ -449,7 +449,7 @@
             "Name": "Asiatic Black Bear",
             "Latin": "Ursus thibetanus",
             "Landing": "assets/explore/asiatic/landing-text-asiatic.png",
-            "Background": "assets/explore/asiatic/bkgr-asiatic.jpg",
+            "Background": "assets/explore/asiatic/bkgr-asiatic.png",
             "Help": "assets/explore/asiatic/help-text-asiatic.png",
             "Weight": 
                 {
@@ -502,7 +502,7 @@
             "Name": "American Black Bear",
             "Latin": "Ursus americanus",
             "Landing": "assets/explore/american/landing-text.png",
-            "Background": "assets/explore/american/bkgr-american.jpg",
+            "Background": "assets/explore/american/bkgr-american.png",
             "Help": "assets/explore/american/help-text-american.png",
             "Weight": 
                 {
@@ -556,7 +556,7 @@
             "Name": "Brown Bear",
             "Latin": "Ursus arctos",
             "Landing": "assets/explore/brown/landing-text-brown.png",
-            "Background": "assets/explore/brown/bkgr-brown.jpg",
+            "Background": "assets/explore/brown/bkgr-brown.png",
             "Help": "assets/explore/brown/help-text-brown.png",
             "Weight": 
                 {
@@ -609,7 +609,7 @@
             "Name": "Polar Bear",
             "Latin": "Ursus maritimus",
             "Landing": "assets/explore/polar/landing-text-polar.png",
-            "Background": "assets/explore/polar/bkgr-polar.jpg",
+            "Background": "assets/explore/polar/bkgr-polar.png",
             "Help": "assets/explore/polar/help-text-polar.png",
             "Weight": 
                 {
@@ -657,8 +657,5 @@
                 }
             ]
         }
-
     ]
-
-
 }
