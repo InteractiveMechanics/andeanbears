@@ -22,13 +22,13 @@ Game = (function() {
     var showComplete = function() {
         var numberDropped = $('.dropped').length;
         console.log(numberDropped);
-        if (numberDropped == 8) {
+        if (numberDropped == 9) {
             setTimeout(function() {  
                 $('.dragged').addClass('animated tada'); 
-                $('.brown-bear').addClass('animated tada'); }, 5000);
+                $('.brown-bear').addClass('animated tada'); }, 8000);
             setTimeout(function() {  
                 $('#game-complete').removeClass('hidden').addClass('animated fadeIn');
-                $('#game-complete').removeClass('hidden').addClass('animated fadeIn'); }, 7000);
+                $('#game-complete').removeClass('hidden').addClass('animated fadeIn'); }, 9000);
         }
     }
 
@@ -49,13 +49,17 @@ Game = (function() {
     }
 
     var markBrownBear = function() {
-        $('.droppable-widget[data-bear="7"]').addClass('brown-bear').append('<div class="brown-bear-marker hidden"></div>');
+         var brownBearRing = '<svg version="1.1" data-bear="7" id="brown-ring2" class="animated fadeIn brown-bear-ring hidden" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 139 139" style="enable-background:new 0 0 139 139;" xml:space="preserve"><style type="text/css">.st0{fill:; enable-background:new;}.st1{fill: ;}</style><path class="st0" d="z"/><g id="Layer_2"><g><path class="st1" d="M69.5,15.8c29.7,0,53.7,24.1,53.7,53.7s-24.1,53.7-53.7,53.7S15.8,99.2,15.8,69.5S39.8,15.8,69.5,15.8 M69.5,6.3c-16.9,0-32.7,6.6-44.7,18.5S6.3,52.6,6.3,69.5s6.6,32.7,18.5,44.7s27.8,18.5,44.7,18.5s32.7-6.6,44.7-18.5 s18.5-27.8,18.5-44.7s-6.6-32.7-18.5-44.7S86.4,6.3,69.5,6.3L69.5,6.3z"/></g></g></svg>';   
+
+        $('.droppable-widget[data-bear="7"]').addClass('brown-bear').append('<div class="brown-bear-marker hidden"></div>').append(brownBearRing);
     }
 
 
     var dropBrownBear = function() {
         $('.brown-bear').not('dropped').find('.brown-bear-marker').removeClass('hidden');
-        $('.brown-bear').not('dropped').addClass('.dropped');
+        $('.brown-bear').not('dropped').find('.brown-bear-ring').removeClass('hidden');
+        $('.brown-bear').not('dropped').find('.empty-btn').css('display', 'none');
+        $('.brown-bear').not('dropped').addClass('dropped');
     }
 
     
