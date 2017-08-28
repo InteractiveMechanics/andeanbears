@@ -18,8 +18,13 @@ Utilities = (function() {
         $('.reset-btn').css('background-image', 'url("../../assets/game/BC-home-btn-down.png")').addClass('animated pulse');
          setTimeout(function() { resetInteractive(); }, 1000);
          setTimeout(function() { unanimateResetBtn(); }, 1500);
-
     }
+
+    var animateResetBtnBlue = function() {
+        $('.reset-btn-blue').css('-webkit-filter', 'drop-shadow(0 0 10px #06CAFE)').css('background-image', 'url("../../assets/explore/profile/btn-home-active.png")').addClass('animated pulse');
+         setTimeout(function() { resetInteractive(); }, 1000);
+         setTimeout(function() { unanimateResetBtnBlue(); }, 1500);
+    } 
 
     var animateExploreBtn = function() {
         $('#home-btn-explore').addClass('animated pulse');
@@ -65,6 +70,11 @@ Utilities = (function() {
         $('#reset-profile').css('background-image', 'url("../../assets/explore/profile/btn-home.png")').removeClass('animated pulse');
     }
 
+    var unanimateResetBtnBlue = function() {
+         $('#reset-profile').css('-webkit-filter', 'initial').css('background-image','url("../../assets/explore/profile/btn-home.png")').removeClass('animated pulse');
+
+    }
+
 
 
 
@@ -75,6 +85,7 @@ Utilities = (function() {
         $(document).on('click tap drag', '#home-btn-game', animateChallengeBtn);
         $(document).on('click tap drag', '#reset-profile', animateProfileReset);
         $(document).on('click tap drag', '.reset-btn', animateResetBtn);
+        $(document).on('click tab drag', '.reset-btn-blue', animateResetBtnBlue);
         $(document).on('click tap drag', '.reset-btn-explore', animateResetExplore);
         
     }

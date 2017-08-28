@@ -62,6 +62,19 @@ Game = (function() {
         $('.brown-bear').not('dropped').addClass('dropped');
     }
 
+
+    var animateGameResetBtn = function() {
+        $('#game-reset-btn').css('background-image', 'url("../../assets/game/BC-startover-btn-down.png")').addClass('animated pulse');
+        setTimeout(function() { buildGame(); }, 1000);
+        setTimeout(function() { unanimateGameResetBtn(); }, 1500);
+    }
+
+    var unanimateGameResetBtn = function() {
+         $('.game-reset-bnt').css('background-image', 'url("../../assets/game/BC-startover-btn.png")').removeClass('animated pulse');
+    }
+
+
+
     
 
 
@@ -151,7 +164,7 @@ Game = (function() {
 
 
      var bindEvents = function() {
-        $(document).on('click tap', '#game-reset-btn', buildGame);
+        $(document).on('click tap', '#game-reset-btn', animateGameResetBtn);
         $(document).on('click tap', '.botw-btn', showExplore);
         $(document).on('click tap', '#game-map', hideComplete);
     }

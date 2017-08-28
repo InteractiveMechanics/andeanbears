@@ -244,7 +244,7 @@
 
 
 
-#profile-reset {
+.reset-btn-blue {
 	background-image: url('../../assets/explore/profile/btn-home.png'); 
 	position: initial;
 	background-size: cover;
@@ -267,3 +267,94 @@
 	width: 100%;
 	height: auto;
 }
+
+.weight-art-img[data-profile="1"] {
+	margin-top: 30px;
+	position: relative;
+    left: -36px;
+}
+
+#weight .weight-answer[data-profile="1"] {
+	left: 64px;
+}
+
+
+.weight-art-img[data-profile="2"] {
+	margin-top: 15px;
+	position: relative;
+    left: -40px;
+}
+
+#weight .weight-answer[data-profile="2"] {
+	//this is fine
+}
+
+.weight-art-img[data-profile="3"] {
+	margin-top: 55px;
+	position: relative;
+    left: -40px;
+}
+
+#weight .weight-answer[data-profile="3"] {
+	bottom: 342px;
+}
+
+
+.weight-art-img[data-profile="4"] {
+	margin-top: 38px;
+	position: relative;
+	left: -31px;
+}
+
+#weight .weight-answer[data-profile="4"] {
+	bottom: 311px;
+	left: 44px;
+}
+
+.weight-art-img[data-profile="5"] {
+	margin-top: 38px;
+	position: relative;
+    left: -33px;
+}
+
+#weight .weight-answer[data-profile="5"] {
+	bottom: 373px;
+	left: 42px;
+}
+
+.weight-art-img[data-profile="6"] {
+	margin-top: 10px;
+	position: relative;
+    left: -33px;
+}
+
+#weight .weight-answer[data-profile="6"] {
+	bottom: 290px;
+	left: 40px;
+}
+
+.weight-art-img[data-profile="7"] {
+	margin-top: 94px;
+	position: relative;
+    left: -23px;
+}
+
+#weight .weight-answer[data-profile="7"] {
+	bottom: 342px;
+	left: 36px;
+
+}
+
+.weight-art-img[data-profile="8"] {
+	margin-top: 51px;
+	position: relative;
+    left: -27px;
+}
+
+#weight .weight-answer[data-profile="8"] {
+	left: 126px;
+	bottom: 331px;
+}
+
+
+
