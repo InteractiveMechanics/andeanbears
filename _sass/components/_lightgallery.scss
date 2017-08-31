@@ -1,10 +1,11 @@
 .lg-backdrop {
 	top: 40px;
-	right: 30px;
+	right: 40px;
 	bottom: 40px;
-	left: 50px;
+	left: 40px;
 	background: url('../../assets/explore/profile/selfies-popup-bkgr.png');
 	background-repeat: no-repeat;
+    background-size: 100% 99%;
 }
 
 .lg-backdrop.in {
@@ -19,6 +20,7 @@
 }
 .lg-outer .lg {
     overflow: visible;
+    max-height: 900px;
 }
 
  .lg-outer .lg-img-wrap {
@@ -54,8 +56,13 @@
     height: 130px !important;
 }
 
-.lg-outer .lg-thumb-item.active, 
 .lg-outer .lg-thumb-item:hover {
+    position: relative;
+    border-color: transparent;
+    overflow: visible;
+}
+
+.lg-outer .lg-thumb-item.active {
     position: relative;
     border-color: transparent;
     overflow: visible;

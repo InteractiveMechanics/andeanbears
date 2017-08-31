@@ -255,7 +255,7 @@
             ,
             "Video": "assets/explore/video/sun.mp4",
             "Videoposter": "assets/explore/sun/Slideshow/video.jpg",
-            "Videocaption": "This is the video caption",
+            "Videocaption": "Sun bears use their long tongues to extract flesh from the middle of fruits.",
             "Button": "assets/explore/sun/btn-help-sun.png",
             "Selfie": [
                 {
@@ -311,7 +311,7 @@
             ,
             "Video": "assets/explore/videos/panda.mp4",
             "Videoposter": "assets/explore/panda/Slideshow/video.jpg",
-            "Videocaption": "This is the video caption for panda",
+            "Videocaption": "Pandas consume huge amounts of bamboo each day. They must strip away the outer layers before eating the inner flesh.",
             "Button": "assets/explore/panda/btn-help-panda.png",
             "Selfie": [
                 {
@@ -366,7 +366,7 @@
             ,
             "Video": "assets/explore/videos/sloth.mp4",
             "Videoposter": "assets/explore/sloth/Slideshow/video.jpg",
-            "Videocaption": "Video caption for sloth",
+            "Videocaption": "Sloth bears are the only bear species that carries their cubs on their backs.",
             "Button": "assets/explore/sloth/btn-help-sloth.png",
             "Selfie": [
                 {
@@ -420,7 +420,7 @@
             ,
             "Video": "assets/explore/video/andean.mp4",
             "Videoposter": "assets/explore/andean/Slideshow/video.jpg",
-            "Videocaption": "Caption for the Andean Bear Video",
+            "Videocaption": "Although they sometimes eat insects and small animals, Andean bears, prefer sweet plants and fruits.",
             "Button": "assets/explore/andean/btn-help.png",
             "Selfie": [
                 {
@@ -474,7 +474,7 @@
             ,
             "Video": "assets/explore/videos/asiatic.mp4",
             "Videoposter": "assets/explore/asiatic/Slideshow/video.jpg",
-            "Videocaption": "This is the video caption for Asiatic Black Bear",
+            "Videocaption": "Asiatic black bears, have ruffs of long fur around their heads, which make them appear larger than they are.",
             "Button": "assets/explore/asiatic/btn-help-asiatic.png",
             "Selfie": [
                 {
@@ -528,7 +528,7 @@
             ,
             "Video": "assets/explore/videos/american.mp4",
             "Videoposter": "assets/explore/american/Slideshow/video.jpg",
-            "Videocaption": "Caption for American Black Bear Video",
+            "Videocaption": "American black bears living on North America’s northwest coast spend a lot of time fishing for salmon.",
             "Button": "assets/explore/american/btn-help-american.png",
             "Selfie": [
                 {
@@ -583,7 +583,7 @@
             ,
             "Video": "assets/explore/videos/brown.mp4",
             "Videoposter": "assets/explore/brown/Slideshow/video.jpg",
-            "Videocaption": "This is the caption for the brown bear video",
+            "Videocaption": "Brown bear cubs stay with their mothers for the first few years of life, learning to hunt and survive.",
             "Button": "assets/explore/brown/btn-help-brown.png",
             "Selfie": [
                 {
@@ -637,7 +637,7 @@
             ,
             "Video": "assets/explore/videos/polar.mp4",
             "Videoposter": "assets/explore/polar/Slideshow/video.jpg",
-            "Videocaption": "Polar Bear Video Caption",
+            "Videocaption": "Polar bears roam on the Arctic sea ice to search for food.",
             "Button": "assets/explore/polar/btn-help-polar.png",
             "Selfie": [
                 {
