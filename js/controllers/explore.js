@@ -36,8 +36,6 @@ Explore = (function() {
 
     var prepareExplore = function() {
         var id = $('h1').attr('data-bear');
-        
-        
         clearProfile();
         clearBtnAnimation();
         updateExplore(id);
@@ -274,6 +272,7 @@ Explore = (function() {
                 dynamic: true,
                 dynamicEl: data
             });
+        $('.lg-video-object').play();
     }
 
     var resetProfile = function() {

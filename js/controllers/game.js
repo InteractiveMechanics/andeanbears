@@ -75,8 +75,6 @@ Game = (function() {
 
 
 
-    
-
 
    
     var buildGame = function() {
@@ -107,6 +105,8 @@ Game = (function() {
                 var droppedElement = $(this);
                 var hint1 = $(this).find('.hint-1');
                 var hint2 = $(this).find('.hint-2');
+                var timeoutCorrectAnswer;
+                var timeoutHints;
 
 		 	    if(ui.draggable.is('[data-bear="' + droppableNumber + '"]')) {
 
@@ -114,6 +114,9 @@ Game = (function() {
 		 	   		ui.draggable.addClass('dragged animated pulse');
                     $(this).addClass('dropped');
 
+                    clearTimeout(timeoutHints);
+                    $('.hint-1').addClass('hidden');
+                    $('.hint-2').addClass('hidden');
                     setTimeout(function() {  correctAnswer.removeClass('hidden'); }, 1000);
                     setTimeout(function() {  $(this).css('z-index', '4'); }, 1000);
                     
@@ -121,8 +124,16 @@ Game = (function() {
                         $('.correct-answer').addClass('hidden');
                     }
 		 	   		//correctAnswer.removeClass('hidden');
-                    setTimeout(function(){ correctAnswer.addClass('hidden'); }, 8000);
-                    setTimeout(function(){ $(this).css('z-index', 'initial'); }, 8000);
+
+                    timeoutCorrectAnswer = setTimeout(function() {
+                        correctAnswer.addClass('hidden');
+                        $(this).css('z-index', 'initial');
+
+                    }, 8000);
+
+
+                    //setTimeout(function(){ correctAnswer.addClass('hidden'); }, 8000);
+                    //setTimeout(function(){ $(this).css('z-index', 'initial'); }, 8000);
                    
 		 	   	 	ui.draggable.position({
 		              	my: "center",
@@ -145,13 +156,46 @@ Game = (function() {
 		 		} else {
 		 			ui.draggable.draggable('option', 'revert', 'valid');
 
+
+                    clearTimeout(timeoutCorrectAnswer);
+                    $('.correct-answer').addClass('hidden');
+
+                    clearTimeout(timeoutHints);
+                    $('.hint-1').addClass('hidden');
+                    $('.hint-2').addClass('hidden');
+
+                    
+                    
+
                     if (!hint1.hasClass('answered')) {
+                       
                         hint1.removeClass('hidden').addClass('answered');
                         $(this).css('background', '');
-                        setTimeout(function(){ hint1.addClass('hidden'); }, 5000);
+
+                        // timeoutHint1 = setTimeout(function() {
+                        //     hint1.addClass('hidden');
+                        // }, 5000);
+
+                        timeoutHints = setTimeout(function() {
+                            hint1.addClass('hidden');
+                            hint2.addClass('hidden');
+                        }, 5000);
+
+                        //setTimeout(function(){ hint1.addClass('hidden'); }, 5000);
                     } else {
                         hint2.removeClass('hidden');
-                        setTimeout(function(){ hint2.addClass('hidden'); }, 5000);
+                        
+                        // timeoutHint2 = setTimeout(function() {
+                        //     hint2.addClass('hidden');
+                        // }, 5000);
+
+                         timeoutHints = setTimeout(function() {
+                            hint1.addClass('hidden');
+                            hint2.addClass('hidden');
+                        }, 5000);
+
+
+                        //setTimeout(function(){ hint2.addClass('hidden'); }, 5000);
                     }
 				}
     		
