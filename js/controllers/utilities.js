@@ -52,10 +52,13 @@ Utilities = (function() {
     var resetVisitedState = function() {
         $('.explore-btn-text').removeClass('visited');
         $('.explore-btn-img').removeClass('visited');
+        console.log('resetVisitedState');
     }
 
     var resetActiveState = function() {
         $('.explore-btn-img').removeClass('active');
+        console.log('resetActiveState');
+
     }
 
     var unanimateResetExplore = function() {
@@ -101,15 +104,14 @@ Utilities = (function() {
     }
 
     var resetInteractive = function() {
+        resetVisitedState();
+        resetActiveState();
         $('#explore').addClass('hidden');
         $('#game').addClass('hidden');
         $('#profile').addClass('hidden');
         $('#home').removeClass('hidden');
         $('#selfies-btn').data('lightGallery').destroy();
         unanimateBtn();
-        resetVisitedState();
-        resetActiveState();
-
         //TODO: reset timeout
     }
 
