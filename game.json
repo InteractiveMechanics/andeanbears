@@ -420,7 +420,7 @@
             ,
             "Video": "assets/explore/video/andean.mp4",
             "Videoposter": "assets/explore/andean/Slideshow/video.jpg",
-            "Videocaption": "Although they sometimes eat insects and small animals, Andean bears, prefer sweet plants and fruits.",
+            "Videocaption": "Although they sometimes eat insects and small animals, Andean bears prefer sweet plants and fruits.",
             "Button": "assets/explore/andean/btn-help.png",
             "Selfie": [
                 {
@@ -583,7 +583,7 @@
             ,
             "Video": "assets/explore/videos/brown.mp4",
             "Videoposter": "assets/explore/brown/Slideshow/video.jpg",
-            "Videocaption": "Brown bear cubs stay with their mothers for the first few years of life, learning to hunt and survive.",
+            "Videocaption": "Brown bear cubs stay with their mothers early on, learning to hunt and survive.",
             "Button": "assets/explore/brown/btn-help-brown.png",
             "Selfie": [
                 {
@@ -592,7 +592,7 @@
                 },
                 {
                     "image": "assets/explore/brown/Slideshow/2-brown-selfie.jpg",
-                    "caption": "Most brown bears can climb trees, though it is more difficult for larger specimens, like grizzlies."
+                    "caption": "Most brown bears can climb trees, though it is more difficult for larger bears, like grizzlies."
                 },
                 {
                     "image": "assets/explore/brown/Slideshow/3-brown-selfie.jpg",
@@ -642,7 +642,7 @@
             "Selfie": [
                 {
                     "image": "assets/explore/polar/Slideshow/1-polar-selfie.jpg",
-                    "caption": "Polar bears live in the cold, arctic tundra."
+                    "caption": "Polar bears live in the cold arctic."
                 },
                 {
                     "image": "assets/explore/polar/Slideshow/2-polar-selfie.jpg",
@@ -654,7 +654,7 @@
                 },
                 {
                     "image": "assets/explore/polar/Slideshow/4-polar-selfie.jpg",
-                    "caption": "Pregnant female polar bears dig dens where they live during pregnancy and the early lives of their cubs."
+                    "caption": "Pregnant female polar bears dig dens, where they live during pregnancy and the early lives of their cubs."
                 },
                   {
                     "image": "assets/explore/polar/Slideshow/5-polar-selfie.jpg",

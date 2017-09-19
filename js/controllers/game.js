@@ -25,10 +25,10 @@ Game = (function() {
         if (numberDropped == 9) {
             setTimeout(function() {  
                 $('.dragged').addClass('animated tada'); 
-                $('.brown-bear').addClass('animated tada'); }, 8000);
+                $('.brown-bear').addClass('animated tada'); }, 10000);
             setTimeout(function() {  
                 $('#game-complete').removeClass('hidden').addClass('animated fadeIn');
-                $('#game-complete').removeClass('hidden').addClass('animated fadeIn'); }, 9000);
+                $('#game-complete').removeClass('hidden').addClass('animated fadeIn'); }, 11000);
         }
     }
 
@@ -129,7 +129,7 @@ Game = (function() {
                         correctAnswer.addClass('hidden');
                         $(this).css('z-index', 'initial');
 
-                    }, 8000);
+                    }, 10000);
 
 
                     //setTimeout(function(){ correctAnswer.addClass('hidden'); }, 8000);
