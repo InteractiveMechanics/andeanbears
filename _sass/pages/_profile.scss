@@ -1,0 +1,356 @@
+.video-container {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    //background-image: url('../../assets/explore/andean/bkgr-andean.jpg');
+    //background-size: cover;
+}
+
+.background-border {
+	background-image: url('../../assets/explore/andean/bkgr-border-andean.png');
+	background-size: cover;
+	position: absolute;
+	height: 100vh;
+	width: 1000px;
+	top: 0;
+	left: 0;
+	z-index: 0;
+    display: none;
+}
+
+.landing-wrapper {
+	position: absolute;
+    left: 154px;
+    top: 128px;	
+    transition: 0.5s all;
+}
+
+.profile-header {
+    color: white;
+    h1 {
+    	font-family: $serifa-bt-black;
+    	font-size: 70px;
+    	text-transform: uppercase;
+    	margin-bottom: 0px;
+    	line-height: 0.85;
+    	letter-spacing: 0.5px;
+    	max-width: 75%;
+    }
+    h3 {
+    	font-family: $serifa-bt-italic;
+    	font-size: 40px;
+    	-webkit-font-smoothing: antialiased;
+    	margin-top: 6px;
+    	margin-bottom: 20px;
+    }
+    &:after {
+    	content: '';
+    	border-bottom: 5px solid white;
+    	position: absolute;
+    	margin-right: 0px;
+    	left: 0;
+    	height: 15px;
+    	background: transparent;
+    	width: 130px;
+    	top: initial;
+    }
+
+}
+
+.landing-wrapper.small {
+	.profile-header {
+		&:after {
+			border-bottom-width: 3px;
+		}
+	}
+}
+
+.reset-profile {
+	font-size: 20px;
+	font-family: $neris-black;
+	-webkit-font-smoothing: antialiased;
+	text-transform: uppercase;
+	display: block;
+	padding: 5px 0px;
+}
+
+
+
+.profile-nav-wrapper {
+	position: absolute;
+	left: 1290px;
+	top: 832px;
+	display: flex;
+    align-items: center;
+}
+
+.profile-btn-wrapper {
+	position: absolute;
+	left: 1275px;
+	top: 177px;
+
+  	button {
+  		position: relative;
+        background-position: center center;
+        width: 300px;
+        height: 210px;
+        padding: 0;
+
+  		&:nth-of-type(2n) {
+  			left: -25px;
+  		}
+  	}
+}
+
+#landing {
+	//background: url('../../assets/explore/andean/landing-text.png');
+	//background-size: contain;
+	background-repeat: no-repeat;
+	width: 600px;
+    height: 700px;
+    //position: absolute;
+    //left:  154px;
+    //top: 430px;
+    position: relative;
+    margin-top: 77px;
+}
+
+#selfies-btn {
+	background-image: url('../../assets/explore/profile/btn-selfies.png');
+	//background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#selfies-btn.active {
+	background-image: url('../../assets/explore/profile/btn-selfies-active.png');
+	//background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#live-btn {
+	background-image: url('../../assets/explore/profile/btn-whereDoILive.png');
+	//background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#live-btn.active {
+	background-image: url('../../assets/explore/profile/btn-whereDoILive-active.png');
+	//background-size: contain;
+	background-repeat: no-repeat;
+    background-position-x: 10px;
+}
+
+#cool-btn {
+	background-image: url('../../assets/explore/profile/btn-coolOrGross.png');
+	//background-size: contain;
+	background-repeat: no-repeat;
+    top: -25px;
+}
+
+#cool-btn.active {
+	background-image: url('../../assets/explore/profile/btn-coolOrGross-active.png');
+	//background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#diet-btn {
+	background-image: url('../../assets/explore/profile/btn-dinner.png');
+	//background-size: contain;
+	background-repeat: no-repeat;
+    top: -25px;
+}
+
+#diet-btn.active {
+	background-image: url('../../assets/explore/profile/btn-dinner-active.png');
+	//background-size: contain;
+	background-repeat: no-repeat;
+}
+
+
+#weight-btn {
+	background-image: url('../../assets/explore/profile/btn-weight.png');
+	//background-size: contain;
+	background-repeat: no-repeat;
+    top: -40px;
+}
+
+#weight-btn.active {
+	background-image: url('../../assets/explore/profile/btn-weight-active.png');
+	//background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#help-btn {
+	background-image: url('../../assets/explore/profile/btn-help.png');
+	//background-size: contain;
+	background-repeat: no-repeat;
+    top: -40px;
+}
+
+#help-btn[data-profile="1"].active {
+	background-image: url('../../assets/explore/sun/btn-help-active-sun.png') !important;
+	//background-size: contain !important;
+	background-repeat: no-repeat !important;
+}
+
+
+#help-btn[data-profile="2"].active {
+	background: url('../../assets/explore/panda/btn-help-active-panda.png') !important;
+	//background-size: contain !important;
+	background-repeat: no-repeat !important;
+}
+
+#help-btn[data-profile="3"].active {
+	background: url('../../assets/explore/sloth/btn-help-active-sloth.png') !important;
+	//background-size: contain !important;
+	background-repeat: no-repeat !important;
+}
+
+
+#help-btn[data-profile="4"].active {
+	background: url('../../assets/explore/andean/btn-help-active.png') !important;
+	//background-size: contain !important;
+	background-repeat: no-repeat !important;
+}
+
+#help-btn[data-profile="5"].active {
+	background: url('../../assets/explore/asiatic/btn-help-active-asiatic.png') !important;
+	//background-size: contain !important;
+	background-repeat: no-repeat !important;	
+}
+
+#help-btn[data-profile="6"].active {
+	background: url('../../assets/explore/american/btn-help-active-american.png') !important;
+	//background-size: contain !important;
+	background-repeat: no-repeat !important;	
+}
+
+#help-btn[data-profile="7"].active {
+	background: url('../../assets/explore/brown/btn-help-active-brown.png') !important;
+	//background-size: contain !important;
+	background-repeat: no-repeat !important;	
+}
+
+#help-btn[data-profile="8"].active {
+	background: url('../../assets/explore/polar/btn-help-active-polar.png') !important;
+	//background-size: contain !important;
+	background-repeat: no-repeat !important;	
+}
+
+
+
+
+
+.reset-btn-blue {
+	background-image: url('../../assets/explore/profile/btn-home.png'); 
+	position: initial;
+	background-size: cover;
+    width: 134px;
+    height: 77px;
+    left: 50px;
+    border: none;
+    position: initial;
+    margin-top: 0px;
+    transition: 0.5s all;
+    box-shadow: 0 0 10px transparent;
+}
+
+.weight-art-btn {
+	width: 100%;
+	height: auto;
+}
+
+.weight-art-img[data-profile="1"] {
+	margin-top: 30px;
+	position: relative;
+    left: -36px;
+}
+
+#weight .weight-answer[data-profile="1"] {
+	left: 64px;
+}
+
+
+.weight-art-img[data-profile="2"] {
+	margin-top: 15px;
+	position: relative;
+    left: -40px;
+}
+
+#weight .weight-answer[data-profile="2"] {
+	//this is fine
+}
+
+.weight-art-img[data-profile="3"] {
+	margin-top: 55px;
+	position: relative;
+    left: -40px;
+}
+
+#weight .weight-answer[data-profile="3"] {
+	bottom: 342px;
+}
+
+
+.weight-art-img[data-profile="4"] {
+	margin-top: 38px;
+	position: relative;
+	left: -31px;
+}
+
+#weight .weight-answer[data-profile="4"] {
+	bottom: 311px;
+	left: 44px;
+}
+
+.weight-art-img[data-profile="5"] {
+	margin-top: 38px;
+	position: relative;
+    left: -33px;
+}
+
+#weight .weight-answer[data-profile="5"] {
+	bottom: 373px;
+	left: 42px;
+}
+
+.weight-art-img[data-profile="6"] {
+	margin-top: 10px;
+	position: relative;
+    left: -33px;
+}
+
+#weight .weight-answer[data-profile="6"] {
+	bottom: 290px;
+	left: 40px;
+}
+
+.weight-art-img[data-profile="7"] {
+	margin-top: 94px;
+	position: relative;
+    left: -23px;
+}
+
+#weight .weight-answer[data-profile="7"] {
+	bottom: 342px;
+	left: 36px;
+
+}
+
+.weight-art-img[data-profile="8"] {
+	margin-top: 51px;
+	position: relative;
+    left: -27px;
+}
+
+#weight .weight-answer[data-profile="8"] {
+	left: 126px;
+	bottom: 331px;
+}
+
+
+

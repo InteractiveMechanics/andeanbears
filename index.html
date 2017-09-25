@@ -3,11 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimum-scale=1">
 
-    <title>Basic Template</title>
+    <title>Andean Bears Exhibit</title>
 
     <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="js/lib/lightGallery/css/lightgallery.css" rel="stylesheet">
+    <link rel="stylesheet" href="animate.css">
     <link href="./dist/css/main.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -16,10 +18,376 @@
     <![endif]-->
 </head>
 <body>
-    <h1>Hello, world!</h1>
+    <!-- attract -->
+    <!-- "home" -->
+    <script id="home-template" type="text/x-jQuery-tmpl">
+    </script>
+    <!-- explore -->
+    <!-- profile -->
+     <script id="profile-template" type="text/x-jQuery-templ">
+        <div class="video-container">
+            <img src="${Background}" alt="andean bear">
+        </div>
+        <div class="background-border"></div>
+        <div class="landing-wrapper">
+        <div class="profile-header">
+            <h1 class="profile-title" data-bear="${Id}">${Name}</h1>
+            <h3 class="latin">${Latin}</h3>
+            <button class="reset-profile hidden">&lt; Return to text</button>
+        </div>
+
+        <div id="landing" class="animated fadeIn" style="background: url('${Landing}') no-repeat;" data-profile="${Id}"></div>
+        </div>
+        <div class="content-wrapper">
+            <div id="help" class="hidden animated fadeIn" data-profile="${Id}">
+                <img src="${Help}" alt="help text">
+            </div>
+            <div id="weight" class="hidden animated fadeIn" data-profile="${Id}">
+                <img src="${Weight.description}" alt="weight text">
+                <img class="weight-answer hidden" src="${Weight.answer}" alt="weight answer" data-profile="${Id}">
+                <button class="weight-art-btn">
+                    <img class="weight-art-img" src="${Weight.art}" alt="weight art" data-profile="${Id}">
+                </button>
+            </div>
+            <div id="diet" class="hidden animated fadeIn" data-profile="1">
+                <img src="${Diet}" alt="dinner text">
+                <p class="dinner-image-caption">${Diet.caption}</p>
+            </div>
+            <div id="cool" class="hidden animated fadeIn" data-profile="${Id}">
+                <img src="${Cool}" alt="Cool or Gross text">
+            </div>
+            <div id="live" class="hidden animated fadeIn" data-profile="${Id}">
+                <img src="${Live.description}" alt="where do i live text">
+            </div>
+            <div id="selfies" class="hidden animated fadeIn" data-profile="${Id}"></div>
+        </div>
+        <div style="display:none;" id="video1">
+            <video class="lg-video-object lg-html5" loop poster="${Videoposter}">
+                <source src="${Video}" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="profile-btn-wrapper">
+            <button id="selfies-btn" data-profile="${Id}" data-gallery='
+                [
+                    {
+                        "thumb": "${Videoposter}", 
+                        "html": "#video1", 
+                        "subHtml": "${Videocaption}"
+                    }, 
+                
+                    {{each(i) Selfie}}
+                        {{if i<5}}
+                            {
+                                "src": "${Selfie[i].image}", 
+                                "thumb": "${Selfie[i].thumb}", 
+                                "subHtml": "${Selfie[i].caption}"
+                            },
+                        {{/if}}
+                    {{/each}}
+
+                    {
+                        "src": "${Selfie[5].image}", 
+                        "thumb": "${Selfie[5].thumb}", 
+                        "subHtml": "${Selfie[5].caption}" 
+                    }
+                    
+
+                ]'></button>
+            <button id="live-btn" data-profile="${Id}"></button>
+            <button id="cool-btn" data-profile="${Id}"></button>
+            <button id="diet-btn" data-profile="${Id}"></button>
+            <button id="weight-btn" data-proifile="${Id}"></button>
+            <button id="help-btn" style="background: url('${Button}'); background-repeat: no-repeat;" data-profile="${Id}"></button>
+        </div>
+        <div class="profile-nav-wrapper">
+            <button class="explore-reset-btn"></button>
+            <button class="reset-btn-blue"></button>
+        </div>   
+       
+
+     </script>
+
+    <!-- game -->
+    <script id="game-template" type="text/x-jQuery-templ">
+          <div class="droppable-widget" data-bear="${Id}" style="top: ${y}px; left: ${x}px;">
+            <div class="correct-answer hidden animated fade-in">
+                <div class="correct-wrapper" style="background-color:#${Color}">
+                    <h2 class="correctTitle">${Correct.title}</h2>
+                    <p class="correctText">${Correct.text}</p>
+                </div>
+                <div class="correct-overlay" style="background-color:#${Color}; background-image: url('${Button}');"></div>
+                <img class="correctImg" src="${Correct.image}">
+            </div>
+            <div class="hint-1 hidden animated shake">
+                <div class="hint-overlay"></div>
+                <div class="hint-wrapper">
+                    <h2>${Incorrect[0].title}</h2>
+                    <p>${Incorrect[0].text}</p>
+                </div>
+            </div>
+            <div class="hint-2 hidden animated shake">
+                 <div class="hint-overlay"></div>
+                 <div class="hint-wrapper">
+                    <h2>${Incorrect[1].title}</h2>
+                    <p>${Incorrect[1].text}</p>
+                </div>
+            </div> 
+            <img class="empty-btn" src="assets/game/empty-btn.png"> 
+          </div>
+         
+    </script>
+
+    <script id="game-btn-template" type="text/x-jQuery-templ">
+           <button class="reset-btn"></button>
+
+            <div class="draggable-widget-holder" data-bear="1"></div>
+            <div class="draggable-widget" data-bear="1" data-species="sun">
+                <p class="draggable-widget-content">Sun Bear</p>
+                <svg version="1.1" data-bear="1" id="sun-ring" class="bear-ring animated fadeIn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 139 139" style="enable-background:new 0 0 139 139;" xml:space="preserve">
+                <style type="text/css">
+                    .st0{fill:;enable-background:new;}
+                    .st1{fill:;}
+                </style>
+                <path class="st0" d="z"/>
+                <g id="Layer_2">
+                    <g>
+                        <path class="st1" d="M69.5,15.8c29.7,0,53.7,24.1,53.7,53.7s-24.1,53.7-53.7,53.7S15.8,99.2,15.8,69.5S39.8,15.8,69.5,15.8
+                             M69.5,6.3c-16.9,0-32.7,6.6-44.7,18.5S6.3,52.6,6.3,69.5s6.6,32.7,18.5,44.7s27.8,18.5,44.7,18.5s32.7-6.6,44.7-18.5
+                            s18.5-27.8,18.5-44.7s-6.6-32.7-18.5-44.7S86.4,6.3,69.5,6.3L69.5,6.3z"/>
+                    </g>
+                </g>
+                </svg> 
+            </div>
+            
+            <div class="draggable-widget-holder" data-bear="2"></div>
+            <div class="draggable-widget" data-bear="2" data-species="panda">
+                <p class="draggable-widget-content">Black Bear</p> 
+                 <svg version="1.1" data-bear="2" id="panda-ring" class="bear-ring animated fadeIn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 139 139" style="enable-background:new 0 0 139 139;" xml:space="preserve">
+                <style type="text/css">
+                    .st0{fill:;enable-background:new;}
+                    .st1{fill:;}
+                </style>
+                <path class="st0" d="z"/>
+                <g id="Layer_2">
+                    <g>
+                        <path class="st1" d="M69.5,15.8c29.7,0,53.7,24.1,53.7,53.7s-24.1,53.7-53.7,53.7S15.8,99.2,15.8,69.5S39.8,15.8,69.5,15.8
+                             M69.5,6.3c-16.9,0-32.7,6.6-44.7,18.5S6.3,52.6,6.3,69.5s6.6,32.7,18.5,44.7s27.8,18.5,44.7,18.5s32.7-6.6,44.7-18.5
+                            s18.5-27.8,18.5-44.7s-6.6-32.7-18.5-44.7S86.4,6.3,69.5,6.3L69.5,6.3z"/>
+                    </g>
+                </g>
+                </svg>
+
+            </div>
+            
+            <div class="draggable-widget-holder" data-bear="3"></div>
+            <div class="draggable-widget" data-bear="3" data-species="sloth">
+                <p class="draggable-widget-content">Brown Bear</p> 
+                 <svg version="1.1" data-bear="3" id="sloth-ring" class="bear-ring animated fadeIn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 139 139" style="enable-background:new 0 0 139 139;" xml:space="preserve">
+                <style type="text/css">
+                    .st0{fill:;enable-background:new;}
+                    .st1{fill:;}
+                </style>
+                <path class="st0" d="z"/>
+                <g id="Layer_2">
+                    <g>
+                        <path class="st1" d="M69.5,15.8c29.7,0,53.7,24.1,53.7,53.7s-24.1,53.7-53.7,53.7S15.8,99.2,15.8,69.5S39.8,15.8,69.5,15.8
+                             M69.5,6.3c-16.9,0-32.7,6.6-44.7,18.5S6.3,52.6,6.3,69.5s6.6,32.7,18.5,44.7s27.8,18.5,44.7,18.5s32.7-6.6,44.7-18.5
+                            s18.5-27.8,18.5-44.7s-6.6-32.7-18.5-44.7S86.4,6.3,69.5,6.3L69.5,6.3z"/>
+                    </g>
+                </g>
+                </svg>
+            </div>
+
+            <div class="draggable-widget-holder" data-bear="4"></div>
+            <div class="draggable-widget" data-bear="4" data-species="andean">
+                <p class="draggable-widget-content">Polar Bear</p>
+                 <svg version="1.1" data-bear="4" id="andean-ring" class="bear-ring animated fadeIn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 139 139" style="enable-background:new 0 0 139 139;" xml:space="preserve">
+                <style type="text/css">
+                    .st0{fill:;enable-background:new;}
+                    .st1{fill:;}
+                </style>
+                <path class="st0" d="z"/>
+                <g id="Layer_2">
+                    <g>
+                        <path class="st1" d="M69.5,15.8c29.7,0,53.7,24.1,53.7,53.7s-24.1,53.7-53.7,53.7S15.8,99.2,15.8,69.5S39.8,15.8,69.5,15.8
+                             M69.5,6.3c-16.9,0-32.7,6.6-44.7,18.5S6.3,52.6,6.3,69.5s6.6,32.7,18.5,44.7s27.8,18.5,44.7,18.5s32.7-6.6,44.7-18.5
+                            s18.5-27.8,18.5-44.7s-6.6-32.7-18.5-44.7S86.4,6.3,69.5,6.3L69.5,6.3z"/>
+                    </g>
+                </g>
+                </svg> 
+            </div>
+
+            <div class="draggable-widget-holder" data-bear="5"></div>
+            <div class="draggable-widget" data-bear="5" data-species="asiatic">
+                <p class="draggable-widget-content">Giant Panda</p>
+                 <svg version="1.1" data-bear="3" id="asiatic-ring" class="bear-ring animated fadeIn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 139 139" style="enable-background:new 0 0 139 139;" xml:space="preserve">
+                <style type="text/css">
+                    .st0{fill:;enable-background:new;}
+                    .st1{fill:;}
+                </style>
+                <path class="st0" d="z"/>
+                <g id="Layer_2">
+                    <g>
+                        <path class="st1" d="M69.5,15.8c29.7,0,53.7,24.1,53.7,53.7s-24.1,53.7-53.7,53.7S15.8,99.2,15.8,69.5S39.8,15.8,69.5,15.8
+                             M69.5,6.3c-16.9,0-32.7,6.6-44.7,18.5S6.3,52.6,6.3,69.5s6.6,32.7,18.5,44.7s27.8,18.5,44.7,18.5s32.7-6.6,44.7-18.5
+                            s18.5-27.8,18.5-44.7s-6.6-32.7-18.5-44.7S86.4,6.3,69.5,6.3L69.5,6.3z"/>
+                    </g>
+                </g>
+                </svg>
+            </div>
+
+            <div class="draggable-widget-holder" data-bear="6"></div>
+            <div class="draggable-widget" data-bear="6" data-species="american">
+                <p class="draggable-widget-content">Giant Panda</p>
+                 <svg version="1.1" data-bear="6" id="american-ring" class="bear-ring animated fadeIn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 139 139" style="enable-background:new 0 0 139 139;" xml:space="preserve">
+                <style type="text/css">
+                    .st0{fill:;enable-background:new;}
+                    .st1{fill:;}
+                </style>
+                <path class="st0" d="z"/>
+                <g id="Layer_2">
+                    <g>
+                        <path class="st1" d="M69.5,15.8c29.7,0,53.7,24.1,53.7,53.7s-24.1,53.7-53.7,53.7S15.8,99.2,15.8,69.5S39.8,15.8,69.5,15.8
+                             M69.5,6.3c-16.9,0-32.7,6.6-44.7,18.5S6.3,52.6,6.3,69.5s6.6,32.7,18.5,44.7s27.8,18.5,44.7,18.5s32.7-6.6,44.7-18.5
+                            s18.5-27.8,18.5-44.7s-6.6-32.7-18.5-44.7S86.4,6.3,69.5,6.3L69.5,6.3z"/>
+                    </g>
+                </g>
+                </svg>
+
+            </div>
+
+            <div class="draggable-widget-holder" data-bear="7"></div>
+            <div class="draggable-widget" data-bear="7" data-species="brown">
+                <p class="draggable-widget-content">Sun Bear</p> 
+                <svg version="1.1" data-bear="7" id="brown-ring" class="bear-ring animated fadeIn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 139 139" style="enable-background:new 0 0 139 139;" xml:space="preserve">
+                <style type="text/css">
+                    .st0{fill:;enable-background:new;}
+                    .st1{fill:;}
+                </style>
+                <path class="st0" d="z"/>
+                <g id="Layer_2">
+                    <g>
+                        <path class="st1" d="M69.5,15.8c29.7,0,53.7,24.1,53.7,53.7s-24.1,53.7-53.7,53.7S15.8,99.2,15.8,69.5S39.8,15.8,69.5,15.8
+                             M69.5,6.3c-16.9,0-32.7,6.6-44.7,18.5S6.3,52.6,6.3,69.5s6.6,32.7,18.5,44.7s27.8,18.5,44.7,18.5s32.7-6.6,44.7-18.5
+                            s18.5-27.8,18.5-44.7s-6.6-32.7-18.5-44.7S86.4,6.3,69.5,6.3L69.5,6.3z"/>
+                    </g>
+                </g>
+                </svg>
+            </div>
+
+              <div class="draggable-widget-holder" data-bear="8"></div>
+            <div class="draggable-widget" data-bear="8" data-species="polar">
+                <p class="draggable-widget-content">Sloth Bear</p>
+                <svg version="1.1" data-bear="7" id="polar-ring" class="bear-ring" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 139 139" style="enable-background:new 0 0 139 139;" xml:space="preserve">
+                <style type="text/css">
+                    .st0{fill:;enable-background:new;}
+                    .st1{fill:;}
+                </style>
+                <path class="st0" d="z"/>
+                <g id="Layer_2">
+                    <g>
+                        <path class="st1" d="M69.5,15.8c29.7,0,53.7,24.1,53.7,53.7s-24.1,53.7-53.7,53.7S15.8,99.2,15.8,69.5S39.8,15.8,69.5,15.8
+                             M69.5,6.3c-16.9,0-32.7,6.6-44.7,18.5S6.3,52.6,6.3,69.5s6.6,32.7,18.5,44.7s27.8,18.5,44.7,18.5s32.7-6.6,44.7-18.5
+                            s18.5-27.8,18.5-44.7s-6.6-32.7-18.5-44.7S86.4,6.3,69.5,6.3L69.5,6.3z"/>
+                    </g>
+                </g>
+                </svg> 
+            </div>
+    
+           
+            
+            <button id="game-reset-btn" class="hidden"></button>
+
+    </script>
+
+    <div id="home">
+        <div class="home-btn-wrapper">
+            <button id="home-btn-explore" class="home-btn"></button>
+            <img class="home-panda" src="assets/home/homepg-PandaBear.png" alt="panda bear">
+            <button id="home-btn-game" class="home-btn"></button> 
+        </div>
+    </div>
+
+    <div id="explore" class="animated fadeIn">
+        <div class="explore-btns-wrapper">
+        <button class="explore-btn" data-bear="1" id="sunBear">
+            <span class="explore-btn-text"  data-bear="1">Sun Bear</span>
+            <span class="explore-btn-img" data-bear="1"></span>
+        </button>
+        <button class="explore-btn" data-bear="2" id="giantPanda">
+            <span class="explore-btn-text" data-bear="2" >Giant Panda</span>
+            <span class="explore-btn-img" data-bear="2"></span>
+        </button>
+        <button class="explore-btn" data-bear="3" id="slothBear">
+            <span class="explore-btn-text" data-bear="3">Sloth Bear</span>
+            <span class="explore-btn-img" data-bear="3"></span>
+        </button>
+        <button class="explore-btn" data-bear="4" id="andeanBear">
+            <span class="explore-btn-text" data-bear="4">Andean Bear</span>
+            <span class="explore-btn-img" data-bear="4"></span>
+        </button>
+        <button class="explore-btn" data-bear="5" id="asiaticBlackBear">
+            <span class="explore-btn-text" data-bear="5">Asiatic Black Bear</span>
+            <span class="explore-btn-img" data-bear="5"></span>
+        </button>
+        <button class="explore-btn" data-bear="6" id="americanBlackBear">
+            <span class="explore-btn-text" data-bear="6">American Black Bear</span>
+            <span class="explore-btn-img" data-bear="6"></span>
+        </button>
+        <button class="explore-btn" data-bear="7" id="brownBear">
+            <span class="explore-btn-text" data-bear="7">Brown Bear</span>
+            <span class="explore-btn-img" data-bear="7"></span>
+        </button>
+        <button class="explore-btn" data-bear="8" id="polarBear">
+            <span class="explore-btn-text" data-bear="8">Polar<br>Bear</span>
+            <span class="explore-btn-img" data-bear="8"></span>
+        </button>
+        </div>
+
+         <button class="reset-btn-explore"></button>
+
+    </div>
+    <div id="profile">
+       <!--  <video width="100%" height="auto" poster="assets/exlore/andean/bkgr-andean.jpg" autoplay loop>
+            <source src="assets/explore/andean/AndeanBear_NEW.mp4" type="video/mp4">
+         </video> -->
+    </div>
+    <div id="game" class="hidden">
+        <div id="game-map"></div>
+        <div id="game-btn-wrapper"></div>
+        <div id="game-complete" class="hidden">
+            <button class="botw-btn"></button>
+        </div>
+    </div>
+
+
 
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./dist/js/main.js"></script>
+
+    <script src="./js/lib/jquery.loadTemplate.min.js"></script>
+    <script src="./js/lib/createjs-2015.11.26.min.js"></script>
+    <script src="./js/lib/jquery-ui.min.js"></script>
+    <script src="./js/lib/jquery.ui.touch-punch.min.js"></script>
+    <script src="./js/lib/lightGallery/js/lightgallery.js"></script>
+    <script src="./js/lib/lightGallery/js/lg-thumbnail.js"></script>
+    <script src="./js/lib/lightGallery/js/lg-autoplay.min.js"></script>
+    <script src="./js/lib/lightGallery/js/lg-video.min.js"></script>
+
+    <script src="./js/controllers/utilities.js"></script>
+    <script src="./js/controllers/explore.js"></script>
+    <script src="./js/controllers/game.js"></script>
+    <script src="./js/controllers/attract.js"></script>
+    <script src="./js/main.js"></script>
+
 </body>
 </html>

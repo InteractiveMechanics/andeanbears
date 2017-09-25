@@ -4,3 +4,6 @@
 /node_modules
 /bower_components
 /dist
+
+*.mp4
+*.mov

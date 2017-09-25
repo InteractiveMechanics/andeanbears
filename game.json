@@ -1,0 +1,718 @@
+{
+    "locations": [
+        {
+            "Id": 4,
+            "x": 701,
+            "y": 552,
+            "Color": "275772",
+            "Title": "Andean Bear",
+            "Button": "assets/game/AndeanBear-btn.png",
+            "Correct": 
+                {
+                    "title": "Correct!",
+                    "text": "These solitary bears can be found in the dense cloud forests and rainforests of the Andes Mountains. They are the only bear species found in South America.", 
+                    "image": "assets/game/AndeanBear-correct.jpg"
+                }
+            ,
+            "Incorrect": [
+                {
+                    "title": "Try Again!",
+                    "text": "The species found here is named after the mountain range it calls home."
+                },
+                {
+                    "title": "Keep Trying!",
+                    "text": "The species found here has marks around its eyes that look like glasses."
+                }
+            ]
+        },
+        {
+            
+            "Id": 6,
+            "x": 638,
+            "y": 333,
+            "Color": "386a25",
+            "Title": "American Black Bear",
+            "Button": "assets/game/AmericanBlackBear-btn.png",
+            "Correct": 
+                {
+                    "title": "Yes!",
+                    "text": "As their name suggests, American black bears are found throughout the United States, as well as Canada and parts of northern Mexico. It is thought that there are two times more American black bears on Earth than all other bear species combined. ", 
+                    "image": "assets/game/AmericanBlackBear-correct.jpg"
+                }
+            ,
+            "Incorrect": [
+                {
+                    "title": "Guess Again!",
+                    "text": "The species found here is the most common of all bears, even living here in Tennessee."
+                },
+                {
+                    "title": "Try Again!",
+                    "text": "Bears of the species found here can have brown, tan, and even blonde fur, despite their name."
+                }
+            ]
+        },
+           {
+            "Id": 7,
+            "x": 1246,
+            "y": 237,
+            "Color": "7c2643",
+            "Title": "Brown Bear",
+            "Button": "assets/game/BrownBear-btn.png",
+            "Correct": 
+                {
+                    "title": "Correct!",
+                    "text": "Brown bears are found throughout North America, Europe, and Asia. The enormous bears sometimes have huge home ranges, some cover up to one thousand square miles.", 
+                    "image": "assets/game/BrownBear02-correct.jpg"
+                }
+            ,
+            "Incorrect": [
+                {
+                    "title": "Try Again!",
+                    "text": "The bear species found here is the most widespread on Earth, it even shows up twice on this map."
+                },
+                {
+                    "title": "Guess Again!",
+                    "text": "Some members of the species that live here are known as grizzly bears."
+                }
+            ]
+                
+        },
+         {
+            "Id": 7,
+            "x": 499,
+            "y": 158,
+            "Title": "Brown Bear",
+            "Color": "7c2643",
+            "Button": "assets/game/BrownBear-btn.png",
+            "Correct": 
+                {
+                    "title": "You’re Right!",
+                    "text": "These bears are found in more places around the world than any other bear. They are common in parts of North America, Europe, and Asia. They are the most widespread of any bear species.", 
+                    "image": "assets/game/BrownBear01-correct.jpg"
+                }
+            ,
+            "Incorrect": [
+                {
+                    "title": "Keep Trying!",
+                    "text": "The species that lives here is extremely adaptable, able to survive in a range of habitats, and eat a variety of foods."
+                },
+                {
+                    "title": "Try Again!",
+                    "text": "The species found here is the most widespread on Earth, it even shows up twice on this map."
+                }
+            ]
+        },
+        {
+            "Id": 8,
+            "x": 786,
+            "y": 66,
+            "Title": "Polar Bear",
+            "Color": "462457",
+            "Button": "assets/game/PolarBear-btn.png",
+            "Correct": 
+                {
+                    "title": "Excellent!",
+                    "text": "Polar bears can be found in the arctic lands and waters of northern Asia, Europe, and North America. These bears are great swimmers, and spend most of their time in the summer swimming between ice floes to catch food. ", 
+                    "image": "assets/game/PolarBear-correct.jpg"
+                }
+            ,
+            "Incorrect": [
+                {
+                    "title": "Keep Trying!",
+                    "text": "The species that lives here is the largest of all the bear species."
+                },
+                {
+                    "title": "Try Again!",
+                    "text": "The species found here is adapted to living in snowy and icy environments. "
+                }
+            ]
+        },
+            {
+            "Id": 5,
+            "x": 1511,
+            "y": 284,
+            "Title": "Asiatic Black Bear",
+            "Color": "7e271e",
+            "Button": "assets/game/AsiaticBear-btn.png",
+            "Correct": 
+                {
+                    "title": "Excellent!",
+                    "text": "Excellent! Asiatic black bears are found throughout Asia, from India to Southeast Asia, and even in Japan. These small bears have been seen eating over 160 different kinds of fruit in their forest habitats.", 
+                    "image": "assets/game/AsiaticBlackBear-correct.jpg"
+                }
+            ,
+            "Incorrect": [
+                {
+                    "title": "Try Again!",
+                    "text": "The bear species that lives here is named for the continent where it is found."
+                },
+                {
+                    "title": "Guess Again!",
+                    "text": "The bears found here typically have a crescent-shaped patch of light fur on their chests, leading them to have the nickname “moon bears.”"
+                }
+            ]
+        },
+         {
+            "Id": 2,
+            "x": 1380,
+            "y": 348,
+            "Title": "Giant Panda",
+            "Color": "d49c2d",
+            "Button": "assets/game/GiantPanda-btn.png",
+            "Correct": 
+                {
+                    "title": "You're Right!",
+                    "text": "Giant pandas are extremely rare, living in just one small area of central China. These distinctive bears spend half of their day eating in their bamboo forest habitat.", 
+                    "image": "assets/game/GiantPanda-correct.jpg"
+                }
+            ,
+            "Incorrect": [
+                {
+                    "title": "Guess Again!",
+                    "text": "The species found here loves to snack on the bamboo found in its forest home."
+                },
+                {
+                    "title": "Keep Trying!",
+                    "text": "The species that lives here is easily recognized by its distinctive black and white fur."
+                }
+            ]
+        },
+        {
+            "Id": 1,
+            "x": 1472,
+            "y": 517,
+            "Title": "Sun Bear",
+            "Color": "c14f1e",
+            "Button": "assets/game/SunBear-btn.png",
+            "Correct": 
+                {
+                    "title": "Correct!",
+                    "text": "These bears are found in tropical forest habitats in Southeast Asia. They use their long snouts and even longer tongues to slurp bugs and honey from nests and hives.", 
+                    "image": "assets/game/SunBear-correct.jpg"
+                }
+            ,
+            "Incorrect": [
+                {
+                    "title": "Guess Again!",
+                    "text": "The species that lives here is the smallest of all the bear species."
+                },
+                {
+                    "title": "Try Again!",
+                    "text": "The bears found here have short fur that helps them stay cool in their tropical habitat."
+                }
+            ]
+        },
+        {
+            "Id": 3,
+            "x": 1312,
+            "y": 473,
+            "Title": "Sloth Bear",
+            "Color": "0c7b6b",
+            "Button": "assets/game/SlothBear-btn.png",
+            "Correct": 
+                {
+                    "title": "Yes!",
+                    "text": "Sloth bears are found in forests and grasslands throughout India, Nepal, and Sri Lanka. They got their names because the first scientists to study them thought they were sloths and not bears at all.", 
+                    "image": "assets/game/SlothBear-correct.jpg"
+                }
+            ,
+            "Incorrect": [
+                {
+                    "title": "Keep Trying!",
+                    "text": "The bear species found here is named for a completely different kind of animal."
+                },
+                {
+                    "title": "Guess Again!",
+                    "text": "Even though their name might make you think they are slow, the bear species found here can outrun you."
+                }
+            ]
+        }
+    ],
+
+    "bears": [
+         {
+            "Id": 1,
+            "Name": "Sun Bear",
+            "Latin": "Helarctos malayanus",
+            "Landing": "assets/explore/sun/landing-text-sun.png",
+            "Background": "assets/explore/sun/bkgr-sun.png",
+            "Help": "assets/explore/sun/help-text-sun.png",
+            "Weight": 
+                {
+                    "description": "assets/explore/sun/weight-text-sun.png",
+                    "answer": "assets/explore/sun/weight-answer-sun.png", 
+                    "art": "assets/explore/sun/weight-img-sun.png"
+                }
+            ,
+            "Diet": "assets/explore/sun/dinner-text-sun.png",
+            "Dietcaption": "Diet Caption for Sun Bear",
+            "Cool": "assets/explore/sun/coolOrGross-text-sun.png",
+            "Live": 
+                {
+                    "description": "assets/explore/sun/whereLive-text-sun.png",
+                    "map": "assets/explore/sun/whereLive-map-sun.png"
+                }
+            ,
+            "Video": "assets/explore/video/sun.mp4",
+            "Videoposter": "assets/explore/sun/Slideshow/video.jpg",
+            "Videocaption": "Sun bears use their long tongues to extract flesh from the middle of fruits.",
+            "Button": "assets/explore/sun/btn-help-sun.png",
+            "Selfie": [
+                {
+                    "image": "assets/explore/sun/Slideshow/1-sun-selfie.jpg",
+                    "thumb": "assets/explore/sun/Slideshow/1-sun-selfie-thumb.jpg",
+                    "caption": "A sun bear’s tongue can be as long as 10 inches!"
+                },
+                {
+                    "image": "assets/explore/sun/Slideshow/2-sun-selfie.jpg",
+                    "thumb": "assets/explore/sun/Slideshow/2-sun-selfie-thumb.jpg",
+                    "caption": "Sun bears are excellent tree-climbers. They often create platforms in treetops."
+                },
+                  {
+                    "image": "assets/explore/sun/Slideshow/3-sun-selfie.jpg",
+                    "thumb": "assets/explore/sun/Slideshow/3-sun-selfie-thumb.jpg",
+                    "caption": "Sun bears use their extremely long claws to tear open termite nests and rip bark from trees."
+                },
+                {
+                    "image": "assets/explore/sun/Slideshow/4-sun-selfie.jpg",
+                    "thumb": "assets/explore/sun/Slideshow/4-sun-selfie-thumb.jpg",
+                    "caption": "The sun bear’s teeth and jaws are extremely powerful, and are even able to crack a coconut."
+                },
+                  {
+                    "image": "assets/explore/sun/Slideshow/5-sun-selfie.jpg",
+                    "thumb": "assets/explore/sun/Slideshow/5-sun-selfie-thumb.jpg",
+                    "caption": "The sun bear’s short ears, long snout, and small stature have earned it the nickname “dog” bear."
+                },
+                {
+                    "image": "assets/explore/sun/Slideshow/6-sun-selfie.jpg",
+                    "thumb": "assets/explore/sun/Slideshow/6-sun-selfie-thumb.jpg",
+                    "caption": "Sun bears prefer to sleep in and on fallen logs, but may also climb up into the trees to rest. <small>(&copy; Siew Te Wong, Thye Lim Tee, and Lin May Chiew, BSBCC / Wikimedia Commons / CC-BY-SA-3.0)</small>"
+
+                }
+            ]
+        },
+
+        {
+            "Id": 2,
+            "Name": "Giant Panda",
+            "Latin": "Ailuropoda melanoleuca",
+            "Landing": "assets/explore/panda/landing-text-panda.png",
+            "Background": "assets/explore/panda/bkgr-panda.png",
+            "Help": "assets/explore/panda/help-text-panda.png",
+            "Weight": 
+                {
+                    "description": "assets/explore/panda/weight-text-panda.png",
+                    "answer": "assets/explore/panda/weight-answer-panda.png", 
+                    "art": "assets/explore/panda/weight-img-panda.png"
+                }
+            ,
+            "Diet": "assets/explore/panda/dinner-text-panda.png",
+            "Dietcaption": "Caption for Panda dinner",
+            "Cool": "assets/explore/panda/coolOrGross-text-panda.png",
+            "Live": 
+                {
+                    "description": "assets/explore/panda/whereLive-panda.png",
+                    "map": "assets/explore/panda/whereLive-img-panda.png"
+                }
+            ,
+            "Video": "assets/explore/videos/panda.mp4",
+            "Videoposter": "assets/explore/panda/Slideshow/video.jpg",
+            "Videocaption": "Pandas consume huge amounts of bamboo each day. They must strip away the outer layers before eating the inner flesh.",
+            "Button": "assets/explore/panda/btn-help-panda.png",
+            "Selfie": [
+                {
+                    "image": "assets/explore/panda/Slideshow/1-panda-selfie.jpg",
+                    "thumb": "assets/explore/panda/Slideshow/1-panda-selfie-thumb.jpg",
+                    "caption": "Giant Pandas spend most of their time on the ground, but are great at climbing trees."
+                },
+                {
+                    "image": "assets/explore/panda/Slideshow/2-panda-selfie.jpg",
+                    "thumb": "assets/explore/panda/Slideshow/2-panda-selfie-thumb.jpg",
+                    "caption": "Though once thought to be solitary animals, researchers now know that pandas do spend time together outside of mating season."
+                },
+                {
+                    "image": "assets/explore/panda/Slideshow/3-panda-selfie.jpg",
+                    "thumb": "assets/explore/panda/Slideshow/3-panda-selfie-thumb.jpg",
+                    "caption": "Pandas can be very playful, and especially enjoy rolling in the snow."
+                },
+                {
+                    "image": "assets/explore/panda/Slideshow/4-panda-selfie.jpg",
+                    "thumb": "assets/explore/panda/Slideshow/4-panda-selfie-thumb.jpg",
+                    "caption": "Pandas spend up to 12 hours every day eating bamboo, their preferred food."
+                },
+                {
+                    "image": "assets/explore/panda/Slideshow/5-panda-selfie.jpg",
+                    "thumb": "assets/explore/panda/Slideshow/5-panda-selfie-thumb.jpg",
+                    "caption": "Although they are quite large, pandas can be very nimble, climbing high in even the most unlikely of trees."
+                },
+                {
+                    "image": "assets/explore/panda/Slideshow/6-panda-selfie.jpg",
+                    "thumb": "assets/explore/panda/Slideshow/6-panda-selfie-thumb.jpg",
+                    "caption": "Panda cubs live with their mothers for up to 3 years after their birth. <small>(© Siew Te Wong, Thye Lim Tee, and Lin May Chiew, BSBCC / Wikimedia Commons / CC-BY-SA-3.0)</small>"
+                }
+            ]
+        },
+
+        {
+            "Id": 3,
+            "Name": "Sloth Bear",
+            "Latin": "Melursus ursinus",
+            "Landing": "assets/explore/sloth/landing-text-sloth.png",
+            "Background": "assets/explore/sloth/bkgr-sloth.png",
+            "Help": "assets/explore/sloth/help-text-sloth.png",
+            "Weight": 
+                {
+                    "description": "assets/explore/sloth/weight-text-sloth.png",
+                    "answer": "assets/explore/sloth/weight-answer-sloth.png", 
+                    "art": "assets/explore/sloth/weight-img-sloth.png"
+                }
+            ,
+            "Diet": "assets/explore/sloth/dinner-text-sloth.png",
+            "Dietcaption": "Diet caption for sloth bear",
+            "Cool": "assets/explore/sloth/coolOrGross-text-sloth.png",
+            "Live": 
+                {
+                    "description": "assets/explore/sloth/whereLive-sloth.png",
+                    "map": "assets/explore/sloth/whereLive-img-sloth.png"
+                }
+            ,
+            "Video": "assets/explore/videos/sloth.mp4",
+            "Videoposter": "assets/explore/sloth/Slideshow/video.jpg",
+            "Videocaption": "Sloth bears are the only bear species that carries their cubs on their backs.",
+            "Button": "assets/explore/sloth/btn-help-sloth.png",
+            "Selfie": [
+                {
+                    "image": "assets/explore/sloth/Slideshow/1-sloth-selfie.jpg",
+                    "thumb": "assets/explore/sloth/Slideshow/1-sloth-selfie-thumb.jpg",
+                    "caption": "When researchers first saw these shaggy bears, they thought they were a kind of sloth."
+                },
+                {
+                    "image": "assets/explore/sloth/Slideshow/2-sloth-selfie.jpg",
+                    "thumb": "assets/explore/sloth/Slideshow/2-sloth-selfie-thumb.jpg",
+                    "caption": "Sloth bears use their long snouts and powerful lungs to suck insects from their nests."
+                },
+                 {
+                    "image": "assets/explore/sloth/Slideshow/3-sloth-selfie.jpg",
+                    "thumb": "assets/explore/sloth/Slideshow/3-sloth-selfie-thumb.jpg",
+                    "caption": "Sloth bears sometimes live in grasslands, where they use boulders and tall grasses for shelter. <small>(© Knut-Erik Helle / Sloth Bear / Flickr / CC BY-NC-ND 2.0)</small>"
+                },
+                {
+                    "image": "assets/explore/sloth/Slideshow/4-sloth-selfie.jpg",
+                    "thumb": "assets/explore/sloth/Slideshow/4-sloth-selfie-thumb.jpg",
+                    "caption": "Sloth bears have a large gap between their front teeth, enabling them to use their mouths like a vacuum to suck out insects lodged within branches. <small>(© Nathan Rupert / Sloth Bear eating some shrubs / Flickr / CC BY-NC-ND 2.0)</small>"
+                },
+                 {
+                    "image": "assets/explore/sloth/Slideshow/5-sloth-selfie.jpg",
+                    "thumb": "assets/explore/sloth/Slideshow/5-sloth-selfie-thumb.jpg",
+                    "caption": "Cubs typically stay with their mother for a year or two. When they are very young, sloth bear cubs ride on their mother’s backs."
+                },
+                {
+                    "image": "assets/explore/sloth/Slideshow/6-sloth-selfie.jpg",
+                    "thumb": "assets/explore/sloth/Slideshow/6-sloth-selfie-thumb.jpg",
+                    "caption": "Although their coats are quite long, they aren’t very thick, so a sloth bear is able to stay cool in hot weather."
+                }
+            ]
+        },
+        {
+            "Id": 4,
+            "Name": "Andean Bear",
+            "Latin": "Tremarctos ornatus",
+            "Landing": "assets/explore/andean/landing-text.png",
+            "Background": "assets/explore/andean/bkgr-andean.png",
+            "Help": "assets/explore/andean/help-text.png",
+            "Weight": 
+                {
+                    "description": "assets/explore/andean/weight-text.png",
+                    "answer": "assets/explore/andean/weight-answer.png", 
+                    "art": "assets/explore/andean/weight-art.png"
+                }
+            ,
+            "Diet": "assets/explore/andean/dinner-text.png",
+            "Dietcaption": "Bromelaids are a family of plants that grow mainly in tropical South America.",
+            "Cool": "assets/explore/andean/coolOrGross-text.png",
+            "Live": 
+                {
+                    "description": "assets/explore/andean/whereLive-andean.png",
+                    "map": "assets/explore/andean/whereLive-map-andean.png"
+                }
+            ,
+            "Video": "assets/explore/video/andean.mp4",
+            "Videoposter": "assets/explore/andean/Slideshow/video.jpg",
+            "Videocaption": "Although they sometimes eat insects and small animals, Andean bears prefer sweet plants and fruits.",
+            "Button": "assets/explore/andean/btn-help.png",
+            "Selfie": [
+                {
+                    "image": "assets/explore/andean/Slideshow/1-andean-selfie.jpg",
+                    "thumb": "assets/explore/andean/Slideshow/1-andean-selfie-thumb.jpg",
+                    "caption": "The markings found on each Andean bear's face are unique."
+                },
+                {
+                    "image": "assets/explore/andean/Slideshow/2-andean-selfie.jpg",
+                    "thumb": "assets/explore/andean/Slideshow/2-andean-selfie-thumb.jpg",
+                    "caption": "Andean bears spend a lot of time laying in a tree’s branches, eating sweet bromeliads."
+                },
+                {
+                    "image": "assets/explore/andean/Slideshow/3-andean-selfie.jpg",
+                    "thumb": "assets/explore/andean/Slideshow/3-andean-selfie-thumb.jpg",
+                    "caption": "Andean bears care for their cubs for roughly 3 years."
+                },
+                {
+                    "image": "assets/explore/andean/Slideshow/4-andean-selfie.jpg",
+                    "thumb": "assets/explore/andean/Slideshow/4-andean-selfie-thumb.jpg",
+                    "caption": "Andean bears have large home ranges, which encompass forests and grasslands."
+                },
+                {
+                    "image": "assets/explore/andean/Slideshow/5-andean-selfie.jpg",
+                    "thumb": "assets/explore/andean/Slideshow/5-andean-selfie-thumb.jpg",
+                    "caption": "Andean bears are excellent climbers, and prefer to nap and snack in the treetops."
+                },
+                {
+                    "image": "assets/explore/andean/Slideshow/6-andean-selfie.jpg",
+                    "thumb": "assets/explore/andean/Slideshow/6-andean-selfie-thumb.jpg",
+                    "caption": "Andean bears sometimes raid crops on farms that have been set up in their range. Researchers help farmers “bear-proof” their fields, while using radio collars to track a bear’s movements."
+                }
+            ]
+        },
+        {
+            "Id": 5,
+            "Name": "Asiatic Black Bear",
+            "Latin": "Ursus thibetanus",
+            "Landing": "assets/explore/asiatic/landing-text-asiatic.png",
+            "Background": "assets/explore/asiatic/bkgr-asiatic.png",
+            "Help": "assets/explore/asiatic/help-text-asiatic.png",
+            "Weight": 
+                {
+                    "description": "assets/explore/asiatic/weight-text-asiatic.png",
+                    "answer": "assets/explore/asiatic/weight-answer-asiatic.png", 
+                    "art": "assets/explore/asiatic/weight-art-asiatic.png"
+                }
+            ,
+            "Diet": "assets/explore/asiatic/dinner-text-asiatic.png",
+            "Dietcaption": "Caption for diet asiatic bear",
+            "Cool": "assets/explore/asiatic/coolOrGross-text-asiatic.png",
+            "Live": 
+                {
+                    "description": "assets/explore/asiatic/whereLive-asiatic.png",
+                    "map": "assets/explore/asiatic/whereLive-map-asiatic.png"
+                }
+            ,
+            "Video": "assets/explore/videos/asiatic.mp4",
+            "Videoposter": "assets/explore/asiatic/Slideshow/video.jpg",
+            "Videocaption": "Asiatic black bears, have ruffs of long fur around their heads, which make them appear larger than they are.",
+            "Button": "assets/explore/asiatic/btn-help-asiatic.png",
+            "Selfie": [
+                {
+                    "image": "assets/explore/asiatic/Slideshow/1-asiatic-selfie.jpg",
+                    "thumb": "assets/explore/asiatic/Slideshow/1-asiatic-selfie-thumb.jpg",
+                    "caption": "Asiatic black bears are typically solitary, only coming together to mate."
+                },
+                {
+                    "image": "assets/explore/asiatic/Slideshow/2-asiatic-selfie.jpg",
+                    "thumb": "assets/explore/asiatic/Slideshow/2-asiatic-selfie-thumb.jpg",
+                    "caption": "The bears spend a lot of time foraging high in the treetops."
+                },
+                {
+                    "image": "assets/explore/asiatic/Slideshow/3-asiatic-selfie.jpg",
+                    "thumb": "assets/explore/asiatic/Slideshow/3-asiatic-selfie-thumb.jpg",
+                    "caption": "Bear cubs are typically born in pairs and remain with their mother for the first three years of life."
+                },
+                {
+                    "image": "assets/explore/asiatic/Slideshow/4-asiatic-selfie.jpg",
+                    "thumb": "assets/explore/asiatic/Slideshow/4-asiatic-selfie-thumb.jpg",
+                    "caption": "Asiatic black bears are sometimes called “moon bears” for the crescent shape of light fur on their chests."
+                },
+                {
+                    "image": "assets/explore/asiatic/Slideshow/5-asiatic-selfie.jpg",
+                    "thumb": "assets/explore/asiatic/Slideshow/5-asiatic-selfie-thumb.jpg",
+                    "caption": "The large ruff of long fur around their heads makes these bears look bigger than they are."
+                },
+                {
+                    "image": "assets/explore/asiatic/Slideshow/6-asiatic-selfie.jpg",
+                    "thumb": "assets/explore/asiatic/Slideshow/6-asiatic-selfie-thumb.jpg",
+                    "caption": "Asiatic black bears are excellent tree-climbers, and spend considerable time in trees."
+                }
+            ]
+        },
+        {
+            "Id": 6,
+            "Name": "American Black Bear",
+            "Latin": "Ursus americanus",
+            "Landing": "assets/explore/american/landing-text.png",
+            "Background": "assets/explore/american/bkgr-american.png",
+            "Help": "assets/explore/american/help-text-american.png",
+            "Weight": 
+                {
+                    "description": "assets/explore/american/weight-text.png",
+                    "answer": "assets/explore/american/weight-answer.png", 
+                    "art": "assets/explore/american/weight-art.png"
+                }
+            ,
+            "Diet": "assets/explore/american/dinner-text-american.png",
+            "Dietcaption": "Caption for the American Black Bear diet section",
+            "Cool": "assets/explore/american/coolOrGross-text-american.png",
+            "Live": 
+                {
+                    "description": "assets/explore/american/whereLive-text-american.png",
+                    "map": "assets/explore/american/whereLive-map-american.png"
+                }
+            ,
+            "Video": "assets/explore/videos/american.mp4",
+            "Videoposter": "assets/explore/american/Slideshow/video.jpg",
+            "Videocaption": "American black bears living on North America’s northwest coast spend a lot of time fishing for salmon.",
+            "Button": "assets/explore/american/btn-help-american.png",
+            "Selfie": [
+                {
+                    "image": "assets/explore/american/Slideshow/1-american-selfie.jpg",
+                    "thumb": "assets/explore/american/Slideshow/1-american-selfie-thumb.jpg",
+                    "caption": "American black bears are the most common bear species found in the United States."
+                },
+                {
+                    "image": "assets/explore/american/Slideshow/2-american-selfie.jpg",
+                    "thumb": "assets/explore/american/Slideshow/2-american-selfie-thumb.jpg",
+                    "caption": "Female black bears typically give birth every other year, with litters ranging from one to six cubs."
+                },
+                {
+                    "image": "assets/explore/american/Slideshow/3-american-selfie.jpg",
+                    "thumb": "assets/explore/american/Slideshow/3-american-selfie-thumb.jpg",
+                    "caption": "American black bears eat a wide range of foods, from plants and fruits to insects and animals."
+                },
+                {
+                    "image": "assets/explore/american/Slideshow/4-american-selfie.jpg",
+                    "thumb": "assets/explore/american/Slideshow/4-american-selfie-thumb.jpg",
+                    "caption": "American black bears will swim and hunt in waters they live near."
+                },
+                {
+                    "image": "assets/explore/american/Slideshow/5-american-selfie.jpg",
+                    "thumb": "assets/explore/american/Slideshow/5-american-selfie-thumb.jpg",
+                    "caption": "Climbing trees provides American black bear cubs with protection from predators."
+                },
+                {
+                    "image": "assets/explore/american/Slideshow/6-american-selfie.jpg",
+                    "thumb": "assets/explore/american/Slideshow/6-american-selfie-thumb.jpg",
+                    "caption": "American black bears will hunt for fish in local waterways."
+                }
+            ]
+        },
+    
+        {
+            "Id": 7,
+            "Name": "Brown Bear",
+            "Latin": "Ursus arctos",
+            "Landing": "assets/explore/brown/landing-text-brown.png",
+            "Background": "assets/explore/brown/bkgr-brown.png",
+            "Help": "assets/explore/brown/help-text-brown.png",
+            "Weight": 
+                {
+                    "description": "assets/explore/brown/weight-text-brown.png",
+                    "answer": "assets/explore/brown/weight-answer-brown.png", 
+                    "art": "assets/explore/brown/weight-img-brown.png"
+                }
+            ,
+            "Diet": "assets/explore/brown/dinner-text-brown.png",
+            "Dietcaption": "dinner caption for brown bear",
+            "Cool": "assets/explore/brown/coolOrGross-text-brown.png",
+            "Live": 
+                {
+                    "description": "assets/explore/brown/whereLive-brown.png",
+                    "map": "assets/explore/brown/whereLive-img-brown.png"
+                }
+            ,
+            "Video": "assets/explore/videos/brown.mp4",
+            "Videoposter": "assets/explore/brown/Slideshow/video.jpg",
+            "Videocaption": "Brown bear cubs stay with their mothers early on, learning to hunt and survive.",
+            "Button": "assets/explore/brown/btn-help-brown.png",
+            "Selfie": [
+                {
+                    "image": "assets/explore/brown/Slideshow/1-brown-selfie.jpg",
+                    "thumb": "assets/explore/brown/Slideshow/1-brown-selfie-thumb.jpg",
+                    "caption": "Some types of brown bears can grow up to 800 pounds."
+                },
+                {
+                    "image": "assets/explore/brown/Slideshow/2-brown-selfie.jpg",
+                    "thumb": "assets/explore/brown/Slideshow/2-brown-selfie-thumb.jpg",
+                    "caption": "Most brown bears can climb trees, though it is more difficult for larger bears, like grizzlies."
+                },
+                {
+                    "image": "assets/explore/brown/Slideshow/3-brown-selfie.jpg",
+                    "thumb": "assets/explore/brown/Slideshow/3-brown-selfie-thumb.jpg",
+                    "caption": "Brown bears living in the Northwest coast of North America eat salmon whenever it is available."
+                },
+                {
+                    "image": "assets/explore/brown/Slideshow/4-brown-selfie.jpg",
+                    "thumb": "assets/explore/brown/Slideshow/4-brown-selfie-thumb.jpg",
+                    "caption": "Brown bears often use their long claws to dig up roots and insects to eat."
+                },
+                {
+                    "image": "assets/explore/brown/Slideshow/5-brown-selfie.jpg",
+                    "thumb": "assets/explore/brown/Slideshow/5-brown-selfie-thumb.jpg",
+                    "caption": "Brown bears eat an omnivorous diet made up of fruit, nuts, insects, fish, and small animals."
+                },
+                {
+                    "image": "assets/explore/brown/Slideshow/6-brown-selfie.jpg",
+                    "thumb": "assets/explore/brown/Slideshow/6-brown-selfie-thumb.jpg",
+                    "caption": "Brown bear cubs remain with their mothers for one and a half to three years after birth."
+                }
+            ]
+        },
+        {
+            "Id": 8,
+            "Name": "Polar Bear",
+            "Latin": "Ursus maritimus",
+            "Landing": "assets/explore/polar/landing-text-polar.png",
+            "Background": "assets/explore/polar/bkgr-polar.png",
+            "Help": "assets/explore/polar/help-text-polar.png",
+            "Weight": 
+                {
+                    "description": "assets/explore/polar/weight-text-polar.png",
+                    "answer": "assets/explore/polar/weight-answer-polar.png", 
+                    "art": "assets/explore/polar/weight-img-polar.png"
+                }
+            ,
+            "Diet": "assets/explore/polar/dinner-text-polar.png",
+            "Dietcaption": "Diet Caption for Polar Bear",
+            "Cool": "assets/explore/polar/coolOrGross-text-polar.png",
+            "Live": 
+                {
+                    "description": "assets/explore/polar/whereLive-polar.png",
+                    "map": "assets/explore/polar/whereLive-img-polar.png"
+                }
+            ,
+            "Video": "assets/explore/videos/polar.mp4",
+            "Videoposter": "assets/explore/polar/Slideshow/video.jpg",
+            "Videocaption": "Polar bears roam on the Arctic sea ice to search for food.",
+            "Button": "assets/explore/polar/btn-help-polar.png",
+            "Selfie": [
+                {
+                    "image": "assets/explore/polar/Slideshow/1-polar-selfie.jpg",
+                    "thumb": "assets/explore/polar/Slideshow/1-polar-selfie-thumb.jpg",
+                    "caption": "Polar bears live in the cold arctic."
+                },
+                {
+                    "image": "assets/explore/polar/Slideshow/2-polar-selfie.jpg",
+                    "thumb": "assets/explore/polar/Slideshow/2-polar-selfie-thumb.jpg",
+                    "caption": "Food can be scarce in the arctic during the winter so polar bears must eat plenty of fatty seals to build up their reserves."
+                },
+                  {
+                    "image": "assets/explore/polar/Slideshow/3-polar-selfie.jpg",
+                    "thumb": "assets/explore/polar/Slideshow/3-polar-selfie-thumb.jpg",
+                    "caption": "Climate change has reduced the amount of sea ice each year, threatening the polar bear’s survival."
+                },
+                {
+                    "image": "assets/explore/polar/Slideshow/4-polar-selfie.jpg",
+                    "thumb": "assets/explore/polar/Slideshow/4-polar-selfie-thumb.jpg",
+                    "caption": "Pregnant female polar bears dig dens, where they live during pregnancy and the early lives of their cubs."
+                },
+                  {
+                    "image": "assets/explore/polar/Slideshow/5-polar-selfie.jpg",
+                    "thumb": "assets/explore/polar/Slideshow/5-polar-selfie-thumb.jpg",
+                    "caption": "Polar bears survive by hunting seals and fish in the arctic waters."
+                },
+                {
+                    "image": "assets/explore/polar/Slideshow/6-polar-selfie.jpg",
+                    "thumb": "assets/explore/polar/Slideshow/6-polar-selfie-thumb.jpg",
+                    "caption": "Young polar bears learn all they need to survive from their mothers."
+                }
+            ]
+        }
+    ]
+}

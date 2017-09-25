@@ -1,0 +1,139 @@
+#home {
+	background: url('../../assets/home/homepg-bkgr-text.jpg');
+	//background-size: cover;
+	height: 100%;
+}
+
+#home-btn-explore,
+#home-btn-game {
+	height: 558px;
+	width: 557px;
+	position: absolute;
+	border: none;
+	top: 310px;
+}
+
+
+#home-btn-explore {
+	background: url('../../assets/home/BOTW-btn.png');
+	height: 572px;
+	width: 557px;
+    left: 345px;
+    background-size: cover;
+}
+
+#home-btn-game {
+	background: url('../../assets/home/BC-btn.png');
+	background-size: cover;
+	height: 582px;
+	width: 584px;
+	left: 960px;
+
+}
+
+.home-panda {
+	position: absolute;
+    top: 535px;
+    left: 580px;
+    height: 500px;
+    width: auto;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.game-label {
+	position: absolute;
+	left: 0px;
+	top: 103px;
+}
+
+
+#game-map {
+	background: url('../../assets/game/BC-bkgr-map-w-bar.jpg');
+	background-size: cover;
+	background-color: #dedede;
+	width: 100%;
+	height: 1080px;
+}
+
+#game-btn-wrapper {
+	width: 100%;
+	height: 217px;
+	position: absolute;
+	bottom: 0px;
+    
+    > * {
+        z-index: 1;
+    }
+}
+
+.reset-btn {
+	position: absolute;
+	background: url('../../assets/game/BC-home-btn.png');
+	background-size: cover;
+	width: 134px;
+	height: 77px;
+    left: 50px;
+    margin-top: 97px;
+    border: none;
+}
+
+.reset-btn-explore {
+	position: absolute;
+	background: url('../../assets/explore/btn-home.png');
+	background-size: cover;
+	width: 134px;
+	height: 77px;
+    left: 50px;
+    top: 950px;
+    border: none;
+}
+
+#game-reset-btn {
+	position: absolute;
+	background: url('../../assets/game/BC-startover-btn.png');
+	background-size: cover;
+	width: 150px;
+	height: 77px;
+    right: 50px;
+    margin-top: 97px;
+    border: none;
+}
+
+#game-complete {
+	background: url('../../assets/game/BC-complete-full.png');
+	background-size: 100%;
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+	z-index: 2;
+	color: #fff;
+	font-family: $serifa-bt-black;
+
+	.botw-btn {
+		background: url('../../assets/game/BOTW-btn-lg.png');
+		background-size: cover;
+		height: 396px;
+        width: 746px;
+		display: block;
+		margin: 600px auto 0;
+		border: none;
+	}
+	h1 {
+		font-size: 90px;
+		text-transform: uppercase;
+		margin-bottom: 40px;
+		margin-top: 0px;
+	}
+
+	h3 {
+		font-size: 40px;
+	}
+
+}
+
+
+
+

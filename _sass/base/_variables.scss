@@ -4,9 +4,28 @@ $midgray:           #939598;
 $black:             #231f20;
 
 
-// Typography
-$sans-serif:         'Helvetica-Neue', sans-serif;                      // Define your basic fonts here, for consistency
+$sun:				#c13f1e;
+$panda:				#d49c2d;
+$sloth:				#0c7b6b;
+$andean:			#275772;
+$asiatic:			#7e271e;
+$american:			#386a25;
+$brown:				#7c2643;
+$polar:				#462457;	
 
+
+// Typography
+$sans-serif:        'Helvetica-Neue', sans-serif;                      // Define your basic fonts here, for consistency
+$happy-fox:			'Happy-Fox', Helvetica, Arial, sans-serif;
+$neris-semibold:	'Neris-SemiBold', Helvetica, Arial, sans-serif;
+$neris-semibold-italic:	'Neris-SemiBold-Italic', Helvetica, Arial, sans-serif;
+$neris-black:		'Neris-Black', Helvetica, Arial, sans-serif;
+$neris-light:		'Neris-Light', Helvetica, Arial, sans-serif;
+
+$truenorth-bold:	'True-North-Textures-Bold', Garamond, Georgia, serif;
+$serifa-bt-black:	'SerifaBT-Black', Garamond, Georgia, serif;
+$serifa-bt:			'SerifaBT', Garamond, Georgia, serif;
+$serifa-bt-italic:	'SerifaBT-Italic', Garamond, Georgia, serif;
 
 // Media Queries
 $screen-xxs:        'max-width: 480px';

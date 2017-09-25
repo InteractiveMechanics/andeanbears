@@ -1,0 +1,182 @@
+.lg-backdrop {
+	top: 40px;
+	right: 40px;
+	bottom: 40px;
+	left: 40px;
+	background: url('../../assets/explore/profile/selfies-popup-bkgr.png');
+	background-repeat: no-repeat;
+    background-size: 100% 99%;
+}
+
+.lg-backdrop.in {
+	opacity: 0.98;
+}
+
+.lg-outer {
+    width: 1700px;
+    height: 900px;
+    top: 80px;
+    left: 110px;
+}
+.lg-outer .lg {
+    overflow: visible;
+    max-height: 900px;
+}
+
+ .lg-outer .lg-img-wrap {
+ 	display: flex; 
+ 	justify-content: center;
+ 	padding: 0px;
+ }
+
+ .lg-outer .lg-image {
+ 	width: 100% !important;
+    object-fit: cover;
+ }
+
+
+.lg-outer .lg-thumb {
+	margin: 0px auto -79px !important;
+    width: 70% !important;
+    text-align: center;
+}
+
+.lg-outer .lg-thumb-item {
+    border-color: transparent;
+    box-sizing: content-box;
+    padding: 2px;
+    overflow: visible;
+    float: none;
+    display: inline-block;
+    width: 140px !important;
+}
+
+.lg-outer .lg-thumb-outer {
+	background-color: transparent;
+    height: 130px !important;
+}
+
+.lg-outer .lg-thumb-item:hover {
+    position: relative;
+    border-color: transparent;
+    overflow: visible;
+}
+
+.lg-outer .lg-thumb-item.active {
+    position: relative;
+    border-color: transparent;
+    overflow: visible;
+
+    &:after {
+        content: '';
+        width: 104%;
+        height: 104%;
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background: url(../../assets/explore/profile/selfies-thumbnail-active.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-width: 5px;
+        overflow: visible;
+    }
+}
+
+.lg-outer .lg-toogle-thumb {
+	display: none;
+}
+
+.lg-outer .lg-inner {
+	height: 78%;
+	width: 80%;
+	left: 10%;
+    top: 40px;
+}
+
+.lg-actions .lg-next {
+	top: 33%;
+	background-color: transparent;
+	&:before {
+		content: url('../../assets/explore/profile/btn-arrow-r.png');
+	}
+}
+
+.lg-actions .lg-next.active {
+	&:before {
+		content: url('../../assets/explore/profile/btn-arrow-r-active.png');
+	}
+}
+
+
+.lg-actions .lg-prev {
+	top: 33%;
+	background-color: transparent;
+	&:after {
+		content: url('../../assets/explore/profile/btn-arrow-l.png');
+	}
+}
+
+.lg-actions .lg-prev.active {
+	&:after {
+		content: url('../../assets/explore/profile/btn-arrow-l-active.png');
+	}
+}
+
+
+.lg-hide-items .lg-next,
+.lg-hide-items .lg-prev,
+.lg-hide-items .lg-toolbar {
+	opacity: 1.0;
+}
+
+.lg-sub-html {
+	position: absolute;
+	width: 1360px;
+	left: 10%;
+	text-align: left;
+	height: 50px;
+
+    small {
+        display: block;
+        font-style: italic;
+        font-size: 14px;
+    }
+}
+
+.lg-outer.lg-pull-caption-up.lg-thumb-open .lg-sub-html {
+	bottom: 158px;
+    font-size: 18px;
+    font-family: "Neris-Light", Helvetica, Arial, sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 20px 30px;
+    height: auto;
+}
+
+.lg-toolbar .lg-close {
+	&:after {
+		content: url('../../assets/explore/profile/btn-close.png');
+	}
+}
+
+.lg-toolbar {
+    right: -20px;
+    left: auto;
+	background-color: transparent;
+}
+
+#lg-download {
+	display: none;
+}
+
+#lg-counter {
+	display: none;
+}
+
+.lg-outer .lg-video-cont {
+	overflow: hidden;
+    padding: 0;
+}
+ 
+
+
