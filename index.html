@@ -80,7 +80,7 @@
                         {{if i<5}}
                             {
                                 "src": "${Selfie[i].image}", 
-                                "thumb": "${Selfie[i].image}", 
+                                "thumb": "${Selfie[i].thumb}", 
                                 "subHtml": "${Selfie[i].caption}"
                             },
                         {{/if}}
@@ -88,7 +88,7 @@
 
                     {
                         "src": "${Selfie[5].image}", 
-                        "thumb": "${Selfie[5].image}", 
+                        "thumb": "${Selfie[5].thumb}", 
                         "subHtml": "${Selfie[5].caption}" 
                     }
                     
@@ -365,9 +365,6 @@
         <div id="game-map"></div>
         <div id="game-btn-wrapper"></div>
         <div id="game-complete" class="hidden">
-            <h1>Congratulations!</h1>
-            <h3>You&#8217;ve completed the Bear Challenge.</h3>
-            <h3>Now discover even more about bears!</h3>
             <button class="botw-btn"></button>
         </div>
     </div>

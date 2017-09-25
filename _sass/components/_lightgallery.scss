@@ -135,8 +135,12 @@
 	left: 10%;
 	text-align: left;
 	height: 50px;
-    display: flex;
-    align-items: center;
+
+    small {
+        display: block;
+        font-style: italic;
+        font-size: 14px;
+    }
 }
 
 .lg-outer.lg-pull-caption-up.lg-thumb-open .lg-sub-html {

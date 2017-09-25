@@ -26,6 +26,7 @@
 	position: absolute;
     left: 154px;
     top: 128px;	
+    transition: 0.5s all;
 }
 
 .profile-header {
@@ -256,11 +257,6 @@
     margin-top: 0px;
     transition: 0.5s all;
     box-shadow: 0 0 10px transparent;
-    -webkit-filter: drop-shadow(0 0 10px rgba(0,0,0,0.65));
-
-    &:hover, &:active, &:focus {
-        -webkit-filter: drop-shadow(0 0 10px #06CAFE);
-    }
 }
 
 .weight-art-btn {

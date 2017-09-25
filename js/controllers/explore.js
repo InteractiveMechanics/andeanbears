@@ -64,11 +64,10 @@ Explore = (function() {
 
     var getProfile = function() {
         var id = $(this).attr('data-bear');
-        console.log(id);
+        //console.log(id);
         if ($('.explore-btn-img').is('[data-bear="' + id + '"]')) {
             $(this).find($('.explore-btn-img')).addClass('active animated pulse');
         }
-
          
         setTimeout(function() {  buildProfile(id); }, 2000);
         //buildProfile(id);  
@@ -79,7 +78,8 @@ Explore = (function() {
 
     var buildProfile = function(id) {
         clearExplore();
-        console.log(id);
+        clearProfile();
+        //console.log(id);
         $('#profile-template').tmpl(data.bears[id-1]).appendTo('#profile');
         $('#profile').removeClass('hidden');
         $('#landing').removeClass('hidden').addClass('animated fadeIn');
@@ -263,7 +263,7 @@ Explore = (function() {
                 width: '100%',
                 height: '100%',
                 fullScreen: false,
-                autoplay: true,
+                autoplay: false,
                 progressBar: false,
                 fourceAutoplay: true,
                 videoMaxWidth: '100%',
@@ -279,7 +279,7 @@ Explore = (function() {
             $('#landing').removeClass('hidden').removeClass('fadeOut').addClass('fadeIn');
             $('.reset-profile').removeClass('slideInUp').addClass('hidden fadeOut');
             $('.latin').removeClass('hidden animated fadeOut').addClass('animated fadeIn');
-            $('.profile-header').css('top', '200px').removeClass('slideInUp small').addClass('animated slideInDown');
+            $('.landing-wrapper').css('top', '128px').removeClass('small').addClass('animated');
             $('.profile-title').css('font-size', '70px').css('max-width', '75%');
             $('#selfies').addClass('hidden fadeOut');
             $('#selfies-btn').removeClass('animated pulse active');
@@ -338,7 +338,6 @@ Explore = (function() {
                 videoElement.play();
             }
         } 
-        
     }
 
     

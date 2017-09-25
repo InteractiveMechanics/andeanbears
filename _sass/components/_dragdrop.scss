@@ -39,8 +39,12 @@
 }
 
 .draggable-widget[data-species="sun"] {
-	background: url('../../assets/game/SunBear-btn.png');
+	background: url('../../assets/game/SunBear-btn-lg.png');
 	background-size: cover;
+
+    &:hover, &:focus, &:active {
+        background-image: url('../../assets/game/SunBear-btn-down-lg.png');
+    }
 }
 
 .draggable-widget-holder[data-bear="2"],
@@ -51,8 +55,12 @@
 
 
 .draggable-widget[data-species="panda"] {
-	background: url('../../assets/game/GiantPanda-btn.png');
+	background: url('../../assets/game/GiantPanda-btn-lg.png');
 	background-size: cover;
+
+    &:hover, &:focus, &:active {
+        background-image: url('../../assets/game/GiantPanda-btn-down-lg.png');
+    }
 }
 
 .draggable-widget-holder[data-bear="3"],
@@ -62,8 +70,12 @@
 }
 
 .draggable-widget[data-species="sloth"] {
-	background: url('../../assets/game/SlothBear-btn.png');
+	background: url('../../assets/game/SlothBear-btn-lg.png');
 	background-size: cover;
+
+    &:hover, &:focus, &:active {
+        background-image: url('../../assets/game/SlothBear-btn-down-lg.png');
+    }
 }
 
 .draggable-widget-holder[data-bear="4"],
@@ -73,8 +85,12 @@
 }
 
 .draggable-widget[data-species="andean"] {
-	background: url('../../assets/game/AndeanBear-btn.png');
+	background: url('../../assets/game/AndeanBear-btn-lg.png');
 	background-size: cover;
+
+    &:hover, &:focus, &:active {
+        background-image: url('../../assets/game/AndeanBear-btn-down-lg.png');
+    }
 }
 
 .draggable-widget-holder[data-bear="5"],
@@ -84,8 +100,12 @@
 }
 
 .draggable-widget[data-species="asiatic"] {
-	background: url('../../assets/game/AsiaticBear-btn.png');
+	background: url('../../assets/game/AsiaticBear-btn-lg.png');
 	background-size: cover;
+
+    &:hover, &:focus, &:active {
+        background-image: url('../../assets/game/AsiaticBear-btn-down-lg.png');
+    }
 }
 
 .draggable-widget-holder[data-bear="6"],
@@ -95,8 +115,12 @@
 }
 
 .draggable-widget[data-species="american"] {
-	background: url('../../assets/game/AmericanBlackBear-btn.png');
+	background: url('../../assets/game/AmericanBlackBear-btn-lg.png');
 	background-size: cover;
+
+    &:hover, &:focus, &:active {
+        background-image: url('../../assets/game/AmericanBlackBear-btn-down-lg.png');
+    }
 }
 
 .draggable-widget-holder[data-bear="7"],
@@ -106,12 +130,16 @@
 }
 
 .draggable-widget[data-species="brown"] {
-	background: url('../../assets/game/BrownBear-btn.png');
+	background: url('../../assets/game/BrownBear-btn-lg.png');
 	background-size: cover;
+
+    &:hover, &:focus, &:active {
+        background-image: url('../../assets/game/BrownBear-btn-down-lg.png');
+    }
 }
 
 .brown-bear-marker {
-	background: url('../../assets/game/BrownBear-btn.png');
+	background: url('../../assets/game/BrownBear-btn-lg.png');
 	background-size: cover;
 	width: 110px;
 	height: 110px;
@@ -130,8 +158,12 @@
 }
 
 .draggable-widget[data-species="polar"] {
-	background: url('../../assets/game/PolarBear-btn.png');
+	background: url('../../assets/game/PolarBear-btn-lg.png');
 	background-size: cover;
+
+    &:hover, &:focus, &:active {
+        background-image: url('../../assets/game/PolarBear-btn-down-lg.png');
+    }
 }
 
 
