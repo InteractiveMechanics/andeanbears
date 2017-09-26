@@ -86,9 +86,8 @@
             <button id="selfies-btn" data-profile="${Id}" data-gallery='
                 [
                     {
-                        "poster": "${Videoposter}", 
                         "thumb": "${Videothumb}", 
-                        "html": "#video1", 
+                        "html": "#video1",
                         "subHtml": "${Videocaption}"
                     }, 
                 
@@ -338,34 +337,42 @@
         <button class="explore-btn" data-bear="1" id="sunBear">
             <span class="explore-btn-text"  data-bear="1">Sun Bear</span>
             <span class="explore-btn-img" data-bear="1"></span>
+            <span class="explore-btn-shadow" data-bear="1"></span>
         </button>
         <button class="explore-btn" data-bear="2" id="giantPanda">
             <span class="explore-btn-text" data-bear="2" >Giant Panda</span>
             <span class="explore-btn-img" data-bear="2"></span>
+            <span class="explore-btn-shadow" data-bear="2"></span>
         </button>
         <button class="explore-btn" data-bear="3" id="slothBear">
             <span class="explore-btn-text" data-bear="3">Sloth Bear</span>
             <span class="explore-btn-img" data-bear="3"></span>
+            <span class="explore-btn-shadow" data-bear="3"></span>
         </button>
         <button class="explore-btn" data-bear="4" id="andeanBear">
             <span class="explore-btn-text" data-bear="4">Andean Bear</span>
             <span class="explore-btn-img" data-bear="4"></span>
+            <span class="explore-btn-shadow" data-bear="4"></span>
         </button>
         <button class="explore-btn" data-bear="5" id="asiaticBlackBear">
             <span class="explore-btn-text" data-bear="5">Asiatic Black Bear</span>
             <span class="explore-btn-img" data-bear="5"></span>
+            <span class="explore-btn-shadow" data-bear="5"></span>
         </button>
         <button class="explore-btn" data-bear="6" id="americanBlackBear">
             <span class="explore-btn-text" data-bear="6">American Black Bear</span>
             <span class="explore-btn-img" data-bear="6"></span>
+            <span class="explore-btn-shadow" data-bear="6"></span>
         </button>
         <button class="explore-btn" data-bear="7" id="brownBear">
             <span class="explore-btn-text" data-bear="7">Brown Bear</span>
             <span class="explore-btn-img" data-bear="7"></span>
+            <span class="explore-btn-shadow" data-bear="7"></span>
         </button>
         <button class="explore-btn" data-bear="8" id="polarBear">
             <span class="explore-btn-text" data-bear="8">Polar<br>Bear</span>
             <span class="explore-btn-img" data-bear="8"></span>
+            <span class="explore-btn-shadow" data-bear="8"></span>
         </button>
         </div>
 
@@ -384,6 +391,7 @@
             <button class="botw-btn"></button>
         </div>
     </div>
+    <div id="hidden" class="hidden"></div>
 
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -391,6 +399,7 @@
     <script src="./js/lib/jquery.loadTemplate.min.js"></script>
     <script src="./js/lib/createjs-2015.11.26.min.js"></script>
     <script src="./js/lib/jquery-ui.min.js"></script>
+    <script src="./js/lib/defiant.min.js"></script>
     <script src="./js/lib/jquery.ui.touch-punch.min.js"></script>
     <script src="./js/lib/lightGallery/js/lightgallery.js"></script>
     <script src="./js/lib/lightGallery/js/lg-thumbnail.js"></script>
@@ -401,6 +410,7 @@
     <script src="./js/controllers/explore.js"></script>
     <script src="./js/controllers/game.js"></script>
     <script src="./js/controllers/attract.js"></script>
+    <script src="./js/controllers/preloader.js"></script>
     <script src="./js/main.js"></script>
 
 </body>

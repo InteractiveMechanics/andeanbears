@@ -20,7 +20,8 @@
 }
 .lg-outer .lg {
     overflow: visible;
-    max-height: 900px;
+    max-height: 900px !important;
+    height: 900px !important;
 }
 
  .lg-outer .lg-img-wrap {
@@ -35,10 +36,11 @@
  }
 
 
-.lg-outer .lg-thumb {
-	margin: 0px auto -79px !important;
+.lg-thumb {
+	margin: 0px auto !important;
     width: 70% !important;
     text-align: center;
+    height: 130px !important;
 }
 
 .lg-outer .lg-thumb-item {
@@ -54,6 +56,9 @@
 .lg-outer .lg-thumb-outer {
 	background-color: transparent;
     height: 130px !important;
+    bottom: 0 !important;
+    transform: none !important;
+    max-height: 130px !important;
 }
 
 .lg-outer .lg-thumb-item:hover {
@@ -87,7 +92,7 @@
 }
 
 .lg-outer .lg-inner {
-	height: 78%;
+	height: 78% !important;
 	width: 80%;
 	left: 10%;
     top: 40px;
@@ -129,12 +134,19 @@
 	opacity: 1.0;
 }
 
-.lg-sub-html {
+.lg-outer .lg-sub-html {
 	position: absolute;
 	width: 1360px;
 	left: 10%;
 	text-align: left;
 	height: 50px;
+	bottom: 158px !important;
+    font-size: 18px;
+    font-family: "Neris-Light", Helvetica, Arial, sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 20px 30px;
+    height: auto;
 
     small {
         display: block;
@@ -143,23 +155,13 @@
     }
 }
 
-.lg-outer.lg-pull-caption-up.lg-thumb-open .lg-sub-html {
-	bottom: 158px;
-    font-size: 18px;
-    font-family: "Neris-Light", Helvetica, Arial, sans-serif;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.65);
-    padding: 20px 30px;
-    height: auto;
-}
-
-.lg-toolbar .lg-close {
+.lg-outer .lg-toolbar .lg-close {
 	&:after {
 		content: url('../../assets/explore/profile/btn-close.png');
 	}
 }
 
-.lg-toolbar {
+.lg-outer .lg-toolbar {
     right: -20px;
     left: auto;
 	background-color: transparent;

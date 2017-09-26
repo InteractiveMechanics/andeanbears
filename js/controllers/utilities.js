@@ -10,7 +10,7 @@ Utilities = (function() {
 
     var animateChallengeBtn = function() {
         $('#home-btn-game').addClass('animated pulse');
-        setTimeout(function() {  Game.buildGame(); }, 1000);
+        setTimeout(function() {  Game.buildGame(); unanimateBtn(); }, 1000);
         sendGAEvent("Take the Bear Challenge");
     }
 
@@ -22,7 +22,7 @@ Utilities = (function() {
     }
 
     var animateResetBtnBlue = function() {
-        $('.reset-btn-blue').css('-webkit-filter', 'drop-shadow(0 0 10px #06CAFE)').css('background-image', 'url("../../assets/explore/profile/btn-home-active.png")').addClass('animated pulse');
+        $('.reset-btn-blue').css('background-image', 'url("../../assets/explore/profile/btn-home-active.png")').addClass('animated pulse');
         setTimeout(function() { resetInteractive(); }, 1000);
         setTimeout(function() { unanimateResetBtnBlue(); }, 1500);
         sendGAEvent("Back to home");
@@ -30,7 +30,7 @@ Utilities = (function() {
 
     var animateExploreBtn = function() {
         $('#home-btn-explore').addClass('animated pulse');
-        setTimeout(function() {  Explore.buildExplore(); }, 1000);
+        setTimeout(function() {  Explore.buildExplore(); unanimateBtn(); }, 1000);
         sendGAEvent("Explore Bears of the World");
     }
 
@@ -54,14 +54,13 @@ Utilities = (function() {
     }
 
     var resetVisitedState = function() {
-        $('.explore-btn-text').removeClass('visited');
-        $('.explore-btn-img').removeClass('visited');
-        //console.log('resetVisitedState');
+        $('.explore-btn-text').removeClass('visited bounce animated');
+        $('.explore-btn-img').removeClass('visited bounce animated');
     }
 
     var resetActiveState = function() {
         $('.explore-btn-img').removeClass('active');
-        //console.log('resetActiveState');
+        $('.explore-btn-text').removeClass('active');
 
     }
 
@@ -113,7 +112,9 @@ Utilities = (function() {
         $('#game').addClass('hidden');
         $('#profile').addClass('hidden');
         $('#home').removeClass('hidden');
-        $('#selfies-btn').data('lightGallery').destroy();
+        if ($('#selfies-btn').data('lightGallery')){
+            $('#selfies-btn').data('lightGallery').destroy();
+        }
         unanimateBtn();
         //TODO: reset timeout
         sendGAEvent("Session end");

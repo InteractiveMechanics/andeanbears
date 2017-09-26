@@ -253,7 +253,7 @@
                     "map": "assets/explore/sun/whereLive-map-sun.png"
                 }
             ,
-            "Video": "assets/explore/video/sun.mp4",
+            "Video": "assets/explore/videos/sun.mp4",
             "Videoposter": "assets/explore/sun/Slideshow/video.jpg",
             "Videothumb": "assets/explore/sun/Slideshow/video-thumb.jpg",
             "Videocaption": "Sun bears use their long tongues to extract flesh from the middle of fruits.",
@@ -439,7 +439,7 @@
                     "map": "assets/explore/andean/whereLive-map-andean.png"
                 }
             ,
-            "Video": "assets/explore/video/andean.mp4",
+            "Video": "assets/explore/videos/andean.mp4",
             "Videoposter": "assets/explore/andean/Slideshow/video.jpg",
             "Videothumb": "assets/explore/andean/Slideshow/video-thumb.jpg",
             "Videocaption": "Although they sometimes eat insects and small animals, Andean bears prefer sweet plants and fruits.",

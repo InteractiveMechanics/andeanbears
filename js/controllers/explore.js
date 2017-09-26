@@ -13,9 +13,8 @@ Explore = (function() {
     }
 
     var clearBtnAnimation = function() {
-         if ($('.explore-btn-img').hasClass('animated pulse')) {
-            $('.explore-btn-img').removeClass('animated pulse');
-        }
+        $('.explore-btn-img').removeClass('active animated pulse bounce');
+        $('.explore-btn-text').removeClass('active animated pulse bounce');
     }
 
     var showExplore = function() {
@@ -64,13 +63,12 @@ Explore = (function() {
 
     var getProfile = function() {
         var id = $(this).attr('data-bear');
-        //console.log(id);
         if ($('.explore-btn-img').is('[data-bear="' + id + '"]')) {
-            $(this).find($('.explore-btn-img')).addClass('active animated pulse');
+            $(this).find($('.explore-btn-text')).addClass('active');
+            $(this).find($('.explore-btn-img')).addClass('active animated bounce');
         }
          
         setTimeout(function() {  buildProfile(id); }, 2000);
-        //buildProfile(id);  
     }
 
 
@@ -333,9 +331,9 @@ Explore = (function() {
             if (videoElement.paused) {
                 videoElement.load();
                 videoElement.play();
-                console.log('your if statement is working');
+                //console.log('your if statement is working');
             } else if (videoElement.ended) {
-                console.log('your else statement is working')   
+                //console.log('your else statement is working')   
                 videoElement.play();
             }
         } 

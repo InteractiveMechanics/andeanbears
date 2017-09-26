@@ -7,6 +7,7 @@ $(function(){
         Utilities.init();
         Explore.init();
 		Game.init();
+        Preloader.init();
 		
     }, 'json');
 
