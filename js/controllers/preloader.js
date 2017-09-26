@@ -13,6 +13,10 @@ Preloader = (function() {
 
     var buildAssetsArray = function() {
         assets = JSON.search(data, '//bears/Video');
+        assets += JSON.search(data, '//bears/Background');
+        assets += JSON.search(data, '//bears/Videoposter');
+        assets += JSON.search(data, '//bears/image');
+        assets += JSON.search(data, '//bears/thumb');
     }
     var loadAll = function() {
         while (assets.length > 0) {
