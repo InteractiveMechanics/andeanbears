@@ -116,6 +116,7 @@
 }
 
 .explore-btn[data-bear="2"],
+.explore-btn[data-bear="3"],
 .explore-btn[data-bear="4"] {
 	width: 175px;
 }
@@ -186,10 +187,10 @@
 	background: url('../../assets/explore/btn-SlothBear.png');
 	background-repeat: no-repeat;
     //background-size: contain;
-	width: 150px;
+	width: 175px;
 	height: 268px;
 	top: -31px;
-	left: -4px;
+	left: 7px;
 }
 
 .explore-btn-img[data-bear="3"].active {
