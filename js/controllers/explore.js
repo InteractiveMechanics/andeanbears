@@ -33,11 +33,22 @@ Explore = (function() {
         Utilities.clearHome();
     }
 
-    var prepareExplore = function() {
-        var id = $('h1').attr('data-bear');
+    var prepareExplore = function(id) {
+        //var id = $('h1').attr('data-bear');
         clearProfile();
         clearBtnAnimation();
         updateExplore(id);
+    }
+
+    var animateDiffBear = function(id) {
+        var id = $('h1').attr('data-bear');
+        $('.explore-reset-btn').css('background-image', 'url("../../assets/explore/profile/btn-diffBear-active.png")').addClass('animated pulse');
+         setTimeout(function() { prepareExplore(id); }, 1000);
+         setTimeout(function() { unanimateResetBtn(); }, 1500);
+    }
+
+    var unanimateDiffBear = function() {
+         $('.explore-reset-btn').css('background-image', 'url("../../assets/explore/btn-diffBear.png")').removeClass('animated pulse');
     }
 
     var updateExplore = function(id) {
@@ -345,7 +356,7 @@ Explore = (function() {
 
      var bindEvents = function() {
         $(document).on('click tap', '.explore-btn[data-bear]', getProfile);
-        $(document).on('click tap', '.explore-reset-btn', prepareExplore);
+        $(document).on('click tap', '.explore-reset-btn', animateDiffBear);
         $(document).on('click tap', '#help-btn', buildHelp);
         $(document).on('click tap', '#weight-btn', buildWeight);
         $(document).on('click tap', '#diet-btn', buildDiet);
