@@ -83,6 +83,7 @@ Explore = (function() {
         $('#profile-template').tmpl(data.bears[id-1]).appendTo('#profile');
         $('#profile').removeClass('hidden');
         $('#landing').removeClass('hidden').addClass('animated fadeIn');
+        sendGAEvent("Explore Bears of the World: " + data.bears[id-1].name);
     }
 
     var transformHeading = function() {

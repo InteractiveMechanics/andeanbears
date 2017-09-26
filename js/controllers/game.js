@@ -21,7 +21,7 @@ Game = (function() {
 
     var showComplete = function() {
         var numberDropped = $('.dropped').length;
-        console.log(numberDropped);
+        //console.log(numberDropped);
         if (numberDropped == 9) {
             setTimeout(function() {  
                 $('.dragged').addClass('animated tada'); 
@@ -29,6 +29,7 @@ Game = (function() {
             setTimeout(function() {  
                 $('#game-complete').removeClass('hidden').addClass('animated fadeIn');
                 $('#game-complete').removeClass('hidden').addClass('animated fadeIn'); }, 11000);
+            sendGAEvent("Take the Bear Challenge: Complete");
         }
     }
 
