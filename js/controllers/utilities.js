@@ -1,19 +1,17 @@
 Utilities = (function() {
 	var timeout = [];
     var duration = 120000; //90000
+    var longduration = 900000;
 
     var init = function() {
         bindEvents();
     }
-
-
 
     var animateChallengeBtn = function() {
         $('#home-btn-game').addClass('animated pulse');
         setTimeout(function() {  Game.buildGame(); unanimateBtn(); }, 1000);
         sendGAEvent("Take the Bear Challenge");
     }
-
 
     var animateResetBtn = function() {
         $('.reset-btn').css('background-image', 'url("../../assets/game/BC-home-btn-down.png")').addClass('animated pulse');
@@ -103,6 +101,7 @@ Utilities = (function() {
             });
         }
         timeout.push(setTimeout(resetInteractive, duration));
+        timeout.push(setTimeout(resetBrowser, longduration));
     }
 
     var resetInteractive = function() {
@@ -118,6 +117,10 @@ Utilities = (function() {
         unanimateBtn();
         //TODO: reset timeout
         sendGAEvent("Session end");
+    }
+
+    var resetBrowser = function() {
+        location.reload();
     }
 
     var clearHome = function() {

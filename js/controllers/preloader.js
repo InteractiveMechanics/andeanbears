@@ -12,17 +12,21 @@ Preloader = (function() {
     }
 
     var buildAssetsArray = function() {
-        assets = JSON.search(data, '//bears/Video');
-        assets += JSON.search(data, '//bears/Background');
-        assets += JSON.search(data, '//bears/Videoposter');
-        assets += JSON.search(data, '//bears/image');
-        assets += JSON.search(data, '//bears/thumb');
+        var videos = JSON.search(data, '//bears/Video');
+        var bgs = JSON.search(data, '//bears/Background');
+        var posters = JSON.search(data, '//bears/Videoposter');
+        var images = JSON.search(data, '//bears/image');
+        var thumbs = JSON.search(data, '//bears/thumb');
+
+        assets = videos.concat(bgs, posters, images, thumbs);
+        console.log(assets);
     }
     var loadAll = function() {
         while (assets.length > 0) {
             var item = assets.shift();
             preload.loadFile(item);
         }
+        console.log(assets);
     }
     var handleFileLoad = function(event) {
         $('#hidden').append(event.result);
