@@ -111,6 +111,7 @@
 	z-index: 2;
 	color: #fff;
 	font-family: $serifa-bt-black;
+    pointer-events: none;
 
 	.botw-btn {
 		background: url('../../assets/game/BOTW-btn-lg.png');
@@ -120,6 +121,7 @@
 		display: block;
 		margin: 600px auto 0;
 		border: none;
+        pointer-events: all;
 	}
 	h1 {
 		font-size: 90px;

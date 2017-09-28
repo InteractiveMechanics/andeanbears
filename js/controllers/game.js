@@ -24,9 +24,11 @@ Game = (function() {
         //console.log(numberDropped);
         if (numberDropped == 9) {
             setTimeout(function() {  
-                $('.dragged').addClass('animated tada'); 
-                $('.brown-bear').addClass('animated tada'); }, 10000);
+                $('.dragged').addClass('animated tada infinite'); 
+                $('.brown-bear').addClass('animated tada infinite'); }, 5000);
             setTimeout(function() {  
+                $('.dragged').removeClass('animated tada infinite'); 
+                $('.brown-bear').removeClass('animated tada infinite');
                 $('#game-complete').removeClass('hidden').addClass('animated fadeIn');
                 $('#game-complete').removeClass('hidden').addClass('animated fadeIn'); }, 11000);
             sendGAEvent("Take the Bear Challenge: Complete");

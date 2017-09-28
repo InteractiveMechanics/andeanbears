@@ -15,18 +15,24 @@ Preloader = (function() {
         var videos = JSON.search(data, '//bears/Video');
         var bgs = JSON.search(data, '//bears/Background');
         var posters = JSON.search(data, '//bears/Videoposter');
-        var images = JSON.search(data, '//bears/image');
-        var thumbs = JSON.search(data, '//bears/thumb');
+        var images = JSON.search(data, '//bears/Selfie/image');
+        var thumbs = JSON.search(data, '//bears/Selfie/thumb');
+        var other = [
+            'assets/home/homepg-bkgr-text.jpg',
+            'assets/explore/Background.jpg',
+            'assets/game/BC-bkgr-map-w-bar.jpg',
+            'assets/game/BC-complete-full.png'
+        ];
 
-        assets = videos.concat(bgs, posters, images, thumbs);
-        console.log(assets);
+        assets = videos.concat(bgs, posters, images, thumbs, other);
+        //console.log(assets);
     }
     var loadAll = function() {
         while (assets.length > 0) {
             var item = assets.shift();
             preload.loadFile(item);
         }
-        console.log(assets);
+        //console.log(assets);
     }
     var handleFileLoad = function(event) {
         $('#hidden').append(event.result);
