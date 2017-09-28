@@ -25,12 +25,12 @@ Game = (function() {
         if (numberDropped == 9) {
             setTimeout(function() {  
                 $('.dragged').addClass('animated tada infinite'); 
-                $('.brown-bear').addClass('animated tada infinite'); }, 5000);
+                $('.brown-bear').addClass('animated tada infinite'); }, 6000);
             setTimeout(function() {  
                 $('.dragged').removeClass('animated tada infinite'); 
                 $('.brown-bear').removeClass('animated tada infinite');
                 $('#game-complete').removeClass('hidden').addClass('animated fadeIn');
-                $('#game-complete').removeClass('hidden').addClass('animated fadeIn'); }, 11000);
+                $('#game-complete').removeClass('hidden').addClass('animated fadeIn'); }, 10000);
             sendGAEvent("Take the Bear Challenge: Complete");
         }
     }
@@ -94,7 +94,7 @@ Game = (function() {
     	//clear the home screen
     	$('.draggable-widget').draggable({
     		snap: false,
-    		revert: 'invalid',
+    		revert: true,
 		    snapMode: 'inner',
 		    snapTolerance: 20,
 		    cursorAt: {top: 50, left: 50}
@@ -112,8 +112,7 @@ Game = (function() {
                 var timeoutHints;
 
 		 	    if(ui.draggable.is('[data-bear="' + droppableNumber + '"]')) {
-
-		 	   		ui.draggable.draggable('option', 'revert', 'invalid');
+                    ui.draggable.draggable('option', 'revert', false);
 		 	   		ui.draggable.addClass('dragged animated pulse');
                     $(this).addClass('dropped');
 
@@ -126,7 +125,6 @@ Game = (function() {
                     if ( $('.correct-answer') != correctAnswer ) {
                         $('.correct-answer').addClass('hidden');
                     }
-		 	   		//correctAnswer.removeClass('hidden');
 
                     timeoutCorrectAnswer = setTimeout(function() {
                         correctAnswer.addClass('hidden');
@@ -134,10 +132,6 @@ Game = (function() {
 
                     }, 10000);
 
-
-                    //setTimeout(function(){ correctAnswer.addClass('hidden'); }, 8000);
-                    //setTimeout(function(){ $(this).css('z-index', 'initial'); }, 8000);
-                   
 		 	   	 	ui.draggable.position({
 		              	my: "center",
 		              	at: "center",
@@ -151,14 +145,13 @@ Game = (function() {
 
                     showStartOver();
                     showComplete();
+
                     if ($(this).hasClass('brown-bear')) {
                         dropBrownBear();
                     }
 
-
 		 		} else {
-		 			ui.draggable.draggable('option', 'revert', 'valid');
-
+		 			ui.draggable.draggable('option', 'revert', true);
 
                     clearTimeout(timeoutCorrectAnswer);
                     $('.correct-answer').addClass('hidden');
@@ -167,43 +160,26 @@ Game = (function() {
                     $('.hint-1').addClass('hidden');
                     $('.hint-2').addClass('hidden');
 
-                    
-                    
-
                     if (!hint1.hasClass('answered')) {
-                       
                         hint1.removeClass('hidden').addClass('answered');
                         $(this).css('background', '');
-
-                        // timeoutHint1 = setTimeout(function() {
-                        //     hint1.addClass('hidden');
-                        // }, 5000);
 
                         timeoutHints = setTimeout(function() {
                             hint1.addClass('hidden');
                             hint2.addClass('hidden');
                         }, 5000);
 
-                        //setTimeout(function(){ hint1.addClass('hidden'); }, 5000);
                     } else {
                         hint2.removeClass('hidden');
                         
-                        // timeoutHint2 = setTimeout(function() {
-                        //     hint2.addClass('hidden');
-                        // }, 5000);
-
                          timeoutHints = setTimeout(function() {
                             hint1.addClass('hidden');
                             hint2.addClass('hidden');
                         }, 5000);
 
-
-                        //setTimeout(function(){ hint2.addClass('hidden'); }, 5000);
                     }
 				}
-    		
     		}
-
     	});
     }
 
