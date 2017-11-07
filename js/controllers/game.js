@@ -1,6 +1,7 @@
 Game = (function() {
+    var prevDrag;
 
-	 var init = function() {
+    var init = function() {
         bindEvents();
     }
 
@@ -97,7 +98,24 @@ Game = (function() {
     		revert: true,
 		    snapMode: 'inner',
 		    snapTolerance: 20,
-		    cursorAt: {top: 50, left: 50}
+		    cursorAt: {top: 50, left: 50},
+            drag: function( event, ui ) {
+                if (Game.prevDrag){
+                    if ((Game.prevDrag.top == ui.position.top) && (Game.prevDrag.left == ui.position.left)){  
+                        var that = $(this);
+                        setTimeout(function(){ 
+                            var instance = that.draggable('instance');
+                            if ((parseFloat(instance.position.top) == parseFloat(Game.prevDrag.top)) && (parseFloat(instance.position.left) == parseFloat(Game.prevDrag.left))) {
+                                that.trigger('mouseup');
+                            }
+                        }, 500);
+                    } else {
+                        Game.prevDrag = ui.position;
+                    }
+                } else {
+                    Game.prevDrag = ui.position;
+                }
+            }
     	});
     	$('.droppable-widget').droppable({
     		drop: function( event, ui ) {
