@@ -78,7 +78,13 @@ Game = (function() {
     }
 
 
-
+    var difference = function(num1, num2) {
+        if (num1 > num2) {
+            return num1 - num2
+        } else {
+            return num2 - num1
+        }
+    }
 
    
     var buildGame = function() {
@@ -101,16 +107,33 @@ Game = (function() {
 		    cursorAt: {top: 50, left: 50},
             drag: function( event, ui ) {
                 if (Game.prevDrag){
-                    if ((Game.prevDrag.top == ui.position.top) && (Game.prevDrag.left == ui.position.left)){  
+                    var topDifference = difference(Game.prevDrag.top, ui.position.top);
+                    var leftDifference = difference(Game.prevDrag.left, ui.position.left);
+                    
+                    
+                    if ((topDifference <= 4) && (leftDifference <= 4)){
+                    
                         var that = $(this);
                         setTimeout(function(){ 
                             var instance = that.draggable('instance');
+                            var instanceTopDifference = difference(instance.position.top, Game.prevDrag.top);
+                            var instanceLeftDifference = difference(instance.position.left, Game.prevDrag.left);
+                        
+                            
                             if ((parseFloat(instance.position.top) == parseFloat(Game.prevDrag.top)) && (parseFloat(instance.position.left) == parseFloat(Game.prevDrag.left))) {
                                 that.trigger('mouseup');
+                            } else if (instanceLeftDifference <= 4 && instanceTopDifference <= 4) {
+                                that.trigger('mouseup');
+                            } else {
                             }
-                        }, 500);
+                        }, 1000);
+                        
+                            
+                        
                     } else {
+                        
                         Game.prevDrag = ui.position;
+                        console.log('this is the else');
                     }
                 } else {
                     Game.prevDrag = ui.position;
